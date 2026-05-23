@@ -24,29 +24,35 @@ export function downloadFile(dataUrl, filename) {
 
 // Set up Navbar responsive hamburger toggle and active states
 export function initNavbar() {
-  const toggleBtn = document.getElementById('nav-toggle');
-  const navMenu = document.getElementById('nav-menu');
-  if (toggleBtn && navMenu) {
-    toggleBtn.addEventListener('click', () => {
-      navMenu.classList.toggle('hidden');
-      navMenu.classList.toggle('block');
-    });
-  }
+  const scheduleInit = window.requestIdleCallback || (cb => setTimeout(cb, 50));
+  scheduleInit(() => {
+    const toggleBtn = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    if (toggleBtn && navMenu) {
+      toggleBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('hidden');
+        navMenu.classList.toggle('block');
+      });
+    }
 
-  const dropdownBtn = document.getElementById('tools-dropdown-btn');
-  const dropdownMenu = document.getElementById('tools-dropdown');
-  if (dropdownBtn && dropdownMenu) {
-    dropdownBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      dropdownMenu.classList.toggle('hidden');
-    });
-    document.addEventListener('click', () => {
-      dropdownMenu.classList.add('hidden');
-    });
-  }
+    const dropdownBtn = document.getElementById('tools-dropdown-btn');
+    const dropdownMenu = document.getElementById('tools-dropdown');
+    if (dropdownBtn && dropdownMenu) {
+      dropdownBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        dropdownMenu.classList.toggle('hidden');
+      });
+      document.addEventListener('click', () => {
+        dropdownMenu.classList.add('hidden');
+      });
+    }
+  });
 }
 
 // Setup common setup like mobile analytics or ads placeholder log
 export function logSponsorship() {
-  console.log('Toolifya — Fast, Free, No Signup. Proudly Monetized with AdSense.');
+  const scheduleLog = window.requestIdleCallback || (cb => setTimeout(cb, 100));
+  scheduleLog(() => {
+    console.log('Toolifya — Fast, Free, No Signup. Proudly Monetized with AdSense.');
+  });
 }
