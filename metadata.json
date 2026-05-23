@@ -1,0 +1,6 @@
+{
+  "name": "Toolifya",
+  "description": "Free Online Image Tools — Fast, Simple, No Signup. Compress, resize, crop, and convert images to JPG, PNG, WebP, and PDF instantly in your browser.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

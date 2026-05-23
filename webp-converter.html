@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Primary SEO -->
+    <title>WebP Converter Online Free — JPG PNG to WebP | Toolifya</title>
+    <meta name="description" content="Convert images to WebP format online for free. Also convert WebP to JPG or PNG. Reduce file size by 30% with WebP. No signup." />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <link rel="canonical" href="https://toolifya.site/webp-converter.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="WebP Converter Online Free — JPG PNG to WebP | Toolifya" />
+    <meta property="og:description" content="Convert images to WebP format online for free. Also convert WebP to JPG or PNG. Reduce file size by 30% with WebP." />
+    <meta property="og:url" content="https://toolifya.site/webp-converter.html" />
+    <meta property="og:image" content="https://toolifya.site/og-image.png" />
+    <meta property="og:site_name" content="Toolifya" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Performance hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/src/index.css" />
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://toolifya.site/#website",
+          "url": "https://toolifya.site",
+          "name": "Toolifya",
+          "description": "Free online image tools — fast, simple, no signup required"
+        },
+        {
+          "@type": "WebApplication",
+          "@id": "https://toolifya.site/webp-converter.html#app",
+          "name": "WebP Converter",
+          "url": "https://toolifya.site/webp-converter.html",
+          "description": "Convert images to WebP format online for free. Also convert WebP to JPG or PNG. Reduce file size by 30% with WebP.",
+          "applicationCategory": "UtilitiesApplication",
+          "operatingSystem": "Windows, macOS, Linux, Android, iOS, ChromeOS",
+          "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "isPartOf": {
+            "@id": "https://toolifya.site/#website"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://toolifya.site"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "WebP Converter",
+              "item": "https://toolifya.site/webp-converter.html"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body class="bg-white text-[#0F172A] min-h-screen flex flex-col font-sans">
+    
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-[#0A0A0A] text-white py-4 px-6 md:px-12 flex justify-between items-center shadow-lg">
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="text-xl md:text-2xl font-extrabold tracking-tight hover:opacity-90 flex items-center gap-2">
+          <span class="text-brand-cyan">⚡</span>Toolifya
+        </a>
+      </div>
+      
+      <!-- Mobile Toggle -->
+      <button id="nav-toggle" class="md:hidden text-white hover:text-brand-cyan focus:outline-none">
+        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+          <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+        </svg>
+      </button>
+
+      <nav id="nav-menu" class="hidden md:flex flex-col md:flex-row absolute md:relative top-full left-0 w-full md:w-auto bg-[#0A0A0A] md:bg-transparent p-6 md:p-0 gap-6 items-start md:items-center border-t border-neutral-800 md:border-0">
+        <div class="relative group">
+          <button id="tools-dropdown-btn" class="flex items-center gap-1 font-medium text-brand-cyan hover:text-brand-cyan transition-colors">
+            All Tools
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </button>
+          
+          <ul id="tools-dropdown" class="hidden absolute left-0 mt-2 w-56 bg-white text-slate-800 rounded-xl shadow-xl border border-slate-100 overflow-hidden py-1 z-50">
+            <li><a href="image-compressor.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">⚡ Image Compressor</a></li>
+            <li><a href="image-resizer.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">↕️ Image Resizer</a></li>
+            <li><a href="image-crop.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">✂️ Image Crop Tool</a></li>
+            <li><a href="jpg-to-png.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">🖼️ JPG to PNG Converter</a></li>
+            <li><a href="png-to-jpg.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">🎨 PNG to JPG Converter</a></li>
+            <li><a href="webp-converter.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-bold transition-colors">🕸️ WebP Converter</a></li>
+            <li><a href="image-to-pdf.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">📄 Image to PDF</a></li>
+          </ul>
+        </div>
+        <a href="about.html" class="font-medium hover:text-brand-cyan transition-colors">About Us</a>
+        <a href="privacy-policy.html" class="font-medium hover:text-brand-cyan transition-colors">Privacy Policy</a>
+      </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="bg-slate-50 border-b border-slate-100 py-3 px-6 md:px-12 text-sm text-slate-500">
+      <div class="max-w-7xl mx-auto flex items-center gap-2">
+        <a href="index.html" class="hover:text-brand-primary transition-colors">Home</a>
+        <span>&rsaquo;</span>
+        <span class="text-slate-400">Converters</span>
+        <span>&rsaquo;</span>
+        <span class="text-slate-800 font-medium">WebP Converter</span>
+      </div>
+    </div>
+
+    <!-- Main Workspace -->
+    <main class="max-w-7xl mx-auto px-6 py-12 flex-grow w-full">
+      
+      <!-- AD Placeholder -->
+      <div class="w-full text-center bg-slate-50 border border-slate-100 rounded-2xl py-2 px-4 mb-10 text-xs text-slate-400 font-mono tracking-wider">
+        <span>ADVERTISEMENT</span>
+        <div class="w-full max-w-[728px] h-20 bg-slate-200/40 border border-dashed border-slate-200 rounded mx-auto flex items-center justify-center text-slate-400 mt-1">
+          728x90 Billboard Banner
+        </div>
+      </div>
+
+      <!-- Title / Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-4">
+          WebP Converter — Convert Images to WebP Online Free
+        </h1>
+        <p class="text-slate-500 text-base md:text-lg">
+          Fast two-way WebP compilation. Convert JPG/PNG files to speed-optimized Google WebP format, or revert WebP files back to JPG/PNG images instantly.
+        </p>
+      </div>
+
+      <!-- Interactive Web Workspace Card -->
+      <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-10 shadow-[0_12px_48px_rgba(0,0,0,0.03)] mb-16 max-w-4xl mx-auto">
+        
+        <!-- Tab Switching Controllers -->
+        <div class="grid grid-cols-2 gap-3 mb-8 bg-slate-100 p-1.5 rounded-2xl">
+          <button id="tab-to-webp" class="py-3 text-sm font-bold rounded-xl text-brand-primary bg-white shadow-sm transition-all focus:outline-none cursor-pointer">
+            ✨ Convert to WebP
+          </button>
+          <button id="tab-from-webp" class="py-3 text-sm font-semibold rounded-xl text-slate-600 hover:text-slate-800 transition-all focus:outline-none cursor-pointer">
+            🔄 Convert from WebP
+          </button>
+        </div>
+
+        <!-- Info Badge -->
+        <div id="webp-advantage-badge" class="bg-cyan-50 border border-cyan-100 rounded-xl p-4 mb-6 flex items-center gap-3 text-sm text-[#06B6D4]">
+          <div class="text-lg">🕸️</div>
+          <div class="font-semibold">
+            WebP Format Advantage: WebP images are typically 30% smaller than standard JPEGs while retaining perfect structural and alpha-layer sharpness.
+          </div>
+        </div>
+
+        <!-- Upload Box -->
+        <div id="upload-zone" class="border-2 border-dashed border-slate-300 hover:border-brand-primary hover:bg-slate-50/50 rounded-2xl p-8 md:p-12 text-center cursor-pointer transition-all duration-300 relative group">
+          <input type="file" id="file-input" multiple accept="image/jpeg, image/png, image/webp" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+          <div class="flex flex-col items-center gap-4">
+            <div class="w-16 h-16 bg-sky-50 text-sky-600 rounded-full flex items-center justify-center text-3xl transition-transform group-hover:scale-110">
+              📥
+            </div>
+            <div>
+              <p class="text-lg font-bold text-slate-905 mb-1" id="upload-title">Drop JPG or PNG images here</p>
+              <p class="text-slate-505 text-sm" id="upload-subtitle">or click to browse local folders</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Settings Panel (Hidden until files uploaded) -->
+        <div id="config-panel" class="hidden mt-8 pt-8 border-t border-slate-100 space-y-6">
+          <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">⚙️ Output Configurations</h3>
+          
+          <!-- Mode A: Convert to WebP options -->
+          <div id="config-to-webp-group" class="space-y-3">
+            <div class="flex justify-between items-center text-sm">
+              <label class="font-bold text-slate-600">WebP Compression Quality</label>
+              <span id="quality-val" class="font-mono font-bold text-brand-primary bg-violet-50 px-2 rounded">85%</span>
+            </div>
+            <input type="range" id="quality-slider" min="50" max="100" value="85" />
+          </div>
+
+          <!-- Mode B: Convert from WebP options -->
+          <div id="config-from-webp-group" class="hidden space-y-3">
+            <label class="text-sm font-bold text-slate-650 block">Target Formatted Output</label>
+            <select id="select-output-format" class="w-full p-3 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-1 focus:ring-brand-primary text-slate-800 font-semibold cursor-pointer">
+              <option value="image/jpeg">JPEG (.jpg)</option>
+              <option value="image/png">PNG (.png) - Lossless Translucent</option>
+            </select>
+          </div>
+
+          <button id="convert-btn" class="w-full bg-[#7C3AED] hover:bg-brand-hover text-white py-4 px-6 rounded-2xl font-bold tracking-wide shadow-md transition-all active:scale-[0.98] cursor-pointer">
+            Run WebP Conversion
+          </button>
+        </div>
+
+        <!-- Processing State (Hidden) -->
+        <div id="processing-loader" class="hidden mt-8 py-10 flex flex-col items-center justify-center gap-3">
+          <div class="animate-spin rounded-full h-10 w-10 border-4 border-slate-200 border-t-brand-primary"></div>
+          <p class="text-sm font-bold text-slate-600">Converting pixel buffers...</p>
+        </div>
+
+        <!-- Output container (Hidden until compilation complete) -->
+        <div id="output-container" class="hidden mt-10 pt-8 border-t border-slate-200 space-y-6">
+          <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+            <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">Converted Quality WebPs</h3>
+            <button id="download-all-btn" class="bg-slate-900 text-white font-semibold text-xs px-4 py-2 rounded-xl hover:bg-slate-800 flex items-center gap-1.5 shadow transition-all">
+              ⚡ Download All as ZIP
+            </button>
+          </div>
+
+          <div class="overflow-x-auto border border-slate-100 rounded-2xl bg-slate-50/50">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="bg-slate-100 border-b border-slate-205 text-[11px] font-bold text-slate-505 uppercase tracking-wider">
+                  <th class="py-3.5 px-4 font-bold">Filename</th>
+                  <th class="py-3.5 px-4 text-center">Original Size</th>
+                  <th class="py-3.5 px-4 text-center">Exported WebP Size</th>
+                  <th class="py-3.5 px-4 text-center">Size Savings</th>
+                  <th class="py-3.5 px-4 text-right">Action</th>
+                </tr>
+              </thead>
+              <tbody id="results-table-body" class="divide-y divide-slate-100 text-sm bg-white">
+                <!-- Rendered dynamically -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SEO CONTENT SECTION SECTION A to D -->
+      <section class="max-w-4xl mx-auto space-y-16 mt-20">
+        
+        <!-- SECTION A: How to Convert WebP -->
+        <div>
+          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-6">How to Convert Images using WebP formats</h2>
+          <ol class="grid grid-cols-1 md:grid-cols-3 gap-6 list-none p-0">
+            <li class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+              <div class="text-[#7C3AED] font-black text-2xl mb-3">01</div>
+              <h3 class="font-bold text-base text-slate-905 mb-2">Toggle Converter Direction</h3>
+              <p class="text-slate-550 text-xs leading-relaxed">Choose between formatting older JPEG/PNG files to modern WebP containers, or converting WebPs back to standard PNG/JPG formats.</p>
+            </li>
+            <li class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+              <div class="text-[#7C3AED] font-black text-2xl mb-3">02</div>
+              <h3 class="font-bold text-base text-slate-905 mb-2">Adjust Compression Values</h3>
+              <p class="text-slate-550 text-xs leading-relaxed">Adjust WebP quality factors before processing to optimize loading speed vs image sharpness perfectly.</p>
+            </li>
+            <li class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+              <div class="text-[#7C3AED] font-black text-2xl mb-3">03</div>
+              <h3 class="font-bold text-base text-slate-905 mb-2">Batch download</h3>
+              <p class="text-slate-550 text-xs leading-relaxed">Process multiple files concurrently inside browser memory threads. Save individually or download ZIP collections.</p>
+            </li>
+          </ol>
+        </div>
+
+        <!-- SECTION B: Why use Toolifya's WebP engine -->
+        <div>
+          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-6 text-center">Why Use Toolifya's WebP Converter?</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="flex gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-100">
+              <div class="text-2xl">⚡</div>
+              <div>
+                <h4 class="font-bold text-slate-905 text-sm mb-1">Boost Page Speed</h4>
+                <p class="text-slate-500 text-xs leading-relaxed">WebPs reduce image sizes by ~30%, significantly accelerating Web Core Vital metrics (LCP) for SEO authority.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-100">
+              <div class="text-2xl">🔒</div>
+              <div>
+                <h4 class="font-bold text-slate-905 text-sm mb-1">100% Client Offline Sandboxing</h4>
+                <p class="text-slate-500 text-xs leading-relaxed">All operations execute within local client memory. No files are uploaded to cloud servers.</p>
+              </div>
+            </div>
+            <div class="flex gap-2 p-5 bg-slate-50 rounded-2xl border border-slate-100">
+              <div class="text-2xl">🔄</div>
+              <div>
+                <h4 class="font-bold text-[#0F172A] text-sm mb-1">Dual Converters Bound</h4>
+                <p class="text-slate-500 text-xs leading-relaxed">Easily convert image assets to WebP or decode them back to PNG or JPEG for older devices with ease.</p>
+              </div>
+            </div>
+            <div class="flex gap-2 p-5 bg-slate-50 rounded-2xl border border-slate-100">
+              <div class="text-2xl">🚫</div>
+              <div>
+                <h4 class="font-bold text-[#0F172A] text-sm mb-1">Watermark Free</h4>
+                <p class="text-slate-500 text-xs leading-relaxed">Generate clean, unwatermarked WebPs for websites, blogs, and presentations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION C: FAQ -->
+        <div>
+          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-6 text-center">Frequently Asked Questions</h2>
+          <div class="space-y-4">
+            <details class="group bg-slate-50 border border-slate-205 rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
+              <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
+                <h3 class="font-bold text-slate-900 text-base">What makes WebP superior to JPG and PNG?</h3>
+                <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-slate-950 shadow-sm transition group-open:rotate-180">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                </span>
+              </summary>
+              <p class="mt-4 text-slate-500 text-sm leading-relaxed">
+                WebP was constructed by Google to merge the best of both world formatting layers: highly sophisticated lossy compression algorithms (like JPEG) paired with alpha-channel transparency structures (like PNG). WebP consistently delivers smaller files with virtually zero visual fidelity loss.
+              </p>
+            </details>
+
+            <details class="group bg-slate-50 border border-slate-205 rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
+              <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
+                <h3 class="font-bold text-slate-900 text-base">Are WebP images supported across all browsers?</h3>
+                <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-slate-950 shadow-sm transition group-open:rotate-180">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                </span>
+              </summary>
+              <p class="mt-4 text-slate-500 text-sm leading-relaxed">
+                Yes! As of 2026, over 97% of worldwide active web clients completely support native rendering loads of WebP, including Google Chrome, Apple Safari, Mozilla Firefox, and Microsoft Edge. Reverting WebPs back to JPG is only necessary for legacy applications or device setups.
+              </p>
+            </details>
+          </div>
+        </div>
+
+        <!-- SECTION D: Internal Links -->
+        <div class="border-t border-slate-100 pt-16">
+          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-8 text-center">More Free Image Tools</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div class="bg-slate-50 hover:bg-slate-100/50 rounded-2xl p-6 border border-slate-100 flex flex-col justify-between hover:shadow-md transition-all">
+              <div>
+                <h4 class="font-bold text-slate-200 mb-2">JPG to PNG Converter</h4>
+                <p class="text-slate-500 text-xs mb-4">Reformat solid JPEG directories back into transparent lossless PNGs.</p>
+              </div>
+              <a href="jpg-to-png.html" class="text-xs font-semibold text-brand-primary hover:underline">Try Tool &rarr;</a>
+            </div>
+            <div class="bg-slate-50 hover:bg-slate-100/50 rounded-2xl p-6 border border-slate-100 flex flex-col justify-between hover:shadow-md transition-all">
+              <div>
+                <h4 class="font-bold text-slate-200 mb-2">PNG to JPG Converter</h4>
+                <p class="text-slate-500 text-xs mb-4">Turn transparent PNG files into standard JPEGs with background fills.</p>
+              </div>
+              <a href="png-to-jpg.html" class="text-xs font-semibold text-brand-primary hover:underline">Try Tool &rarr;</a>
+            </div>
+            <div class="bg-slate-50 hover:bg-slate-100/50 rounded-2xl p-6 border border-slate-100 flex flex-col justify-between hover:shadow-md transition-all">
+              <div>
+                <h4 class="font-bold text-slate-200 mb-2">Image Compressor</h4>
+                <p class="text-slate-500 text-xs mb-4">Optimize image sizes for faster page load times.</p>
+              </div>
+              <a href="image-compressor.html" class="text-xs font-semibold text-brand-primary hover:underline">Try Tool &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- AD Space bottom -->
+      <div class="w-full text-center bg-slate-50 border border-slate-100 rounded-2xl py-2 px-4 mt-20 text-xs text-slate-400 font-mono tracking-wider">
+        <span>ADVERTISEMENT</span>
+        <div class="w-full max-w-[728px] h-20 bg-slate-200/40 border border-dashed border-slate-200 rounded mx-auto flex items-center justify-center text-slate-400 mt-1">
+          728x90 Billboard Banner Foot
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0A0A0A] text-white pt-16 pb-8 px-6 md:px-12 mt-24">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-neutral-850">
+        <div>
+          <a href="index.html" class="text-2xl font-extrabold tracking-tight hover:opacity-90 flex items-center gap-2 mb-4">
+            <span class="text-brand-cyan">⚡</span>Toolifya
+          </a>
+          <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
+            Free Online Image Tools — Fast, Simple, No Signup. High performance client processing for worldwide developers and content editors.
+          </p>
+          <div class="mt-4 text-xs font-semibold text-brand-cyan uppercase tracking-wider">
+            Fast. Free. No Signup Required.
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-sm font-bold uppercase tracking-widest text-[#06B6D4] mb-4">Quick Links</h3>
+          <ul class="space-y-2.5 text-slate-400 text-sm">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home Dashboard</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="image-compressor.html" class="hover:text-white transition-colors">Image Compressor</a></li>
+            <li><a href="image-resizer.html" class="hover:text-white transition-colors">Sizing Toolkit</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-bold uppercase tracking-widest text-[#06B6D4] mb-4">Legal Operations</h3>
+          <ul class="space-y-2.5 text-slate-400 text-sm">
+            <li><a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+            <li><a href="about.html#contact" class="hover:text-white transition-colors">Developer Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="max-w-7xl mx-auto pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+        <div>
+          &copy; 2026 Toolifya. All rights reserved. Built with pure browser technology.
+        </div>
+        <div>
+          Domain: <a href="https://toolifya.site" class="hover:text-white transition-all underline">https://toolifya.site</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Handler JS -->
+    <script type="module">
+      import { initNavbar, formatBytes, downloadFile } from '/src/utils.js';
+      initNavbar();
+
+      const tabToWebP = document.getElementById('tab-to-webp');
+      const tabFromWebP = document.getElementById('tab-from-webp');
+
+      const webpAdvantageBadge = document.getElementById('webp-advantage-badge');
+      const uploadZone = document.getElementById('upload-zone');
+      const fileInput = document.getElementById('file-input');
+      const uploadTitle = document.getElementById('upload-title');
+      const uploadSubtitle = document.getElementById('upload-subtitle');
+
+      const configPanel = document.getElementById('config-panel');
+      const configToWebPGroup = document.getElementById('config-to-webp-group');
+      const configFromWebPGroup = document.getElementById('config-from-webp-group');
+
+      const qualitySlider = document.getElementById('quality-slider');
+      const qualityVal = document.getElementById('quality-val');
+      const selectOutputFormat = document.getElementById('select-output-format');
+
+      const convertBtn = document.getElementById('convert-btn');
+      const processingLoader = document.getElementById('processing-loader');
+      const outputContainer = document.getElementById('output-container');
+      const resultsTableBody = document.getElementById('results-table-body');
+      const downloadAllBtn = document.getElementById('download-all-btn');
+
+      let currentMode = 'to-webp'; // 'to-webp' or 'from-webp'
+      let uploadedFiles = [];
+      let transformedFiles = [];
+
+      // Tab switcher toggles
+      tabToWebP.addEventListener('click', () => {
+        currentMode = 'to-webp';
+        tabToWebP.className = 'py-3 text-sm font-bold rounded-xl text-brand-primary bg-white shadow-sm transition-all focus:outline-none cursor-pointer';
+        tabFromWebP.className = 'py-3 text-sm font-semibold rounded-xl text-slate-600 hover:text-slate-800 transition-all focus:outline-none cursor-pointer';
+        
+        webpAdvantageBadge.classList.remove('hidden');
+        uploadTitle.textContent = 'Drop JPG or PNG images here';
+        uploadSubtitle.textContent = 'or click to browse local folders';
+        fileInput.setAttribute('accept', 'image/jpeg, image/png');
+        
+        configToWebPGroup.classList.remove('hidden');
+        configFromWebPGroup.classList.add('hidden');
+        resetWorkspace();
+      });
+
+      tabFromWebP.addEventListener('click', () => {
+        currentMode = 'from-webp';
+        tabFromWebP.className = 'py-3 text-sm font-bold rounded-xl text-brand-primary bg-white shadow-sm transition-all focus:outline-none cursor-pointer';
+        tabToWebP.className = 'py-3 text-sm font-semibold rounded-xl text-slate-600 hover:text-slate-800 transition-all focus:outline-none cursor-pointer';
+
+        webpAdvantageBadge.classList.add('hidden');
+        uploadTitle.textContent = 'Drop WebP images here';
+        uploadSubtitle.textContent = 'or click to browse local folders';
+        fileInput.setAttribute('accept', 'image/webp');
+
+        configFromWebPGroup.classList.remove('hidden');
+        configToWebPGroup.classList.add('hidden');
+        resetWorkspace();
+      });
+
+      qualitySlider.addEventListener('input', () => {
+        qualityVal.textContent = qualitySlider.value + '%';
+      });
+
+      function resetWorkspace() {
+        uploadedFiles = [];
+        transformedFiles = [];
+        configPanel.classList.add('hidden');
+        outputContainer.classList.add('hidden');
+        fileInput.value = '';
+      }
+
+      // Drag handles
+      ['dragenter', 'dragover'].forEach(name => {
+        uploadZone.addEventListener(name, (e) => { e.preventDefault(); uploadZone.classList.add('bg-sky-50', 'border-sky-500'); });
+      });
+      ['dragleave', 'drop'].forEach(name => {
+        uploadZone.addEventListener(name, (e) => { e.preventDefault(); uploadZone.classList.remove('bg-sky-50', 'border-sky-500'); });
+      });
+
+      uploadZone.addEventListener('drop', (e) => {
+        e.preventDefault();
+        const files = Array.from(e.dataTransfer.files).filter(f => {
+          if (currentMode === 'to-webp') {
+            return f.type === 'image/jpeg' || f.type === 'image/png';
+          } else {
+            return f.type === 'image/webp';
+          }
+        });
+        if (files.length > 0) handleFiles(files);
+      });
+
+      fileInput.addEventListener('change', (e) => {
+        const files = Array.from(e.target.files).filter(f => {
+          if (currentMode === 'to-webp') {
+            return f.type === 'image/jpeg' || f.type === 'image/png';
+          } else {
+            return f.type === 'image/webp';
+          }
+        });
+        if (files.length > 0) handleFiles(files);
+      });
+
+      function handleFiles(files) {
+        uploadedFiles = files;
+        configPanel.classList.remove('hidden');
+        outputContainer.classList.add('hidden');
+      }
+
+      // Core conversion processes
+      convertBtn.addEventListener('click', async () => {
+        configPanel.classList.add('hidden');
+        processingLoader.classList.remove('hidden');
+        resultsTableBody.innerHTML = '';
+        transformedFiles = [];
+
+        const quality = parseInt(qualitySlider.value) / 100;
+        const targetFromFormat = selectOutputFormat.value;
+
+        for (let i = 0; i < uploadedFiles.length; i++) {
+          const file = uploadedFiles[i];
+          try {
+            let res = null;
+            if (currentMode === 'to-webp') {
+              res = await convertToWebP(file, quality);
+            } else {
+              res = await convertFromWebP(file, targetFromFormat);
+            }
+            transformedFiles.push(res);
+          } catch (err) {
+            console.error('WebP mapping error: ', file.name, err);
+          }
+        }
+
+        renderResults();
+        processingLoader.classList.add('hidden');
+        outputContainer.classList.remove('hidden');
+      });
+
+      function convertToWebP(file, quality) {
+        return new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.readAsDataURL(file);
+          reader.onload = (e) => {
+            const img = new Image();
+            img.src = e.target.result;
+            img.onload = () => {
+              const canvas = document.createElement('canvas');
+              canvas.width = img.naturalWidth;
+              canvas.height = img.naturalHeight;
+              const ctx = canvas.getContext('2d');
+              ctx.drawImage(img, 0, 0);
+
+              // WebP exporting
+              const dataUrl = canvas.toDataURL('image/webp', quality);
+              const bytes = Math.round((dataUrl.length - 22) * 3 / 4);
+
+              resolve({
+                name: file.name.replace(/\.[^/.]+$/, "") + ".webp",
+                oldSize: file.size,
+                newSize: bytes,
+                url: dataUrl
+              });
+            };
+          };
+        });
+      }
+
+      function convertFromWebP(file, targetFormat) {
+        return new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.readAsDataURL(file);
+          reader.onload = (e) => {
+            const img = new Image();
+            img.src = e.target.result;
+            img.onload = () => {
+              const canvas = document.createElement('canvas');
+              canvas.width = img.naturalWidth;
+              canvas.height = img.naturalHeight;
+              const ctx = canvas.getContext('2d');
+
+              if (targetFormat === 'image/jpeg') {
+                ctx.fillStyle = '#FFFFFF';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+              }
+              ctx.drawImage(img, 0, 0);
+
+              const dataUrl = canvas.toDataURL(targetFormat, 0.95);
+              const bytes = Math.round((dataUrl.length - 22) * 3 / 4);
+              const ext = targetFormat === 'image/jpeg' ? '.jpg' : '.png';
+
+              resolve({
+                name: file.name.replace(/\.[^/.]+$/, "") + ext,
+                oldSize: file.size,
+                newSize: bytes,
+                url: dataUrl
+              });
+            };
+          };
+        });
+      }
+
+      function renderResults() {
+        transformedFiles.forEach((item, index) => {
+          const diff = item.oldSize - item.newSize;
+          const pct = Math.round((diff / item.oldSize) * 100);
+
+          let actionLabel = '';
+          let actionClass = '';
+          if (pct > 0) {
+            actionLabel = pct + '% saved';
+            actionClass = 'bg-emerald-50 text-emerald-600';
+          } else if (pct < 0) {
+            actionLabel = Math.abs(pct) + '% larger';
+            actionClass = 'bg-amber-50 text-amber-600';
+          } else {
+            actionLabel = '0% change';
+            actionClass = 'bg-slate-100 text-slate-500';
+          }
+
+          const tr = document.createElement('tr');
+          tr.className = 'hover:bg-slate-50/50 transition-all';
+          tr.innerHTML = `
+            <td class="py-4 px-4 font-bold text-slate-800 break-all max-w-xs">${item.name}</td>
+            <td class="py-4 px-4 text-center text-slate-505 font-mono text-xs">${formatBytes(item.oldSize)}</td>
+            <td class="py-4 px-4 text-center text-slate-805 font-bold font-mono text-xs">${formatBytes(item.newSize)}</td>
+            <td class="py-4 px-4 text-center animate-fade-in">
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold ${actionClass}">
+                ${actionLabel}
+              </span>
+            </td>
+            <td class="py-4 px-4 text-right">
+              <button data-idx="${index}" class="single-dl bg-slate-100 text-slate-700 hover:bg-brand-primary hover:text-white font-semibold text-xs py-1.5 px-3 rounded-lg transition-all cursor-pointer">
+                Download
+              </button>
+            </td>
+          `;
+          resultsTableBody.appendChild(tr);
+        });
+
+        document.querySelectorAll('.single-dl').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            const idx = parseInt(btn.getAttribute('data-idx'));
+            const item = transformedFiles[idx];
+            downloadFile(item.url, item.name);
+          });
+        });
+      }
+
+      // Bulk ZIP
+      downloadAllBtn.addEventListener('click', () => {
+        if (transformedFiles.length === 0) return;
+        const zip = new JSZip();
+        transformedFiles.forEach(item => {
+          const cleanString = item.url.split(',')[1];
+          zip.file(item.name, cleanString, { base64: true });
+        });
+
+        zip.generateAsync({ type: 'binarystring' }).then(content => {
+          const zipData = "data:application/zip;base64," + btoa(content);
+          downloadFile(zipData, "toolifya-converted-webp.zip");
+        });
+      });
+    </script>
+  </body>
+</html>

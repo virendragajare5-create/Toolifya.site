@@ -1,0 +1,769 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Primary SEO -->
+    <title>Image to PDF Converter Online Free | Toolifya</title>
+    <meta name="description" content="Convert images to PDF online for free. Combine JPG, PNG, and WebP images into a single sorted, high quality PDF. Custom margins, page sizes, no signup." />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <link rel="canonical" href="https://toolifya.site/image-to-pdf.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Image to PDF Converter Online Free | Toolifya" />
+    <meta property="og:description" content="Convert images to PDF online for free. Combine JPG, PNG, and WebP images into a single sorted, high quality PDF." />
+    <meta property="og:url" content="https://toolifya.site/image-to-pdf.html" />
+    <meta property="og:image" content="https://toolifya.site/og-image.png" />
+    <meta property="og:site_name" content="Toolifya" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Performance hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/src/index.css" />
+
+    <!-- pdf-lib CDN -->
+    <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://toolifya.site/#website",
+          "url": "https://toolifya.site",
+          "name": "Toolifya",
+          "description": "Free online image tools — fast, simple, no signup required"
+        },
+        {
+          "@type": "WebApplication",
+          "@id": "https://toolifya.site/image-to-pdf.html#app",
+          "name": "Image to PDF Converter",
+          "url": "https://toolifya.site/image-to-pdf.html",
+          "description": "Convert images to PDF online for free. Combine JPG, PNG, and WebP images into a single sorted, high quality PDF.",
+          "applicationCategory": "UtilitiesApplication",
+          "operatingSystem": "Windows, macOS, Linux, Android, iOS, ChromeOS",
+          "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "isPartOf": {
+            "@id": "https://toolifya.site/#website"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://toolifya.site"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Image to PDF Converter",
+              "item": "https://toolifya.site/image-to-pdf.html"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body class="bg-white text-[#0F172A] min-h-screen flex flex-col font-sans">
+    
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-[#0A0A0A] text-white py-4 px-6 md:px-12 flex justify-between items-center shadow-lg">
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="text-xl md:text-2xl font-extrabold tracking-tight hover:opacity-90 flex items-center gap-2">
+          <span class="text-brand-cyan">⚡</span>Toolifya
+        </a>
+      </div>
+      
+      <!-- Mobile Toggle -->
+      <button id="nav-toggle" class="md:hidden text-white hover:text-brand-cyan focus:outline-none">
+        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+          <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+        </svg>
+      </button>
+
+      <nav id="nav-menu" class="hidden md:flex flex-col md:flex-row absolute md:relative top-full left-0 w-full md:w-auto bg-[#0A0A0A] md:bg-transparent p-6 md:p-0 gap-6 items-start md:items-center border-t border-neutral-800 md:border-0">
+        <div class="relative group">
+          <button id="tools-dropdown-btn" class="flex items-center gap-1 font-medium text-brand-cyan hover:text-brand-cyan transition-colors">
+            All Tools
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </button>
+          
+          <ul id="tools-dropdown" class="hidden absolute left-0 mt-2 w-56 bg-white text-slate-800 rounded-xl shadow-xl border border-slate-100 overflow-hidden py-1 z-50">
+            <li><a href="image-compressor.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">⚡ Image Compressor</a></li>
+            <li><a href="image-resizer.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">↕️ Image Resizer</a></li>
+            <li><a href="image-crop.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">✂️ Image Crop Tool</a></li>
+            <li><a href="jpg-to-png.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">🖼️ JPG to PNG Converter</a></li>
+            <li><a href="png-to-jpg.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">🎨 PNG to JPG Converter</a></li>
+            <li><a href="webp-converter.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">🕸️ WebP Converter</a></li>
+            <li><a href="image-to-pdf.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-bold transition-colors">📄 Image to PDF</a></li>
+          </ul>
+        </div>
+        <a href="about.html" class="font-medium hover:text-brand-cyan transition-colors">About Us</a>
+        <a href="privacy-policy.html" class="font-medium hover:text-brand-cyan transition-colors">Privacy Policy</a>
+      </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="bg-slate-50 border-b border-slate-100 py-3 px-6 md:px-12 text-sm text-slate-500">
+      <div class="max-w-7xl mx-auto flex items-center gap-2">
+        <a href="index.html" class="hover:text-brand-primary transition-colors">Home</a>
+        <span>&rsaquo;</span>
+        <span class="text-slate-400">Converters</span>
+        <span>&rsaquo;</span>
+        <span class="text-slate-800 font-medium font-bold">Image to PDF</span>
+      </div>
+    </div>
+
+    <!-- Main Workspace -->
+    <main class="max-w-7xl mx-auto px-6 py-12 flex-grow w-full">
+      
+      <!-- AD Placeholder -->
+      <div class="w-full text-center bg-slate-50 border border-slate-100 rounded-2xl py-2 px-4 mb-10 text-xs text-slate-400 font-mono tracking-wider">
+        <span>ADVERTISEMENT</span>
+        <div class="w-full max-w-[728px] h-20 bg-slate-200/40 border border-dashed border-slate-200 rounded mx-auto flex items-center justify-center text-slate-400 mt-1">
+          728x90 Billboard Layout
+        </div>
+      </div>
+
+      <!-- Title / Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-4">
+          Image to PDF Converter — JPG PNG to PDF Online Free
+        </h1>
+        <p class="text-slate-500 text-base md:text-lg">
+          Combine and compile multiple JPG, WebP, or PNG images into a clean, print-ready PDF document. Reorder pages, select page margins, and define document dimensions.
+        </p>
+      </div>
+
+      <!-- Main Interaction Workspace Box -->
+      <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-10 shadow-[0_12px_48px_rgba(0,0,0,0.03)] mb-16 max-w-4xl mx-auto">
+        
+        <!-- Upload Box -->
+        <div id="upload-zone" class="border-2 border-dashed border-slate-200 hover:border-brand-primary hover:bg-slate-50/50 rounded-2xl p-8 md:p-12 text-center cursor-pointer transition-all duration-300 relative group">
+          <input type="file" id="file-input" multiple accept="image/jpeg, image/jpg, image/png, image/webp" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+          <div class="flex flex-col items-center gap-4">
+            <div class="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center text-3xl transition-transform group-hover:scale-110">
+              📄
+            </div>
+            <div>
+              <p class="text-lg font-bold text-slate-905 mb-1">Upload multiple graphics to merge</p>
+              <p class="text-slate-505 text-sm">Drag and drop images here or select local files</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sorted Thumbnail Pipeline List (Hidden initially) -->
+        <div id="image-queue-section" class="hidden mt-8 space-y-4">
+          <div class="flex justify-between items-center">
+            <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wide">🔧 Image Ordering &amp; Pages</h3>
+            <button id="add-more-btn" class="bg-indigo-50 text-[#7C3AED] hover:bg-indigo-100/80 text-xs font-bold px-3.5 py-1.5 rounded-xl transition-all cursor-pointer">
+              + Add More Files
+            </button>
+          </div>
+          
+          <!-- Virtual page order stack -->
+          <div id="queue-list" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+
+        <!-- Margins and Dimension Specifications (Hidden initially) -->
+        <div id="config-panel" class="hidden mt-8 pt-8 border-t border-slate-100 space-y-6">
+          <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">⚙️ Document Configurations</h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <!-- Page Size -->
+            <div class="space-y-2">
+              <label class="text-xs font-bold text-slate-705 block">Page Dimension Profile</label>
+              <select id="select-page-size" class="w-full p-2.5 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-1 focus:ring-brand-primary text-slate-800 font-semibold cursor-pointer">
+                <option value="A4">A4 (210 &times; 297 mm)</option>
+                <option value="Letter">US Letter (8.5 &times; 11 in)</option>
+                <option value="Fit">Fit Image (Matches pixel limits)</option>
+              </select>
+            </div>
+
+            <!-- Orientation -->
+            <div id="orientation-container" class="space-y-2">
+              <label class="text-xs font-bold text-slate-705 block">Page Orientation</label>
+              <select id="select-orientation" class="w-full p-2.5 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-1 focus:ring-brand-primary text-slate-800 font-semibold cursor-pointer">
+                <option value="Portrait">Portrait (Vertical)</option>
+                <option value="Landscape">Landscape (Horizontal)</option>
+              </select>
+            </div>
+
+            <!-- Page Margins -->
+            <div id="margins-container" class="space-y-2">
+              <label class="text-xs font-bold text-slate-705 block">Print Margins</label>
+              <select id="select-margins" class="w-full p-2.5 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-1 focus:ring-brand-primary text-slate-800 font-semibold cursor-pointer">
+                <option value="none">No Margin (Full bleed)</option>
+                <option value="narrow">Narrow (10 mm)</option>
+                <option value="wide">Wide (20 mm)</option>
+              </select>
+            </div>
+
+          </div>
+
+          <!-- Quality Compression Slider (For JPEG embedding optimization) -->
+          <div class="space-y-3 bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <div class="flex justify-between items-center text-xs">
+              <label class="font-bold text-slate-600">Image Compression Quality (PDF Optimization)</label>
+              <span id="quality-val" class="font-mono font-bold text-brand-primary bg-violet-50 px-2 rounded">85%</span>
+            </div>
+            <input type="range" id="quality-slider" min="50" max="100" value="85" />
+            <span class="text-[10px] text-slate-400 block font-medium">Slightly compressing high-resolution JPG files prevents resulting PDF books from swelling to immense sizes.</span>
+          </div>
+
+          <!-- Compile actions -->
+          <button id="compile-pdf-btn" class="w-full bg-[#7C3AED] hover:bg-brand-hover text-white py-4 px-6 rounded-2xl font-bold tracking-wide shadow-md transition-all active:scale-[0.98] cursor-pointer">
+            ✨ Compile &amp; Download PDF Document
+          </button>
+        </div>
+
+        <!-- Processing Loader State (Hidden) -->
+        <div id="processing-loader" class="hidden mt-8 py-10 flex flex-col items-center justify-center gap-3">
+          <div class="animate-spin rounded-full h-10 w-10 border-4 border-slate-200 border-t-brand-primary"></div>
+          <p class="text-sm font-bold text-slate-600">Packaging pages and pixel streams...</p>
+        </div>
+
+        <!-- Success prompt (Hidden) -->
+        <div id="success-panel" class="hidden mt-8 text-center space-y-4 bg-emerald-50 border border-emerald-100 p-6 rounded-2xl animate-fade-in">
+          <div class="w-12 h-12 bg-emerald-510 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto shadow-md">✓</div>
+          <h3 class="text-lg font-bold text-slate-905">Your PDF document was assembled successfully</h3>
+          <p class="text-xs text-slate-500">The compiler constructed and triggered download for your PDF booklet locally.</p>
+          <div class="flex justify-center gap-2 pt-2">
+            <button id="process-another-btn" class="bg-brand-primary text-white font-bold py-2.5 px-6 rounded-xl hover:bg-brand-hover transition-all cursor-pointer">
+              Compile Another PDF
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SEO CONTENT SECTION SECTION A to D -->
+      <section class="max-w-4xl mx-auto space-y-16 mt-20">
+        
+        <!-- SECTION A: How to Convert -->
+        <div>
+          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-6">How to Convert Images to PDF Online Free</h2>
+          <ol class="grid grid-cols-1 md:grid-cols-3 gap-6 list-none p-0">
+            <li class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+              <div class="text-[#7C3AED] font-black text-2xl mb-3">01</div>
+              <h3 class="font-bold text-base text-slate-905 mb-2">Import multiple images</h3>
+              <p class="text-slate-550 text-xs leading-relaxed">Drag and drop lists of JPG, WEBP, or PNG files into the platform. Previews are constructed instantly.</p>
+            </li>
+            <li class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+              <div class="text-[#7C3AED] font-black text-2xl mb-3">02</div>
+              <h3 class="font-bold text-base text-slate-905 mb-2">Rearrange &amp; Page Setup</h3>
+              <p class="text-slate-550 text-xs leading-relaxed">Reorder positions using intuitive layout arrows. Choose page sizes like A4 or Letter, orientation layouts, or margins borders.</p>
+            </li>
+            <li class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+              <div class="text-[#7C3AED] font-black text-2xl mb-3">03</div>
+              <h3 class="font-bold text-base text-slate-905 mb-2">Generate Assembly</h3>
+              <p class="text-slate-550 text-xs leading-relaxed">Click 'Compile' to join files together inside offline PDF frameworks. Instant secure transfers directly from memory.</p>
+            </li>
+          </ol>
+        </div>
+
+        <!-- SECTION B: Why use Toolifya's PDF compiler -->
+        <div>
+          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-6 text-center">Why Use Toolifya's Image to PDF Converter?</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="flex gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-100">
+              <div class="text-2xl">⚡</div>
+              <div>
+                <h4 class="font-bold text-slate-905 text-sm mb-1">Pragmatic Reordering controls</h4>
+                <p class="text-slate-500 text-xs leading-relaxed">Sort each page position easily to assemble scan documents cleanly before packaging.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-100">
+              <div class="text-2xl">🔒</div>
+              <div>
+                <h4 class="font-bold text-slate-905 text-sm mb-1">Strict Personal Privacy</h4>
+                <p class="text-slate-500 text-xs leading-relaxed">No remote server transmissions occur. Highly sensitive digital documents are managed securely within your local hardware sandbox.</p>
+              </div>
+            </div>
+            <div class="flex gap-2 p-5 bg-slate-50 rounded-2xl border border-slate-100">
+              <div class="text-2xl">📃</div>
+              <div>
+                <h4 class="font-bold text-[#0F172A] text-sm mb-1">Print Ready Layout formats</h4>
+                <p class="text-slate-500 text-xs leading-relaxed">Configure standard A4 or US letter dimension sizes with custom margins boundaries for neat physical handouts.</p>
+              </div>
+            </div>
+            <div class="flex gap-2 p-5 bg-slate-50 rounded-2xl border border-slate-100">
+              <div class="text-2xl">♾️</div>
+              <div>
+                <h4 class="font-bold text-[#0F172A] text-sm mb-1">No Watermarks Applied</h4>
+                <p class="text-slate-500 text-xs leading-relaxed">Export pristine digital documentation bundles without unwanted logos or page limits.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION C: FAQ -->
+        <div>
+          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-6 text-center">Frequently Asked Questions</h2>
+          <div class="space-y-4">
+            <details class="group bg-slate-50 border border-slate-205 rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
+              <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
+                <h3 class="font-bold text-slate-900 text-base">How do I change the layout order of PDF pages?</h3>
+                <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-slate-950 shadow-sm transition group-open:rotate-180">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                </span>
+              </summary>
+              <p class="mt-4 text-slate-500 text-sm leading-relaxed">
+                As soon as you upload multiple graphics, a sorted timeline window is created. You can use the '▲ Move Left' / '▼ Move Right' positional controls on each card to sort, reposition, or delete individual elements directly in the line stack.
+              </p>
+            </details>
+
+            <details class="group bg-slate-50 border border-slate-205 rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
+              <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
+                <h3 class="font-bold text-slate-900 text-base">What are Portrait and Landscape orientations used for?</h3>
+                <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-slate-950 shadow-sm transition group-open:rotate-180">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                </span>
+              </summary>
+              <p class="mt-4 text-slate-500 text-sm leading-relaxed">
+                Portrait formats orient the A4 or US Letter sheets as vertical documents—best for text document reports. Landscape designs shift sheets sideways (horizontal panels), which is ideal for photographic collections, slides, or high-definition portfolios.
+              </p>
+            </details>
+          </div>
+        </div>
+
+        <!-- SECTION D: Internal links -->
+        <div class="border-t border-slate-100 pt-16">
+          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-8 text-center">More Free Image Tools</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div class="bg-slate-50 hover:bg-slate-100/50 rounded-2xl p-6 border border-slate-100 flex flex-col justify-between hover:shadow-md transition-all">
+              <div>
+                <h4 class="font-bold text-slate-200 mb-2">Image Compressor</h4>
+                <p class="text-slate-500 text-xs mb-4">Compress files down to specific size targets in KB.</p>
+              </div>
+              <a href="image-compressor.html" class="text-xs font-semibold text-brand-primary hover:underline">Try Tool &rarr;</a>
+            </div>
+            <div class="bg-slate-50 hover:bg-slate-100/50 rounded-2xl p-6 border border-slate-100 flex flex-col justify-between hover:shadow-md transition-all">
+              <div>
+                <h4 class="font-bold text-slate-200 mb-2">Image Resizer</h4>
+                <p class="text-slate-505 text-xs mb-4">Scale graphic dimensions with precise pixel ratios.</p>
+              </div>
+              <a href="image-resizer.html" class="text-xs font-semibold text-brand-primary hover:underline">Try Tool &rarr;</a>
+            </div>
+            <div class="bg-slate-50 hover:bg-slate-100/50 rounded-2xl p-6 border border-slate-100 flex flex-col justify-between hover:shadow-md transition-all">
+              <div>
+                <h4 class="font-bold text-slate-200 mb-2">WebP Converter</h4>
+                <p class="text-slate-505 text-xs mb-4">Convert images into modern, web-optimized WebP assets.</p>
+              </div>
+              <a href="webp-converter.html" class="text-xs font-semibold text-brand-primary hover:underline">Try Tool &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- AD Space bottom -->
+      <div class="w-full text-center bg-slate-50 border border-slate-100 rounded-2xl py-2 px-4 mt-20 text-xs text-slate-400 font-mono tracking-wider">
+        <span>ADVERTISEMENT</span>
+        <div class="w-full max-w-[728px] h-20 bg-slate-200/40 border border-dashed border-slate-200 rounded mx-auto flex items-center justify-center text-slate-400 mt-1">
+          728x90 Billboard Layout
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0A0A0A] text-white pt-16 pb-8 px-6 md:px-12 mt-24">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-neutral-850">
+        <div>
+          <a href="index.html" class="text-2xl font-extrabold tracking-tight hover:opacity-90 flex items-center gap-2 mb-4">
+            <span class="text-brand-cyan">⚡</span>Toolifya
+          </a>
+          <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
+            Free Online Image Tools — Fast, Simple, No Signup. High performance client processing for worldwide developers and content editors.
+          </p>
+          <div class="mt-4 text-xs font-semibold text-brand-cyan uppercase tracking-wider">
+            Fast. Free. No Signup Required.
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-sm font-bold uppercase tracking-widest text-[#06B6D4] mb-4">Quick Links</h3>
+          <ul class="space-y-2.5 text-slate-400 text-sm">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home Dashboard</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="image-compressor.html" class="hover:text-white transition-colors">Image Compressor</a></li>
+            <li><a href="image-resizer.html" class="hover:text-white transition-colors">Sizing Toolkit</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-bold uppercase tracking-widest text-[#06B6D4] mb-4">Legal Operations</h3>
+          <ul class="space-y-2.5 text-slate-400 text-sm">
+            <li><a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+            <li><a href="about.html#contact" class="hover:text-white transition-colors">Developer Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="max-w-7xl mx-auto pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+        <div>
+          &copy; 2026 Toolifya. All rights reserved. Built with pure browser technology.
+        </div>
+        <div>
+          Domain: <a href="https://toolifya.site" class="hover:text-white transition-all underline">https://toolifya.site</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Handler logic -->
+    <script type="module">
+      import { initNavbar, downloadFile, formatBytes } from '/src/utils.js';
+      initNavbar();
+
+      const uploadZone = document.getElementById('upload-zone');
+      const fileInput = document.getElementById('file-input');
+      const imageQueueSection = document.getElementById('image-queue-section');
+      const queueList = document.getElementById('queue-list');
+      const addMoreBtn = document.getElementById('add-more-btn');
+
+      const configPanel = document.getElementById('config-panel');
+      const selectPageSize = document.getElementById('select-page-size');
+      const orientationContainer = document.getElementById('orientation-container');
+      const selectOrientation = document.getElementById('select-orientation');
+      const marginsContainer = document.getElementById('margins-container');
+      const selectMargins = document.getElementById('select-margins');
+      const qualitySlider = document.getElementById('quality-slider');
+      const qualityVal = document.getElementById('quality-val');
+
+      const compilePdfBtn = document.getElementById('compile-pdf-btn');
+      const processingLoader = document.getElementById('processing-loader');
+      const successPanel = document.getElementById('success-panel');
+      const processAnotherBtn = document.getElementById('process-another-btn');
+
+      let originalFileList = []; // { id: number, file: File, previewUrl: string, width: number, height: number }
+      let nextId = 0;
+
+      // Disable/enable profile controllers based on Page Size Fit selector
+      selectPageSize.addEventListener('change', () => {
+        if (selectPageSize.value === 'Fit') {
+          orientationContainer.classList.add('opacity-40', 'pointer-events-none');
+          marginsContainer.classList.add('opacity-40', 'pointer-events-none');
+        } else {
+          orientationContainer.classList.remove('opacity-40', 'pointer-events-none');
+          marginsContainer.classList.remove('opacity-40', 'pointer-events-none');
+        }
+      });
+
+      qualitySlider.addEventListener('input', () => {
+        qualityVal.textContent = qualitySlider.value + '%';
+      });
+
+      // Drag handles
+      ['dragenter', 'dragover'].forEach(name => {
+        uploadZone.addEventListener(name, (e) => { e.preventDefault(); uploadZone.classList.add('bg-indigo-50/50', 'border-indigo-500'); });
+      });
+      ['dragleave', 'drop'].forEach(name => {
+        uploadZone.addEventListener(name, (e) => { e.preventDefault(); uploadZone.classList.remove('bg-indigo-50/50', 'border-indigo-500'); });
+      });
+
+      uploadZone.addEventListener('drop', (e) => {
+        e.preventDefault();
+        const files = Array.from(e.dataTransfer.files).filter(f => f.type.startsWith('image/'));
+        if (files.length > 0) handleNewBatch(files);
+      });
+
+      fileInput.addEventListener('change', (e) => {
+        const files = Array.from(e.target.files).filter(f => f.type.startsWith('image/'));
+        if (files.length > 0) handleNewBatch(files);
+      });
+
+      addMoreBtn.addEventListener('click', () => {
+        const subInput = document.createElement('input');
+        subInput.type = 'file';
+        subInput.multiple = true;
+        subInput.accept = 'image/jpeg, image/png, image/webp';
+        subInput.onchange = (e) => {
+          const files = Array.from(e.target.files).filter(f => f.type.startsWith('image/'));
+          if (files.length > 0) handleNewBatch(files);
+        };
+        subInput.click();
+      });
+
+      async function handleNewBatch(files) {
+        uploadZone.classList.add('hidden');
+        imageQueueSection.classList.remove('hidden');
+        configPanel.classList.remove('hidden');
+        successPanel.classList.add('hidden');
+
+        for (let i = 0; i < files.length; i++) {
+          const f = files[i];
+          try {
+            const sizeDetails = await obtainImageDimensions(f);
+            originalFileList.push({
+              id: nextId++,
+              file: f,
+              previewUrl: sizeDetails.preview,
+              width: sizeDetails.w,
+              height: sizeDetails.h
+            });
+          } catch (err) {
+            console.error('Loader errors: ', f.name, err);
+          }
+        }
+
+        renderQueue();
+      }
+
+      function obtainImageDimensions(file) {
+        return new Promise((resolve) => {
+          const reader = new FileReader();
+          reader.readAsDataURL(file);
+          reader.onload = (e) => {
+            const img = new Image();
+            img.src = e.target.result;
+            img.onload = () => {
+              resolve({
+                preview: e.target.result,
+                w: img.naturalWidth,
+                h: img.naturalHeight
+              });
+            };
+          };
+        });
+      }
+
+      // Dynamic timeline stack sorting renderer
+      function renderQueue() {
+        queueList.innerHTML = '';
+        originalFileList.forEach((item, index) => {
+          const card = document.createElement('div');
+          card.className = 'flex items-center gap-4 bg-slate-50 border border-slate-200 p-3.5 rounded-2xl relative shadow-sm animation-fade-in group hover:bg-white transition-all';
+          card.innerHTML = `
+            <div class="w-16 h-16 bg-slate-200 rounded-lg overflow-hidden flex-shrink-0 border border-slate-100 shadow-inner">
+              <img src="${item.previewUrl}" class="w-full h-full object-cover" />
+            </div>
+            <div class="flex-grow min-w-0 pr-10">
+              <p class="font-bold text-slate-800 text-sm truncate" title="${item.file.name}">${item.file.name}</p>
+              <p class="text-[11px] text-slate-400 font-medium">${item.width} &times; ${item.height} px &middot; ${formatBytes(item.file.size)} &middot; Page ${index + 1}</p>
+            </div>
+            
+            <!-- Positional move controls -->
+            <div class="absolute right-3.5 top-1/2 -translate-y-1/2 flex flex-col gap-1.5 opacity-80 group-hover:opacity-100 transition-opacity">
+              <button data-id="${item.id}" class="move-up-btn p-1 bg-white hover:bg-[#7C3AED] hover:text-white rounded shadow-sm text-slate-500 hover:shadow transition-all text-xs cursor-pointer" title="Move Up">▲</button>
+              <button data-id="${item.id}" class="move-down-btn p-1 bg-white hover:bg-[#7C3AED] hover:text-white rounded shadow-sm text-slate-500 hover:shadow transition-all text-xs cursor-pointer" title="Move Down">▼</button>
+            </div>
+
+            <!-- Absolute Delete Control -->
+            <button data-id="${item.id}" class="delete-btn absolute left-2.5 top-2.5 bg-rose-50 text-rose-600 rounded-full h-6 w-6 text-xs flex items-center justify-center font-bold hover:bg-rose-500 hover:text-white border border-rose-100 shadow-sm opacity-0 group-hover:opacity-100 transition-all cursor-pointer" title="Delete Page">
+              &times;
+            </button>
+          `;
+          queueList.appendChild(card);
+        });
+
+        bindQueueActions();
+      }
+
+      function bindQueueActions() {
+        document.querySelectorAll('.move-up-btn').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            const id = parseInt(btn.getAttribute('data-id'));
+            const idx = originalFileList.findIndex(f => f.id === id);
+            if (idx > 0) {
+              const temp = originalFileList[idx];
+              originalFileList[idx] = originalFileList[idx - 1];
+              originalFileList[idx - 1] = temp;
+              renderQueue();
+            }
+          });
+        });
+
+        document.querySelectorAll('.move-down-btn').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            const id = parseInt(btn.getAttribute('data-id'));
+            const idx = originalFileList.findIndex(f => f.id === id);
+            if (idx !== -1 && idx < originalFileList.length - 1) {
+              const temp = originalFileList[idx];
+              originalFileList[idx] = originalFileList[idx + 1];
+              originalFileList[idx + 1] = temp;
+              renderQueue();
+            }
+          });
+        });
+
+        document.querySelectorAll('.delete-btn').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            const id = parseInt(btn.getAttribute('data-id'));
+            originalFileList = originalFileList.filter(f => f.id !== id);
+            if (originalFileList.length === 0) {
+              uploadZone.classList.remove('hidden');
+              imageQueueSection.classList.add('hidden');
+              configPanel.classList.add('hidden');
+            } else {
+              renderQueue();
+            }
+          });
+        });
+      }
+
+      // Compile and render PDF locally using pdf-lib
+      compilePdfBtn.addEventListener('click', async () => {
+        if (originalFileList.length === 0) return;
+
+        configPanel.classList.add('hidden');
+        imageQueueSection.classList.add('hidden');
+        processingLoader.classList.remove('hidden');
+
+        try {
+          // Initialize PDF Document
+          const { PDFDocument } = PDFLib;
+          const pdfDoc = await PDFDocument.create();
+
+          const pageSizeOption = selectPageSize.value; // 'A4', 'Letter', 'Fit'
+          const orientation = selectOrientation.value; // 'Portrait', 'Landscape'
+          const marginsOption = selectMargins.value; // 'none', 'narrow' (10mm), 'wide' (20mm)
+          const quality = parseInt(qualitySlider.value) / 100;
+
+          // Standard conversions factors
+          const mmToPts = 2.83465;
+          const A4_W = 210 * mmToPts; // 595.27
+          const A4_H = 297 * mmToPts; // 841.89
+          const Letter_W = 8.5 * 72; // 612
+          const Letter_H = 11 * 72; // 792
+
+          let marginPts = 0;
+          if (pageSizeOption !== 'Fit') {
+            if (marginsOption === 'narrow') marginPts = 10 * mmToPts; // ~28.3 pts
+            if (marginsOption === 'wide') marginPts = 20 * mmToPts; // ~56.7 pts
+          }
+
+          // Assembly pipeline
+          for (let i = 0; i < originalFileList.length; i++) {
+            const queueItem = originalFileList[i];
+            
+            // Draw image on canvas to optimize compression as clean JPEGs
+            const optimizedBytes = await rebuildLocalJpegBytes(queueItem, quality);
+            const embeddedImg = await pdfDoc.embedJpg(optimizedBytes);
+
+            const naturalW = queueItem.width;
+            const naturalH = queueItem.height;
+
+            let pageW = 0;
+            let pageH = 0;
+
+            if (pageSizeOption === 'Fit') {
+              pageW = naturalW;
+              pageH = naturalH;
+            } else {
+              // Custom A4 or US Letter sizes
+              let standardW = pageSizeOption === 'A4' ? A4_W : Letter_W;
+              let standardH = pageSizeOption === 'A4' ? A4_H : Letter_H;
+
+              if (orientation === 'Landscape') {
+                const tmp = standardW;
+                standardW = standardH;
+                standardH = tmp;
+              }
+
+              pageW = standardW;
+              pageH = standardH;
+            }
+
+            // Create page instance
+            const page = pdfDoc.addPage([pageW, pageH]);
+
+            // Calculate active design printable sizes
+            const printableW = pageW - marginPts * 2;
+            const printableH = pageH - marginPts * 2;
+
+            // Maintain photo aspect ratios during page adjustments
+            const scale = Math.min(printableW / naturalW, printableH / naturalH);
+            const finalW = naturalW * scale;
+            const finalH = naturalH * scale;
+
+            // Calculate coordinates to center inside print margins
+            const posX = marginPts + (printableW - finalW) / 2;
+            const posY = marginPts + (printableH - finalH) / 2;
+
+            page.drawImage(embeddedImg, {
+              x: posX,
+              y: posY,
+              width: finalW,
+              height: finalH
+            });
+          }
+
+          // Expose and download assembled PDF book
+          const finalPdfBytes = await pdfDoc.save();
+          const pdfBlob = new Blob([finalPdfBytes], { type: 'application/pdf' });
+          const objectUrl = URL.createObjectURL(pdfBlob);
+
+          downloadFile(objectUrl, 'toolifya-assembled-document.pdf');
+          
+          processingLoader.classList.add('hidden');
+          successPanel.classList.remove('hidden');
+
+        } catch (err) {
+          console.error('PDF builder crashed: ', err);
+          alert('Failed to assemble PDF. Please ensure all images are correct formats.');
+          processingLoader.classList.add('hidden');
+          configPanel.classList.remove('hidden');
+          imageQueueSection.classList.remove('hidden');
+        }
+      });
+
+      // Canvas compressor utility generating safe physical JPEG arrays
+      function rebuildLocalJpegBytes(item, quality) {
+        return new Promise((resolve, reject) => {
+          const img = new Image();
+          img.src = item.previewUrl;
+          img.onload = () => {
+            const canvas = document.createElement('canvas');
+            canvas.width = img.naturalWidth;
+            canvas.height = img.naturalHeight;
+            const ctx = canvas.getContext('2d');
+
+            // White backing for transparent png bounds inside new JPEG
+            ctx.fillStyle = '#FFFFFF';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.drawImage(img, 0, 0);
+
+            // Rebuild as highly robust JPEG array bytes (pdf-lib parses clean array buffers)
+            canvas.toBlob((blob) => {
+              const reader = new FileReader();
+              reader.onloadend = () => {
+                resolve(new Uint8Array(reader.result));
+              };
+              reader.readAsArrayBuffer(blob);
+            }, 'image/jpeg', quality);
+          };
+        });
+      }
+
+      processAnotherBtn.addEventListener('click', () => {
+        originalFileList = [];
+        fileInput.value = '';
+        uploadZone.classList.remove('hidden');
+        successPanel.classList.add('hidden');
+      });
+
+    </script>
+  </body>
+</html>

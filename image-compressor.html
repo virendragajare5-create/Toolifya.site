@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Primary SEO -->
+    <title>Image Compressor Online Free — Reduce Image Size | Toolifya</title>
+    <meta name="description" content="Compress JPG, PNG and WebP images online for free. Reduce image file size by up to 90% without losing quality. No signup, no upload limit." />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <link rel="canonical" href="https://toolifya.site/image-compressor.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Image Compressor Online Free — Reduce Image Size | Toolifya" />
+    <meta property="og:description" content="Compress JPG, PNG and WebP images online for free. Reduce image file size by up to 90% without losing quality. No signup, no upload limit." />
+    <meta property="og:url" content="https://toolifya.site/image-compressor.html" />
+    <meta property="og:image" content="https://toolifya.site/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Toolifya" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Image Compressor Online Free — Reduce Image Size | Toolifya" />
+    <meta name="twitter:description" content="Compress JPG, PNG and WebP images online for free. Reduce image file size by up to 90% without losing quality. No signup, no upload limit." />
+    <meta name="twitter:image" content="https://toolifya.site/og-image.png" />
+    <meta name="twitter:site" content="@toolifya" />
+
+    <!-- Performance hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/src/index.css" />
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://toolifya.site/#website",
+          "url": "https://toolifya.site",
+          "name": "Toolifya",
+          "description": "Free online image tools — fast, simple, no signup required"
+        },
+        {
+          "@type": "WebApplication",
+          "@id": "https://toolifya.site/image-compressor.html#app",
+          "name": "Image Compressor",
+          "url": "https://toolifya.site/image-compressor.html",
+          "description": "Compress JPG, PNG and WebP images online for free. Reduce image file size by up to 90% without losing quality.",
+          "applicationCategory": "UtilitiesApplication",
+          "operatingSystem": "Windows, macOS, Linux, Android, iOS, ChromeOS",
+          "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "featureList": [
+            "Lossy & Lossless quality sliders",
+            "Target size compression in KB",
+            "Bulk file decompression",
+            "Zero server storage for full privacy"
+          ],
+          "isPartOf": {
+            "@id": "https://toolifya.site/#website"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://toolifya.site"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Image Compressor",
+              "item": "https://toolifya.site/image-compressor.html"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body class="bg-white text-[#0F172A] min-h-screen flex flex-col font-sans">
+    
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-[#0A0A0A] text-white py-4 px-6 md:px-12 flex justify-between items-center shadow-lg">
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="text-xl md:text-2xl font-extrabold tracking-tight hover:opacity-90 flex items-center gap-2">
+          <span class="text-brand-cyan">⚡</span>Toolifya
+        </a>
+      </div>
+      
+      <!-- Mobile Toggle -->
+      <button id="nav-toggle" class="md:hidden text-white hover:text-brand-cyan focus:outline-none">
+        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+          <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+        </svg>
+      </button>
+
+      <nav id="nav-menu" class="hidden md:flex flex-col md:flex-row absolute md:relative top-full left-0 w-full md:w-auto bg-[#0A0A0A] md:bg-transparent p-6 md:p-0 gap-6 items-start md:items-center border-t border-neutral-800 md:border-0">
+        <div class="relative group">
+          <button id="tools-dropdown-btn" class="flex items-center gap-1 font-medium text-brand-cyan hover:text-brand-cyan transition-colors">
+            All Tools
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </button>
+          
+          <ul id="tools-dropdown" class="hidden absolute left-0 mt-2 w-56 bg-white text-slate-800 rounded-xl shadow-xl border border-slate-100 overflow-hidden py-1 z-50">
+            <li><a href="image-compressor.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-bold transition-colors">⚡ Image Compressor</a></li>
+            <li><a href="image-resizer.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">↕️ Image Resizer</a></li>
+            <li><a href="image-crop.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">✂️ Image Crop Tool</a></li>
+            <li><a href="jpg-to-png.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">🖼️ JPG to PNG Converter</a></li>
+            <li><a href="png-to-jpg.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">🎨 PNG to JPG Converter</a></li>
+            <li><a href="webp-converter.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">🕸️ WebP Converter</a></li>
+            <li><a href="image-to-pdf.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">📄 Image to PDF</a></li>
+          </ul>
+        </div>
+        <a href="about.html" class="font-medium hover:text-brand-cyan transition-colors">About Us</a>
+        <a href="privacy-policy.html" class="font-medium hover:text-brand-cyan transition-colors">Privacy Policy</a>
+      </nav>
+    </header>
+
+    <!-- Breadcrumbs Navigation -->
+    <div class="bg-slate-50 border-b border-slate-100 py-3 px-6 md:px-12 text-sm text-slate-500">
+      <div class="max-w-7xl mx-auto flex items-center gap-2">
+        <a href="index.html" class="hover:text-brand-primary transition-colors">Home</a>
+        <span>&rsaquo;</span>
+        <span class="text-slate-400">Image Tools</span>
+        <span>&rsaquo;</span>
+        <span class="text-slate-800 font-medium">Image Compressor</span>
+      </div>
+    </div>
+
+    <!-- Main Container -->
+    <main class="max-w-7xl mx-auto px-6 py-12 flex-grow w-full">
+      
+      <!-- AD Placement -->
+      <div class="w-full text-center bg-slate-50 border border-slate-100 rounded-2xl py-2 px-4 mb-10 text-xs text-slate-400 font-mono tracking-wider">
+        <span>ADVERTISEMENT SPACE</span>
+        <div class="w-full max-w-[728px] h-20 bg-slate-200/40 border border-dashed border-slate-200 rounded mx-auto flex items-center justify-center text-slate-400 mt-1">
+          Responsive Banner Placeholder (728x90)
+        </div>
+      </div>
+
+      <!-- Title / Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-4">
+          Image Compressor — Reduce Image Size Online Free
+        </h1>
+        <p class="text-slate-500 text-base md:text-lg">
+          Compress JPG, PNG, and WebP, and get immediate file optimization. Complete bulk reduction inside your browser without any latency or registration!
+        </p>
+      </div>
+
+      <!-- Tool Workspace -->
+      <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-10 shadow-[0_12px_48px_rgba(0,0,0,0.03)] mb-16 max-w-4xl mx-auto">
+        
+        <!-- Upload Zone -->
+        <div id="upload-zone" class="border-2 border-dashed border-slate-300 hover:border-brand-primary hover:bg-slate-50/50 rounded-2xl p-8 md:p-12 text-center cursor-pointer transition-all duration-300 relative group">
+          <input type="file" id="file-input" multiple accept="image/jpeg, image/png, image/webp" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+          <div class="flex flex-col items-center gap-4">
+            <div class="w-16 h-16 bg-violet-50 text-brand-primary rounded-full flex items-center justify-center text-3xl transition-transform group-hover:scale-110">
+              📥
+            </div>
+            <div>
+              <p class="text-lg font-bold text-slate-900 mb-1">Drag &amp; drop your images here</p>
+              <p class="text-slate-500 text-sm">or click to browse your storage</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-2 mt-2">
+              <span class="bg-slate-100 text-slate-600 text-[11px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">JPG</span>
+              <span class="bg-slate-100 text-slate-600 text-[11px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">PNG</span>
+              <span class="bg-slate-100 text-slate-600 text-[11px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">WebP</span>
+            </div>
+            <p class="text-[11px] text-slate-400 font-medium">Asynchronous processing up to 20MB per file</p>
+          </div>
+        </div>
+
+        <!-- Configuration Panel (Hidden until files uploaded) -->
+        <div id="compress-settings" class="hidden mt-8 pt-8 border-t border-slate-100">
+          <h3 class="text-base font-bold text-slate-900 mb-4 flex items-center gap-2">
+            ⚙️ Compression Configuration
+          </h3>
+          
+          <!-- Compression Modes Tabs -->
+          <div class="grid grid-cols-2 gap-3 mb-6 bg-slate-100 p-1 rounded-xl">
+            <button id="mode-quality-tab" class="py-2.5 text-sm font-semibold rounded-lg text-brand-primary bg-white shadow-sm transition-all focus:outline-none">
+              Quality Percentage
+            </button>
+            <button id="mode-target-tab" class="py-2.5 text-sm font-medium rounded-lg text-slate-600 hover:text-slate-800 transition-all focus:outline-none">
+              Target File Size (KB)
+            </button>
+          </div>
+
+          <!-- Slider Settings (Quality Mode) -->
+          <div id="setting-quality-group" class="space-y-3">
+            <div class="flex justify-between items-center">
+              <label class="text-sm font-bold text-slate-700">Target Quality Factor</label>
+              <span id="quality-val" class="font-mono font-bold text-brand-primary bg-violet-50 px-2.5 py-1 rounded text-sm">80%</span>
+            </div>
+            <input type="range" id="quality-slider" min="5" max="100" value="80" class="w-full" />
+            <p class="text-xs text-slate-400">Lower quality percentages generate smaller file packages with subtle progressive artifact changes.</p>
+          </div>
+
+          <!-- Target KB Settings (Target Mode) -->
+          <div id="setting-target-group" class="hidden space-y-3">
+            <div class="flex justify-between items-center">
+              <label class="text-sm font-bold text-slate-700">Target Maximum Size</label>
+              <div class="flex items-center gap-2">
+                <input type="number" id="target-kb" min="10" max="5000" value="150" 
+                       class="w-24 px-3 py-1 bg-white border border-slate-200 rounded-lg text-sm font-mono font-bold text-slate-800 text-right focus:outline-none focus:ring-1 focus:ring-brand-primary" />
+                <span class="text-sm font-semibold text-slate-500">KB</span>
+              </div>
+            </div>
+            <p class="text-xs text-slate-400">We will iteratively cycle internal compression algorithms to approximate your specified KB constraints.</p>
+          </div>
+
+          <!-- Process Button -->
+          <button id="process-btn" class="w-full mt-6 bg-brand-primary text-white font-bold py-3 px-6 rounded-xl hover:bg-brand-hover tracking-wide shadow-md transition-all duration-200 cursor-pointer">
+            Compress Images Instantly
+          </button>
+        </div>
+
+        <!-- Processing State (Hidden) -->
+        <div id="processing-loader" class="hidden mt-8 py-10 flex flex-col items-center justify-center gap-3">
+          <div class="animate-spin rounded-full h-10 w-10 border-4 border-slate-200 border-t-brand-primary"></div>
+          <span class="text-sm font-bold text-slate-600 animate-pulse">Asynchronously Compressing...</span>
+        </div>
+
+        <!-- Output results container (Hidden until compilation complete) -->
+        <div id="output-container" class="hidden mt-10 pt-8 border-t border-slate-200 space-y-6">
+          <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+            <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+              🎉 Optimization Completed
+            </h3>
+            <button id="download-all-btn" class="bg-slate-900 text-white font-semibold text-xs px-4 py-2 rounded-xl hover:bg-slate-800 flex items-center gap-1.5 shadow transition-all">
+              📥 Download Consolidated ZIP
+            </button>
+          </div>
+
+          <!-- Results Table -->
+          <div class="overflow-x-auto border border-slate-100 rounded-2xl">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="bg-slate-50 border-b border-slate-100 text-[11px] font-bold text-slate-500 uppercase tracking-wider">
+                  <th class="py-3.5 px-4 font-bold">Filename</th>
+                  <th class="py-3.5 px-4 font-bold text-center">Original</th>
+                  <th class="py-3.5 px-4 font-bold text-center">Optimized</th>
+                  <th class="py-3.5 px-4 font-bold text-center">Savings</th>
+                  <th class="py-3.5 px-4 font-bold text-right">Action</th>
+                </tr>
+              </thead>
+              <tbody id="results-table-body" class="divide-y divide-slate-50 text-sm">
+                <!-- Rendered dynamically -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Total Metrics Badge Summary -->
+          <div class="bg-violet-50/50 border border-violet-100 rounded-2xl p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+              <p class="text-xs text-slate-500 font-semibold mb-1 uppercase tracking-wider">Consolidated Metrics</p>
+              <p class="text-slate-800 text-sm font-medium">
+                You integrated <span id="metrics-count" class="font-bold text-brand-primary">0 files</span>, saving a total of <span id="metrics-saved" class="font-bold text-brand-primary">0 KB</span>.
+              </p>
+            </div>
+            <div class="bg-brand-primary text-white text-base font-extrabold px-4 py-2 rounded-xl" id="metrics-percentage">
+              0% Reduced
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SEO CONTENT SECTION SECTION A to D -->
+      <section class="max-w-4xl mx-auto space-y-16 mt-20">
+        
+        <!-- SECTION A: How to Compress -->
+        <div class="prose prose-slate max-w-none">
+          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-6">How to Compress Images Online Free</h2>
+          <ol class="grid grid-cols-1 md:grid-cols-3 gap-6 list-none p-0 m-0">
+            <li class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+              <div class="text-brand-primary font-black text-2xl mb-3">01</div>
+              <h3 class="font-bold text-base text-slate-900 mb-2">Upload Your Images</h3>
+              <p class="text-slate-500 text-sm leading-relaxed">Drag multiple graphic files into the workspace container or browse folders. We support JPEG, JPG, PNG, and WebP files up to 20MB.</p>
+            </li>
+            <li class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+              <div class="text-brand-primary font-black text-2xl mb-3">02</div>
+              <h3 class="font-bold text-base text-slate-900 mb-2">Configure Adjustments</h3>
+              <p class="text-slate-500 text-sm leading-relaxed">Select between precise fractional quality ratios (10-100%) or input standard Target KB bounds to trigger automated quantization.</p>
+            </li>
+            <li class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+              <div class="text-brand-primary font-black text-2xl mb-3">03</div>
+              <h3 class="font-bold text-base text-slate-900 mb-2">Instant Compilation</h3>
+              <p class="text-slate-500 text-sm leading-relaxed">Review the comparison savings live before writing outputs. Download items individually or zip everything into single compressed archives.</p>
+            </li>
+          </ol>
+        </div>
+
+        <!-- SECTION B: Why Use Toolifya -->
+        <div>
+          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-6 text-center">Why Use Toolifya's Image Compressor?</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pb-4">
+            <div class="flex gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-100">
+              <div class="text-2xl">🔒</div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm mb-1">Zero Transmission Records</h4>
+                <p class="text-slate-500 text-xs leading-relaxed">Unlike server-side algorithms, we never send your data bytes over WebSockets or remote folders, operating with total client security.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-100">
+              <div class="text-2xl">⚡</div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm mb-1">Multithreaded Quantization</h4>
+                <p class="text-slate-500 text-xs leading-relaxed">Canvas operations draw pixel grids dynamically on active page instances, delivering compressed files in milliseconds.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-100">
+              <div class="text-2xl">📈</div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm mb-1">Precise Quality Preserves</h4>
+                <p class="text-slate-500 text-xs leading-relaxed">Smart downsampling logic automatically keeps vector paths, pixel outlines, and core textures sharp while cutting redundant size headers.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-100">
+              <div class="text-2xl">♾️</div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm mb-1">Totally Unlimited Use</h4>
+                <p class="text-slate-500 text-xs leading-relaxed">No daily file compression limits, paid subscription tier thresholds, or watermarks. Build and process graphics continuously.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION C: Frequently Asked Questions -->
+        <div>
+          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-6 text-center">Frequently Asked Questions</h2>
+          <div class="space-y-4">
+            <details class="group bg-slate-50 border border-slate-100 rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
+              <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
+                <h3 class="font-bold text-slate-900 text-base">Does compressing reduce image quality?</h3>
+                <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-slate-900 shadow-sm transition group-open:rotate-180">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                </span>
+              </summary>
+              <p class="mt-4 text-slate-500 text-sm leading-relaxed">
+                By definition, compression for formats like JPG/JPEG is lossy, which discards high-frequency pixel nuances that are generally indiscernible to human eyes. At our default 80% slider level, you'll observe file size decreases up to 75% with virtually zero perceptible changes in visual quality. Transparent PNGs are converted to high-fidelity compressed JPGs automatically.
+              </p>
+            </details>
+
+            <details class="group bg-slate-50 border border-slate-100 rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
+              <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
+                <h3 class="font-bold text-slate-900 text-base">What is the maximum file size I can compress?</h3>
+                <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-slate-900 shadow-sm transition group-open:rotate-180">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                </span>
+              </summary>
+              <p class="mt-4 text-slate-500 text-sm leading-relaxed">
+                Our client-side system allows processing of files up to 20MB. Because the compression procedures occur in real-time inside your browser's dedicated Javascript thread heap, very large files require a few extra milliseconds to buffer, but there are no constraints on the size or quantities of files loaded!
+              </p>
+            </details>
+
+            <details class="group bg-slate-50 border border-slate-100 rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
+              <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
+                <h3 class="font-bold text-slate-900 text-base">Is my image uploaded to any server during processing?</h3>
+                <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-slate-900 shadow-sm transition group-open:rotate-180">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                </span>
+              </summary>
+              <p class="mt-4 text-slate-500 text-sm leading-relaxed">
+                Absolutely never! Security remains a fundamental pillar of our development approach. Your files are converted to internal URL object streams and kept static in local ram blocks. When the canvas outputs the byte arrays, it executes the payload as an instant local file download anchor. No database trackers are implemented.
+              </p>
+            </details>
+
+            <details class="group bg-slate-50 border border-slate-100 rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
+              <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
+                <h3 class="font-bold text-slate-900 text-base">What image formats does the compressor support?</h3>
+                <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-slate-900 shadow-sm transition group-open:rotate-180">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                </span>
+              </summary>
+              <p class="mt-4 text-slate-500 text-sm leading-relaxed">
+                The image compression module completely supports input formats such as JPG, JPEG, standard PNG, and WebP. For formats like PNG that support transparency layers, we preserve translucent parameters unless JPEG targets are specified which substitute trans elements with crisp canvas neutral fills.
+              </p>
+            </details>
+          </div>
+        </div>
+
+        <!-- SECTION D: More Free Image Tools (Internal Linking) -->
+        <div class="border-t border-slate-100 pt-16">
+          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-8 text-center">More Free Image Tools</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div class="bg-slate-50 hover:bg-slate-100/50 rounded-2xl p-6 border border-slate-100 flex flex-col justify-between hover:shadow-md transition-all">
+              <div>
+                <h4 class="font-bold text-slate-950 mb-2">Image Resizer</h4>
+                <p class="text-slate-500 text-xs mb-4">Resize graphics using simple percentage sliders or strict pixel boxes.</p>
+              </div>
+              <a href="image-resizer.html" class="text-xs font-semibold text-brand-primary hover:underline">Try Tool &rarr;</a>
+            </div>
+            <div class="bg-slate-50 hover:bg-slate-100/50 rounded-2xl p-6 border border-slate-100 flex flex-col justify-between hover:shadow-md transition-all">
+              <div>
+                <h4 class="font-bold text-slate-950 mb-2">PNG to JPG Converter</h4>
+                <p class="text-slate-500 text-xs mb-4">Convert PNG icons to JPG with customizable transparency backing.</p>
+              </div>
+              <a href="png-to-jpg.html" class="text-xs font-semibold text-brand-primary hover:underline">Try Tool &rarr;</a>
+            </div>
+            <div class="bg-slate-50 hover:bg-slate-100/50 rounded-2xl p-6 border border-slate-100 flex flex-col justify-between hover:shadow-md transition-all">
+              <div>
+                <h4 class="font-bold text-slate-950 mb-2">Image to PDF</h4>
+                <p class="text-slate-500 text-xs mb-4">Combine multiple JPEG or PNG images into a clean single PDF booklet.</p>
+              </div>
+              <a href="image-to-pdf.html" class="text-xs font-semibold text-brand-primary hover:underline">Try Tool &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- AD Space bottom -->
+      <div class="w-full text-center bg-slate-50 border border-slate-100 rounded-2xl py-2 px-4 mt-20 text-xs text-slate-400 font-mono tracking-wider">
+        <span>ADVERTISEMENT SPACE</span>
+        <div class="w-full max-w-[728px] h-20 bg-slate-200/40 border border-dashed border-slate-200 rounded mx-auto flex items-center justify-center text-slate-400 mt-1">
+          Responsive Banner Placeholder (728x90)
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0A0A0A] text-white pt-16 pb-8 px-6 md:px-12 mt-24">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-neutral-850">
+        <div>
+          <a href="index.html" class="text-2xl font-extrabold tracking-tight hover:opacity-90 flex items-center gap-2 mb-4">
+            <span class="text-brand-cyan">⚡</span>Toolifya
+          </a>
+          <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
+            Free Online Image Tools — Fast, Simple, No Signup. High performance client processing for worldwide developers and content editors.
+          </p>
+          <div class="mt-4 text-xs font-semibold text-brand-cyan uppercase tracking-wider">
+            Fast. Free. No Signup Required.
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-sm font-bold uppercase tracking-widest text-[#06B6D4] mb-4">Quick Links</h3>
+          <ul class="space-y-2.5 text-slate-400 text-sm">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home Dashboard</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="image-compressor.html" class="hover:text-white transition-colors">Image Compressor</a></li>
+            <li><a href="image-resizer.html" class="hover:text-white transition-colors">Sizing Toolkit</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-bold uppercase tracking-widest text-[#06B6D4] mb-4">Legal Operations</h3>
+          <ul class="space-y-2.5 text-slate-400 text-sm">
+            <li><a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+            <li><a href="about.html#contact" class="hover:text-white transition-colors">Developer Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="max-w-7xl mx-auto pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+        <div>
+          &copy; 2026 Toolifya. All rights reserved. Built with pure browser technology.
+        </div>
+        <div>
+          Domain: <a href="https://toolifya.site" class="hover:text-white transition-all underline">https://toolifya.site</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Shared/Page JS scripts -->
+    <script type="module">
+      import { initNavbar, formatBytes, downloadFile } from '/src/utils.js';
+      initNavbar();
+
+      const fileInput = document.getElementById('file-input');
+      const uploadZone = document.getElementById('upload-zone');
+      const compressSettings = document.getElementById('compress-settings');
+      const processBtn = document.getElementById('process-btn');
+      const processingLoader = document.getElementById('processing-loader');
+      const outputContainer = document.getElementById('output-container');
+      const resultsTableBody = document.getElementById('results-table-body');
+      
+      const modeQualityTab = document.getElementById('mode-quality-tab');
+      const modeTargetTab = document.getElementById('mode-target-tab');
+      const settingQualityGroup = document.getElementById('setting-quality-group');
+      const settingTargetGroup = document.getElementById('setting-target-group');
+      const qualitySlider = document.getElementById('quality-slider');
+      const qualityVal = document.getElementById('quality-val');
+      const targetKbInput = document.getElementById('target-kb');
+
+      const downloadAllBtn = document.getElementById('download-all-btn');
+      const metricsCount = document.getElementById('metrics-count');
+      const metricsSaved = document.getElementById('metrics-saved');
+      const metricsPercentage = document.getElementById('metrics-percentage');
+
+      let uploadedFiles = [];
+      let compressedOutputs = [];
+      let currentMode = 'quality'; // 'quality' or 'target'
+
+      // Slider visual updating
+      qualitySlider.addEventListener('input', () => {
+        qualityVal.textContent = qualitySlider.value + '%';
+      });
+
+      // Toggle Modes
+      modeQualityTab.addEventListener('click', () => {
+        currentMode = 'quality';
+        modeQualityTab.className = 'py-2.5 text-sm font-semibold rounded-lg text-brand-primary bg-white shadow-sm transition-all focus:outline-none';
+        modeTargetTab.className = 'py-2.5 text-sm font-medium rounded-lg text-slate-600 hover:text-slate-800 transition-all focus:outline-none';
+        settingQualityGroup.classList.remove('hidden');
+        settingTargetGroup.classList.add('hidden');
+      });
+
+      modeTargetTab.addEventListener('click', () => {
+        currentMode = 'target';
+        modeTargetTab.className = 'py-2.5 text-sm font-semibold rounded-lg text-brand-primary bg-white shadow-sm transition-all focus:outline-none';
+        modeQualityTab.className = 'py-2.5 text-sm font-medium rounded-lg text-slate-600 hover:text-slate-800 transition-all focus:outline-none';
+        settingTargetGroup.classList.remove('hidden');
+        settingQualityGroup.classList.add('hidden');
+      });
+
+      // Drag and drop styles
+      ['dragenter', 'dragover'].forEach(eventName => {
+        uploadZone.addEventListener(eventName, (e) => {
+          e.preventDefault();
+          uploadZone.classList.add('bg-violet-50', 'border-brand-primary');
+        }, false);
+      });
+
+      ['dragleave', 'drop'].forEach(eventName => {
+        uploadZone.addEventListener(eventName, (e) => {
+          e.preventDefault();
+          uploadZone.classList.remove('bg-violet-50', 'border-brand-primary');
+        }, false);
+      });
+
+      uploadZone.addEventListener('drop', (e) => {
+        const dt = e.dataTransfer;
+        const files = Array.from(dt.files).filter(f => f.type.startsWith('image/'));
+        if (files.length > 0) {
+          handleFiles(files);
+        }
+      });
+
+      fileInput.addEventListener('change', (e) => {
+        const files = Array.from(e.target.files).filter(f => f.type.startsWith('image/'));
+        if (files.length > 0) {
+          handleFiles(files);
+        }
+      });
+
+      function handleFiles(files) {
+        uploadedFiles = files;
+        compressSettings.classList.remove('hidden');
+        outputContainer.classList.add('hidden');
+        // Scroll smoothly to config
+        compressSettings.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      // Main compression process trigger
+      processBtn.addEventListener('click', async () => {
+        processingLoader.classList.remove('hidden');
+        compressSettings.classList.add('hidden');
+        outputContainer.classList.add('hidden');
+        resultsTableBody.innerHTML = '';
+        compressedOutputs = [];
+
+        // Asynchronous compression loop
+        for (let i = 0; i < uploadedFiles.length; i++) {
+          const file = uploadedFiles[i];
+          try {
+            const result = await compressImageAsync(file);
+            compressedOutputs.push(result);
+          } catch (err) {
+            console.error('Error compressing file: ', file.name, err);
+          }
+        }
+
+        renderResults();
+        processingLoader.classList.add('hidden');
+        outputContainer.classList.remove('hidden');
+        outputContainer.scrollIntoView({ behavior: 'smooth' });
+      });
+
+      // Core Canvas resizing + compressing logic
+      function compressImageAsync(file) {
+        return new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.readAsDataURL(file);
+          reader.onload = (event) => {
+            const img = new Image();
+            img.src = event.target.result;
+            img.onload = () => {
+              const canvas = document.createElement('canvas');
+              const ctx = canvas.getContext('2d');
+              
+              // Set strict standard resolution
+              canvas.width = img.naturalWidth;
+              canvas.height = img.naturalHeight;
+              
+              // Canvas backgrounds (transparency fills for PNG conversions to JPEG)
+              ctx.fillStyle = '#FFFFFF';
+              ctx.fillRect(0, 0, canvas.width, canvas.height);
+              ctx.drawImage(img, 0, 0);
+
+              const originalFormat = file.type;
+              let targetFormat = 'image/jpeg';
+              if (originalFormat === 'image/webp') {
+                targetFormat = 'image/webp';
+              }
+
+              let quality = 0.8;
+              let currentSize = file.size;
+
+              if (currentMode === 'quality') {
+                quality = parseInt(qualitySlider.value) / 100;
+                const outputDataUrl = canvas.toDataURL(targetFormat, quality);
+                const approxSize = Math.round((outputDataUrl.length - 22) * 3 / 4);
+                resolve({
+                  name: file.name,
+                  originalSize: file.size,
+                  newSize: approxSize,
+                  dataUrl: outputDataUrl,
+                  format: targetFormat
+                });
+              } else {
+                // Target size binary approximation loop
+                const targetBytes = parseInt(targetKbInput.value) * 1024;
+                let low = 0.1;
+                let high = 0.98;
+                let bestDataUrl = canvas.toDataURL(targetFormat, 0.8);
+                let bestSize = Math.round((bestDataUrl.length - 22) * 3 / 4);
+                
+                // Do binary searches of quality matching
+                for (let step = 0; step < 5; step++) {
+                  const mid = (low + high) / 2;
+                  const testDataUrl = canvas.toDataURL(targetFormat, mid);
+                  const testSize = Math.round((testDataUrl.length - 22) * 3 / 4);
+                  
+                  if (testSize <= targetBytes) {
+                    bestDataUrl = testDataUrl;
+                    bestSize = testSize;
+                    low = mid; // Try searching better quality
+                  } else {
+                    high = mid; // Must compress more
+                  }
+                }
+
+                resolve({
+                  name: file.name,
+                  originalSize: file.size,
+                  newSize: bestSize,
+                  dataUrl: bestDataUrl,
+                  format: targetFormat
+                });
+              }
+            };
+            img.onerror = () => reject('Image load fail');
+          };
+          reader.onerror = () => reject('File read fail');
+        });
+      }
+
+      function renderResults() {
+        let totalOriginal = 0;
+        let totalNew = 0;
+
+        compressedOutputs.forEach((item, index) => {
+          totalOriginal += item.originalSize;
+          totalNew += item.newSize;
+
+          const savedBytes = item.originalSize - item.newSize;
+          const pct = Math.max(0, Math.round((savedBytes / item.originalSize) * 100));
+
+          const row = document.createElement('tr');
+          row.className = 'hover:bg-slate-50/50 transition-all';
+          
+          row.innerHTML = `
+            <td class="py-4 px-4 font-bold text-slate-800 break-all max-w-xs">${item.name}</td>
+            <td class="py-4 px-4 text-center font-mono text-slate-500 text-xs">${formatBytes(item.originalSize)}</td>
+            <td class="py-4 px-4 text-center font-mono text-slate-800 text-xs font-semibold">${formatBytes(item.newSize)}</td>
+            <td class="py-4 px-4 text-center">
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold ${pct > 0 ? 'bg-emerald-50 text-emerald-600' : 'bg-slate-100 text-slate-500'}">
+                ${pct}% saved
+              </span>
+            </td>
+            <td class="py-4 px-4 text-right">
+              <button data-index="${index}" class="single-dl bg-slate-100 text-slate-800 hover:bg-brand-primary hover:text-white font-semibold text-xs py-1.5 px-3 rounded-lg transition-all cursor-pointer">
+                Download
+              </button>
+            </td>
+          `;
+          resultsTableBody.appendChild(row);
+        });
+
+        // Event listener for single downloads
+        document.querySelectorAll('.single-dl').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            const idx = parseInt(e.target.getAttribute('data-index'));
+            const data = compressedOutputs[idx];
+            downloadFile(data.dataUrl, 'optimized-' + data.name);
+          });
+        });
+
+        // Consolidated metrics calculations
+        const savedGlobal = totalOriginal - totalNew;
+        const totalPct = Math.max(0, Math.round((savedGlobal / totalOriginal) * 100));
+        
+        metricsCount.textContent = compressedOutputs.length + ' file(s)';
+        metricsSaved.textContent = formatBytes(savedGlobal);
+        metricsPercentage.textContent = totalPct + '% Smaller';
+      }
+
+      // Download all zipped using CDN JSZip
+      downloadAllBtn.addEventListener('click', () => {
+        if (compressedOutputs.length === 0) return;
+        
+        const zip = new JSZip();
+        compressedOutputs.forEach((item, index) => {
+          // Parse dataUrl bytes for JSZip injection
+          const dataCleanString = item.dataUrl.split(',')[1];
+          zip.file('optimized-' + item.name, dataCleanString, { base64: true });
+        });
+
+        zip.generateAsync({ type: "binarystring" }).then((content) => {
+          const zipDataUrl = "data:application/zip;base64," + btoa(content);
+          downloadFile(zipDataUrl, "toolifya-compressed-images.zip");
+        });
+      });
+    </script>
+  </body>
+</html>
