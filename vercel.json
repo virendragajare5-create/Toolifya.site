@@ -20,28 +20,13 @@
       ]
     },
     {
-      "source": "/(.*)\\.(css|js|png|jpg|jpeg|gif|webp|svg|ico|xml|txt)$",
+      "source": "/(.*)\\.(css|js)$",
       "headers": [
         {
           "key": "Cache-Control",
           "value": "public, max-age=31536000, immutable"
         }
       ]
-    }
-  ],
-  "routes": [
-    {
-      "src": "/index",
-      "replace": true,
-      "redirect": "/"
-    },
-    {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/(.*)",
-      "status": 404,
-      "dest": "/404.html"
     }
   ]
 }
