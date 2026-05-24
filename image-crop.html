@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
-    <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
-    </noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -22,13 +18,13 @@
     <title>Crop Image Online Free — Free Image Crop Tool | Toolifya</title>
     <meta name="description" content="Crop images online for free with precise control. Choose aspect ratios like 1:1, 16:9, 4:3 or crop freely. JPG, PNG, WebP supported." />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <link rel="canonical" href="https://toolifya.site/image-crop.html" />
+    <link class="canonical" href="https://toolifya.site/image-crop" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Crop Image Online Free — Free Image Crop Tool | Toolifya" />
     <meta property="og:description" content="Crop images online for free with precise control. Choose aspect ratios like 1:1, 16:9, 4:3 or crop freely. JPG, PNG, WebP supported." />
-    <meta property="og:url" content="https://toolifya.site/image-crop.html" />
+    <meta property="og:url" content="https://toolifya.site/image-crop" />
     <meta property="og:image" content="https://toolifya.site/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -42,9 +38,6 @@
     <meta name="twitter:image" content="https://toolifya.site/og-image.png" />
     <meta name="twitter:site" content="@toolifya" />
 
-    <!-- Performance hints -->
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-
     <!-- Styles -->
     <link rel="stylesheet" href="/src/index.css" />
 
@@ -52,159 +45,145 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7108819443201963"
          crossorigin="anonymous"></script>
   </head>
-  <body class="bg-white text-[#0F172A] min-h-screen flex flex-col font-sans">
+  <body class="bg-[#FAFAFA] text-[#09090B] min-h-screen flex flex-col font-sans">
     
     <!-- Navbar -->
-    <header class="sticky top-0 z-50 bg-[#0A0A0A] text-white py-4 px-6 md:px-12 flex justify-between items-center shadow-lg">
+    <header class="h-14 bg-[#09090B] border-b border-[#1C1C1E] text-white px-6 md:px-12 flex justify-between items-center sticky top-0 z-50">
       <div class="flex items-center gap-3">
-        <a href="index.html" class="text-xl md:text-2xl font-extrabold tracking-tight hover:opacity-90 flex items-center gap-2">
-          <span class="text-brand-cyan">⚡</span>Toolifya
+        <a href="index.html" class="text-base font-semibold tracking-tight hover:opacity-90 flex items-center">
+          Toolifya<span class="text-[#7C3AED] ml-0.5">.</span>
         </a>
       </div>
       
-      <!-- Mobile Toggle -->
-      <button id="nav-toggle" class="md:hidden text-white hover:text-brand-cyan focus:outline-none">
-        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-          <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
-        </svg>
-      </button>
-
-      <nav id="nav-menu" class="hidden md:flex flex-col md:flex-row absolute md:relative top-full left-0 w-full md:w-auto bg-[#0A0A0A] md:bg-transparent p-6 md:p-0 gap-6 items-start md:items-center border-t border-neutral-800 md:border-0">
-        <div class="relative group">
-          <button id="tools-dropdown-btn" class="flex items-center gap-1 font-medium text-brand-cyan hover:text-brand-cyan transition-colors">
-            All Tools
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-          </button>
-          
-          <ul id="tools-dropdown" class="hidden absolute left-0 mt-2 w-56 bg-white text-slate-800 rounded-xl shadow-xl border border-slate-100 overflow-hidden py-1 z-50">
-            <li><a href="image-compressor.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">⚡ Image Compressor</a></li>
-            <li><a href="image-resizer.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">↕️ Image Resizer</a></li>
-            <li><a href="image-crop.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-bold transition-colors">✂️ Image Crop Tool</a></li>
-            <li><a href="jpg-to-png.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">🖼️ JPG to PNG Converter</a></li>
-            <li><a href="png-to-jpg.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">🎨 PNG to JPG Converter</a></li>
-            <li><a href="webp-converter.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">🕸️ WebP Converter</a></li>
-            <li><a href="image-to-pdf.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">📄 Image to PDF</a></li>
-          </ul>
-        </div>
-        <a href="about.html" class="font-medium hover:text-brand-cyan transition-colors">About Us</a>
-        <a href="privacy-policy.html" class="font-medium hover:text-brand-cyan transition-colors">Privacy Policy</a>
+      <!-- Nav List -->
+      <nav id="nav-menu" class="hidden md:flex flex-col md:flex-row absolute md:relative top-full left-0 w-full md:w-auto bg-[#09090B] md:bg-transparent p-6 md:p-0 gap-4 md:gap-6 items-start md:items-center border-b border-[#1C1C1E] md:border-0 z-50">
+        <a href="index.html" class="text-sm font-medium text-[#A1A1AA] hover:text-white transition-colors w-full md:w-auto">All Tools</a>
+        <a href="about.html" class="text-sm font-medium text-[#A1A1AA] hover:text-white transition-colors w-full md:w-auto">About</a>
+        <a href="privacy-policy.html" class="text-sm font-medium text-[#A1A1AA] hover:text-white transition-colors w-full md:w-auto">Privacy Policy</a>
+        <a href="image-compressor.html" class="md:hidden text-[#7C3AED] font-semibold text-sm w-full pt-2 border-t border-[#1C1C1E]">Try Free →</a>
       </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="image-compressor.html" class="hidden md:inline-flex items-center text-sm text-white border border-[#3F3F46] rounded-md px-3.5 py-1.5 hover:bg-[#1C1C1E] transition-all font-medium">Try Free →</a>
+        <!-- Mobile Toggle -->
+        <button id="nav-toggle" class="md:hidden text-[#A1A1AA] hover:text-white focus:outline-none" aria-label="Toggle navigation">
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
     </header>
 
-    <!-- Breadcrumb -->
-    <div class="bg-slate-50 border-b border-slate-100 py-3 px-6 md:px-12 text-sm text-slate-500">
-      <div class="max-w-7xl mx-auto flex items-center gap-2">
-        <a href="index.html" class="hover:text-brand-primary transition-colors">Home</a>
-        <span>&rsaquo;</span>
-        <span class="text-slate-400">Image Tools</span>
-        <span>&rsaquo;</span>
-        <span class="text-slate-800 font-medium">Image Crop Tool</span>
-      </div>
-    </div>
-
-    <!-- Main Workspace -->
-    <main class="max-w-7xl mx-auto px-6 py-12 flex-grow w-full">
+    <!-- Main Container -->
+    <main class="max-w-2xl mx-auto px-6 py-12 flex-grow w-full">
       
-      <!-- AD Placeholder -->
-      <div class="w-full text-center bg-slate-50 border border-slate-100 rounded-2xl py-2 px-4 mb-10 text-xs text-slate-400 font-mono tracking-wider">
-        <span>ADVERTISEMENT</span>
-        <div class="w-full max-w-[728px] h-20 bg-slate-200/40 border border-dashed border-slate-200 rounded mx-auto flex items-center justify-center text-slate-400 mt-1">
-          Responsive Banner Placement (728x90)
-        </div>
-      </div>
+      <!-- Breadcrumb -->
+      <nav class="flex items-center gap-1 text-[13px] text-[#A1A1AA] mb-4 font-medium">
+        <a href="index.html" class="hover:text-[#09090B] transition-colors">Home</a>
+        <span>/</span>
+        <span class="text-[#09090B]">Image Crop Tool</span>
+      </nav>
 
       <!-- Title / Header -->
-      <div class="text-center max-w-3xl mx-auto mb-12">
-        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-4">
-          Crop Image Online Free — Image Crop Tool
+      <div class="mb-8">
+        <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight text-[#09090B]">
+          Image Crop Tool
         </h1>
-        <p class="text-slate-500 text-base md:text-lg">
-          Trim, scope, and crop your images with precise control. Choose from predefined standard ratios or drag crop bounds freely on both mobile and desktop.
+        <p class="text-[14px] text-[#52525B] mt-1.5 leading-relaxed font-sans">
+          Crop pictures online with pixel precise handles. Restrict proportions to square, 16:9, or align free form borders.
         </p>
       </div>
 
-      <!-- Content Workspace Box -->
-      <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-10 shadow-[0_12px_48px_rgba(0,0,0,0.03)] mb-16 max-w-4xl mx-auto">
+      <!-- Advertisement Space -->
+      <div class="ad-slot my-6">
+        AdSterra / AdSense Placeholder (728x90)
+      </div>
+
+      <!-- Workspace Card -->
+      <div class="bg-white border border-[#E4E4E7] rounded-2xl p-6 md:p-8 shadow-sm">
         
-        <!-- Upload Zone -->
-        <div id="upload-zone" class="border-2 border-dashed border-slate-300 hover:border-brand-primary hover:bg-slate-50/50 rounded-2xl p-8 md:p-12 text-center cursor-pointer transition-all duration-300 relative group">
-          <input type="file" id="file-input" accept="image/jpeg, image/png, image/webp" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
-          <div class="flex flex-col items-center gap-4">
-            <div class="w-16 h-16 bg-violet-50 text-brand-primary rounded-full flex items-center justify-center text-3xl transition-transform group-hover:scale-110">
-              ✂️
+        <!-- Upload Tray -->
+        <div id="upload-zone" class="border-[1.5px] border-dashed border-[#D4D4D8] rounded-xl bg-[#F4F4F5] p-10 text-center cursor-pointer transition-all duration-200 relative group">
+          <input type="file" id="file-input" accept="image/jpeg, image/png, image/webp" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" />
+          <div class="flex flex-col items-center gap-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center text-2xl transition-transform duration-200 group-hover:-translate-y-0.5">
+              <svg class="h-8 w-8 text-[#A1A1AA] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5h10.5" />
+              </svg>
             </div>
             <div>
-              <p class="text-lg font-bold text-slate-900 mb-1">Drag and drop details here</p>
-              <p class="text-slate-500 text-sm">or click to browse your digital library</p>
+              <p class="text-[14px] font-medium text-[#09090B]">Upload the image to crop</p>
+              <p class="text-xs text-[#A1A1AA] mt-0.5">or drag your graphic directly</p>
             </div>
-            <div class="flex flex-wrap justify-center gap-2 mt-1">
-              <span class="bg-slate-100 text-slate-600 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">JPG</span>
-              <span class="bg-slate-100 text-slate-600 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">PNG</span>
-              <span class="bg-slate-100 text-slate-600 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">WebP</span>
+            <div class="flex gap-1.5 mt-1">
+              <span class="bg-white border border-[#E4E4E7] text-[#A1A1AA] text-[10px] font-semibold px-2 py-0.5 rounded uppercase tracking-wider">JPG</span>
+              <span class="bg-white border border-[#E4E4E7] text-[#A1A1AA] text-[10px] font-semibold px-2 py-0.5 rounded uppercase tracking-wider">PNG</span>
+              <span class="bg-white border border-[#E4E4E7] text-[#A1A1AA] text-[10px] font-semibold px-2 py-0.5 rounded uppercase tracking-wider">WebP</span>
             </div>
           </div>
         </div>
 
-        <!-- Crop Canvas Panel (Hidden until image uploaded) -->
-        <div id="crop-workspace" class="hidden space-y-6">
+        <!-- Crop Canvas workspace (Shown post-load) -->
+        <div id="crop-workspace" class="hidden space-y-5">
           
-          <!-- Presets and Ratios Tool Bar -->
-          <div class="space-y-3">
-            <span class="text-xs text-slate-400 font-bold uppercase tracking-wider block">Lock Frame Aspect Ratio</span>
-            <div class="flex flex-wrap gap-2">
-              <button data-ratio="free" class="ratio-btn px-4 py-2 text-xs font-semibold rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 transition-all cursor-pointer">Free Form</button>
-              <button data-ratio="1:1" class="ratio-btn px-4 py-2 text-xs font-semibold rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 transition-all cursor-pointer">1:1 (Square)</button>
-              <button data-ratio="16:9" class="ratio-btn px-4 py-2 text-xs font-semibold rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 transition-all cursor-pointer">16:9</button>
-              <button data-ratio="4:3" class="ratio-btn px-4 py-2 text-xs font-semibold rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 transition-all cursor-pointer">4:3</button>
-              <button data-ratio="3:2" class="ratio-btn px-4 py-2 text-xs font-semibold rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 transition-all cursor-pointer">3:2</button>
-              <button data-ratio="2:3" class="ratio-btn px-4 py-2 text-xs font-semibold rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 transition-all cursor-pointer">2:3</button>
-              <button data-ratio="9:16" class="ratio-btn px-4 py-2 text-xs font-semibold rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 transition-all cursor-pointer">9:16</button>
+          <!-- Ratios Lock -->
+          <div>
+            <label class="text-[11px] text-[#52525B] font-semibold uppercase tracking-wider block mb-2.5">Lock Frame Aspect Ratio</label>
+            <div class="flex flex-wrap gap-1.5">
+              <button data-ratio="free" class="ratio-btn px-3 py-1.5 text-xs font-semibold rounded-md bg-[#09090B] text-white border border-[#09090B] hover:opacity-90 duration-150 transition-all cursor-pointer">Free Form</button>
+              <button data-ratio="1:1" class="ratio-btn px-3 py-1.5 text-xs font-semibold rounded-md bg-[#F4F4F5] text-[#52525B] hover:text-[#09090B] border border-[#E4E4E7] duration-150 transition-all cursor-pointer">1:1</button>
+              <button data-ratio="16:9" class="ratio-btn px-3 py-1.5 text-xs font-semibold rounded-md bg-[#F4F4F5] text-[#52525B] hover:text-[#09090B] border border-[#E4E4E7] duration-150 transition-all cursor-pointer">16:9</button>
+              <button data-ratio="4:3" class="ratio-btn px-3 py-1.5 text-xs font-semibold rounded-md bg-[#F4F4F5] text-[#52525B] hover:text-[#09090B] border border-[#E4E4E7] duration-150 transition-all cursor-pointer">4:3</button>
+              <button data-ratio="3:2" class="ratio-btn px-3 py-1.5 text-xs font-semibold rounded-md bg-[#F4F4F5] text-[#52525B] hover:text-[#09090B] border border-[#E4E4E7] duration-150 transition-all cursor-pointer">3:2</button>
+              <button data-ratio="9:16" class="ratio-btn px-3 py-1.5 text-xs font-semibold rounded-md bg-[#F4F4F5] text-[#52525B] hover:text-[#09090B] border border-[#E4E4E7] duration-150 transition-all cursor-pointer">9:16</button>
             </div>
           </div>
 
-          <!-- Interactive Viewport Canvas Frame -->
-          <div class="relative bg-slate-900 overflow-hidden rounded-2xl flex items-center justify-center p-4 min-h-[300px] md:min-h-[450px]" id="canvas-container">
-            <!-- This image is hidden and used to reference resource sizes. -->
-            <img id="source-img" class="hidden" />
-            <!-- Active interactive drawing stage -->
-            <canvas id="interactive-canvas" class="max-w-full max-h-[500px] shadow-2xl rounded block cursor-crosshair"></canvas>
+          <!-- Sandbox Viewer Canvas -->
+          <div class="relative bg-[#09090B] overflow-hidden rounded-xl flex items-center justify-center p-3 min-h-[280px] md:min-h-[400px]" id="canvas-container">
+            <!-- Source Image Buffer -->
+            <img id="source-img" class="hidden" alt="Source Asset" />
+            <canvas id="interactive-canvas" class="max-w-full max-h-[440px] shadow-lg rounded block cursor-crosshair"></canvas>
           </div>
 
-          <!-- Metadata & Export Specs -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-slate-100">
-            <div class="space-y-1.5 bg-slate-50 p-3.5 rounded-xl border border-slate-100 text-center">
-              <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Estimated Crop Dimensions</p>
-              <p id="crop-dims-badge" class="font-mono text-sm font-extrabold text-[#7C3AED]">0 &times; 0 px</p>
+          <!-- Specs details -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-3 border-t border-[#E4E4E7]">
+            <div class="bg-[#FAFAFA] border border-[#E4E4E7] rounded-lg p-2.5 flex flex-col justify-center items-center text-center">
+              <p class="text-[10px] text-[#A1A1AA] font-bold uppercase tracking-wider">Estimated Dimensions</p>
+              <p id="crop-dims-badge" class="font-mono text-xs font-extrabold text-[#7C3AED]">0 &times; 0 px</p>
             </div>
-            <div class="space-y-1.5">
-              <label class="text-xs font-bold text-slate-650 block">Output Format</label>
-              <select id="select-format" class="w-full p-2.5 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-1 focus:ring-brand-primary text-slate-800 font-semibold cursor-pointer">
+            
+            <div class="space-y-1">
+              <label class="text-[11px] font-semibold text-[#52525B] block">Format Output</label>
+              <select id="select-format" class="w-full px-3 py-1.8 bg-white border border-[#E4E4E7] rounded-md text-xs focus:outline-none focus:border-[#7C3AED] text-[#09090B] font-medium cursor-pointer">
                 <option value="image/jpeg">JPEG (.jpg)</option>
-                <option value="image/png">PNG (.png) - Supports Transparency</option>
+                <option value="image/png">PNG (.png) - Transparency</option>
                 <option value="image/webp">WebP (.webp)</option>
               </select>
             </div>
           </div>
 
-          <!-- Trigger actions -->
-          <div class="flex flex-col sm:flex-row gap-3">
-            <button id="crop-trigger-btn" class="flex-grow bg-[#7C3AED] hover:bg-brand-hover text-white py-3 px-6 rounded-2xl font-bold tracking-wide shadow-md transition-all active:scale-[0.98] cursor-pointer text-center">
+          <!-- Slicing Actions buttons -->
+          <div class="flex flex-col sm:flex-row gap-2">
+            <button id="crop-trigger-btn" class="flex-grow bg-[#09090B] text-white font-medium py-2.5 px-4 rounded-lg hover:bg-[#1C1C1E] transition-all text-xs tracking-wide cursor-pointer text-center">
               Crop &amp; Download Image
             </button>
-            <button id="reset-workspace-btn" class="sm:w-1/3 border-2 border-slate-200 hover:border-brand-primary text-slate-700 hover:text-brand-primary font-bold py-3 px-6 rounded-2xl transition-all cursor-pointer">
+            <button id="reset-workspace-btn" class="sm:w-1/3 border border-[#E4E4E7] bg-white text-[#52525B] hover:bg-[#F4F4F5] font-medium py-2 px-4 rounded-lg transition-all text-xs cursor-pointer">
               Choose Another
             </button>
           </div>
 
         </div>
 
-        <!-- Success/Processed State View (Hidden until download initialized) -->
-        <div id="success-panel" class="hidden mt-8 text-center space-y-4 bg-emerald-50 border border-emerald-100 p-6 rounded-2xl">
-          <div class="w-12 h-12 bg-emerald-510 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto shadow-md">✓</div>
-          <h3 class="text-lg font-bold text-slate-900">Your image was cropped successfully</h3>
-          <p class="text-xs text-slate-500">The file has been rendered and queued for instant download inside your browser.</p>
+        <!-- Success result message -->
+        <div id="success-panel" class="hidden mt-6 text-center space-y-4 bg-[#F0FDF4] border border-[#BBF7D0] p-5 rounded-xl">
+          <div class="w-8 h-8 bg-[#16A34A] text-white rounded-full flex items-center justify-center text-sm font-semibold mx-auto">✓</div>
+          <div>
+            <h3 class="text-xs font-bold text-[#16A34A] uppercase tracking-wider">Slicing Completed</h3>
+            <p class="text-xs text-[#52525B] mt-0.5">Rendered segment bounds saved to downloads folder successfully.</p>
+          </div>
           <div class="flex justify-center gap-2 pt-2">
-            <button id="process-another-btn" class="bg-brand-primary text-white font-bold py-2.5 px-6 rounded-xl hover:bg-brand-hover transition-all cursor-pointer">
+            <button id="process-another-btn" class="bg-[#7C3AED] hover:bg-accent-hover text-white font-medium py-2 px-4 rounded-lg transition-all text-xs cursor-pointer">
               Crop Another Image
             </button>
           </div>
@@ -212,188 +191,134 @@
 
       </div>
 
-      <!-- SEO CONTENT SECTION SECTION A to D -->
-      <section class="max-w-4xl mx-auto space-y-16 mt-20">
-        
-        <!-- SECTION A: How to Crop -->
+      <!-- connected visual instructions list -->
+      <section class="mt-16 space-y-8">
         <div>
-          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-6 col-span-full">How to Crop an Image Online Free</h2>
-          <ol class="grid grid-cols-1 md:grid-cols-3 gap-6 list-none p-0">
-            <li class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-              <div class="text-[#7C3AED] font-black text-2xl mb-3">01</div>
-              <h3 class="font-bold text-base text-slate-900 mb-2">Upload Graphic</h3>
-              <p class="text-slate-500 text-sm leading-relaxed">Import standard JPEG, WebP, or PNG file images. The cropping engine displays your graphic in an interactive local stage window.</p>
-            </li>
-            <li class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-              <div class="text-[#7C3AED] font-black text-2xl mb-3">02</div>
-              <h3 class="font-bold text-base text-slate-900 mb-2">Adjust Crop Bounds</h3>
-              <p class="text-slate-500 text-sm leading-relaxed">Select lock proportions like 16:9 or square, or adjust freely. Drag crop box corners or use touch sliders to outline focus zones.</p>
-            </li>
-            <li class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-              <div class="text-[#7C3AED] font-black text-2xl mb-3">03</div>
-              <h3 class="font-bold text-base text-slate-900 mb-2">Export Crop</h3>
-              <p class="text-slate-500 text-sm leading-relaxed">Click 'Crop &amp; Download' to process the coordinates. Your browser downloads the cropped file instantly.</p>
-            </li>
-          </ol>
+          <h2 class="text-sm font-bold uppercase tracking-wider text-[#09090B]">How to Crop Images</h2>
+          <p class="text-xs text-[#A1A1AA] mt-1 relative z-10">Three simple directions to slice coordinate bounds instantly.</p>
         </div>
 
-        <!-- SECTION B: Why use Toolifya's Crop Tool -->
-        <div>
-          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-6 text-center">Why Use Toolifya's Image Crop Tool?</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="flex gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-100">
-              <div class="text-2xl">📱</div>
-              <div>
-                <h4 class="font-bold text-slate-900 text-sm mb-1">Touch Screens Responsive</h4>
-                <p class="text-slate-500 text-xs leading-relaxed">Supports gestures on mobile, tablet, and touch screens, letting you resize crop markers with your fingers.</p>
-              </div>
-            </div>
-            <div class="flex gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-100">
-              <div class="text-2xl">🔒</div>
-              <div>
-                <h4 class="font-bold text-slate-900 text-sm mb-1">Assured Sandbox Privacy</h4>
-                <p class="text-slate-500 text-xs leading-relaxed">All operations run locally in your browser. We never save, upload, or track your images.</p>
-              </div>
-            </div>
-            <div class="flex gap-2 p-5 bg-slate-50 rounded-2xl border border-slate-100">
-              <div class="text-2xl">💻</div>
-              <div>
-                <h4 class="font-bold text-[#0F172A] text-sm mb-1">Clean Grid lines</h4>
-                <p class="text-slate-500 text-xs leading-relaxed">Displays a standard Rule of Thirds grid template overlay to help compose photos professionally.</p>
-              </div>
-            </div>
-            <div class="flex gap-2 p-5 bg-slate-50 rounded-2xl border border-slate-100">
-              <div class="text-2xl">⚡</div>
-              <div>
-                <h4 class="font-bold text-[#0F172A] text-sm mb-1">Instant Re-compiling</h4>
-                <p class="text-slate-500 text-xs leading-relaxed">Converts and saves files instantly with high-speed browser-based Canvas rendering.</p>
-              </div>
-            </div>
+        <div class="relative pl-6 border-l border-[#E4E4E7] space-y-8 ml-3">
+          <!-- Step 1 -->
+          <div class="relative">
+            <span class="absolute -left-[35px] top-0.5 w-5 h-5 rounded-full bg-[#F5F3FF] border border-[#DDD6FE] text-[#7C3AED] text-[10px] font-bold flex items-center justify-center">1</span>
+            <h3 class="text-sm font-semibold text-[#09090B]">Add Graphic Assets</h3>
+            <p class="text-xs text-[#52525B] mt-1 font-sans leading-relaxed">Load your desired image files directly within the local sandbox targets securely.</p>
+          </div>
+          <!-- Step 2 -->
+          <div class="relative">
+            <span class="absolute -left-[35px] top-0.5 w-5 h-5 rounded-full bg-[#F5F3FF] border border-[#DDD6FE] text-[#7C3AED] text-[10px] font-bold flex items-center justify-center">2</span>
+            <h3 class="text-sm font-semibold text-[#09090B]">Target Area Layouts</h3>
+            <p class="text-xs text-[#52525B] mt-1 font-sans leading-relaxed">Lock the aspect ratios if desired, then drag on edge handles to frame grid intersections.</p>
+          </div>
+          <!-- Step 3 -->
+          <div class="relative">
+            <span class="absolute -left-[35px] top-0.5 w-5 h-5 rounded-full bg-[#F5F3FF] border border-[#DDD6FE] text-[#7C3AED] text-[10px] font-bold flex items-center justify-center">3</span>
+            <h3 class="text-sm font-semibold text-[#09090B]">Export Refined Bounds</h3>
+            <p class="text-xs text-[#52525B] mt-1 font-sans leading-relaxed">Confirm your selections, execute local canvas render loops, and download outputs.</p>
           </div>
         </div>
-
-        <!-- SECTION C: Frequently Asked Questions -->
-        <div>
-          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-6 text-center">Frequently Asked Questions</h2>
-          <div class="space-y-4">
-            <details class="group bg-slate-50 border border-slate-200 rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
-              <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
-                <h3 class="font-bold text-slate-900 text-base">Does cropping an image reduce its final resolution?</h3>
-                <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-slate-950 shadow-sm transition group-open:rotate-180">
-                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-                </span>
-              </summary>
-              <p class="mt-4 text-slate-500 text-sm leading-relaxed">
-                Yes, cropping maps out a subset of the original pixel coordinate block, reducing dimensions proportional to the crop box. However, we preserve the original pixels and never upscale artificially, keeping your final image crisp and unblurred.
-              </p>
-            </details>
-
-            <details class="group bg-slate-50 border border-slate-200 rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
-              <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
-                <h3 class="font-bold text-slate-900 text-base">What are the predefined aspect ratio selections?</h3>
-                <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-slate-950 shadow-sm transition group-open:rotate-180">
-                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-                </span>
-              </summary>
-              <p class="mt-4 text-slate-500 text-sm leading-relaxed">
-                We support preset standard layouts: 1:1, 16:9, 4:3, 3:2, 2:3, and 9:16. Selecting a preset locks the crop box proportions. Dragging any handle adapts the opposite side automatically. Free Form allows unrestricted adjustments.
-              </p>
-            </details>
-
-            <details class="group bg-slate-50 border border-slate-200 rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
-              <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
-                <h3 class="font-bold text-slate-900 text-base">Are my cropped images sent to remote databases?</h3>
-                <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-slate-950 shadow-sm transition group-open:rotate-180">
-                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-                </span>
-              </summary>
-              <p class="mt-4 text-slate-500 text-sm leading-relaxed">
-                Never. Toolifya runs entirely offline. All cropping operations, adjustments, and exports are processed inside your device's memory using secure Javascript canvas APIs.
-              </p>
-            </details>
-          </div>
-        </div>
-
-        <!-- SECTION D: More Free Image Tools -->
-        <div class="border-t border-slate-100 pt-16">
-          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-8 text-center">More Free Image Tools</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div class="bg-slate-50 hover:bg-slate-100/50 rounded-2xl p-6 border border-slate-100 flex flex-col justify-between hover:shadow-md transition-all">
-              <div>
-                <h4 class="font-bold text-slate-950 mb-2">Image Compressor</h4>
-                <p class="text-slate-500 text-xs mb-4">Compress files down to specific size targets in KB.</p>
-              </div>
-              <a href="image-compressor.html" class="text-xs font-semibold text-brand-primary hover:underline">Try Tool &rarr;</a>
-            </div>
-            <div class="bg-slate-50 hover:bg-slate-100/50 rounded-2xl p-6 border border-slate-100 flex flex-col justify-between hover:shadow-md transition-all">
-              <div>
-                <h4 class="font-bold text-slate-950 mb-2">Image Resizer</h4>
-                <p class="text-slate-500 text-xs mb-4">Resize photos using social layouts or custom pixel ranges.</p>
-              </div>
-              <a href="image-resizer.html" class="text-xs font-semibold text-brand-primary hover:underline">Try Tool &rarr;</a>
-            </div>
-            <div class="bg-slate-50 hover:bg-slate-100/50 rounded-2xl p-6 border border-slate-100 flex flex-col justify-between hover:shadow-md transition-all">
-              <div>
-                <h4 class="font-bold text-slate-950 mb-2">Image to PDF</h4>
-                <p class="text-slate-500 text-xs mb-4">Combine multiple graphics into clean, structured PDF documents.</p>
-              </div>
-              <a href="image-to-pdf.html" class="text-xs font-semibold text-brand-primary hover:underline">Try Tool &rarr;</a>
-            </div>
-          </div>
-        </div>
-
       </section>
 
-      <!-- AD Placeholder Footer -->
-      <div class="w-full text-center bg-slate-50 border border-slate-100 rounded-2xl py-2 px-4 mt-20 text-xs text-slate-400 font-mono tracking-wider">
-        <span>ADVERTISEMENT</span>
-        <div class="w-full max-w-[728px] h-20 bg-slate-200/40 border border-dashed border-slate-200 rounded mx-auto flex items-center justify-center text-slate-400 mt-1">
-          Responsive Banner Footer (728x90)
+      <!-- Accurate FAQs accordion list -->
+      <section class="mt-16 border-t border-[#E4E4E7] pt-12">
+        <div class="mb-6">
+          <h2 class="text-sm font-bold uppercase tracking-wider text-[#09090B]">Frequently Asked Questions</h2>
+          <p class="text-xs text-[#A1A1AA] mt-1">Slicing graphics queries.</p>
         </div>
+
+        <div class="space-y-1">
+          <details class="group bg-transparent">
+            <summary class="flex items-center justify-between cursor-pointer focus:outline-none py-3.5 border-b border-[#E4E4E7]">
+              <h3 class="font-medium text-xs md:text-sm text-[#09090B]">Will cropping compress the graphic quality?</h3>
+              <span class="text-[#A1A1AA] group-open:rotate-180 transition-transform">
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </span>
+            </summary>
+            <div class="py-3.5 text-xs text-[#52525B] leading-relaxed">
+              No. Slicing only changes the width/height coordinates without running standard destructive artifacts over the visual frame.
+            </div>
+          </details>
+
+          <details class="group bg-transparent">
+            <summary class="flex items-center justify-between cursor-pointer focus:outline-none py-3.5 border-b border-[#E4E4E7]">
+              <h3 class="font-medium text-xs md:text-sm text-[#09090B]">What standard preset bounds are provided?</h3>
+              <span class="text-[#A1A1AA] group-open:rotate-180 transition-transform">
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </span>
+            </summary>
+            <div class="py-3.5 text-xs text-[#52525B] leading-relaxed">
+              We contain instant rules: 1:1, 16:9, 4:3, 3:2, and 9:16. Free form parameters allow dragging border grids completely unconstrained.
+            </div>
+          </details>
+
+          <details class="group bg-transparent">
+            <summary class="flex items-center justify-between cursor-pointer focus:outline-none py-3.5 border-b border-[#E4E4E7]">
+              <h3 class="font-medium text-xs md:text-sm text-[#09090B]">Are transparent buffers supported?</h3>
+              <span class="text-[#A1A1AA] group-open:rotate-180 transition-transform">
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </span>
+            </summary>
+            <div class="py-3.5 text-xs text-[#52525B] leading-relaxed">
+              Yes, setting WebP or PNG as your crop export destination targets returns flawless transparencies back, whereas JPEG overlays white backups.
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- Clean tools links -->
+      <section class="mt-16 border-t border-[#E4E4E7] pt-12">
+        <h2 class="text-xs font-bold text-[#09090B] uppercase tracking-wider mb-5">More Tools</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <a href="image-compressor.html" class="block bg-white border border-[#E4E4E7] p-4 rounded-xl hover:border-[#7C3AED] hover:shadow-[0_0_0_3px_rgba(124,58,237,0.08)] transition-all">
+            <h4 class="text-xs font-bold text-[#09090B]">Image Compressor</h4>
+            <p class="text-[11px] text-[#52525B] mt-1 leading-relaxed">Compress file structures down to targeted custom KB ranges.</p>
+          </a>
+          <a href="image-resizer.html" class="block bg-white border border-[#E4E4E7] p-4 rounded-xl hover:border-[#7C3AED] hover:shadow-[0_0_0_3px_rgba(124,58,237,0.08)] transition-all">
+            <h4 class="text-xs font-bold text-[#09090B]">Image Resizer</h4>
+            <p class="text-[11px] text-[#52525B] mt-1 leading-relaxed">Alter image height/width scales easily under custom bounds.</p>
+          </a>
+          <a href="jpg-to-png.html" class="block bg-white border border-[#E4E4E7] p-4 rounded-xl hover:border-[#7C3AED] hover:shadow-[0_0_0_3px_rgba(124,58,237,0.08)] transition-all">
+            <h4 class="text-xs font-bold text-[#09090B]">JPG to PNG</h4>
+            <p class="text-[11px] text-[#52525B] mt-1 leading-relaxed">Reformat lossy JPG graphics to transparent PNG shapes instantly.</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- AD Placeholder Footer slot -->
+      <div class="ad-slot mt-16">
+        AdSterra / AdSense Placeholder (728x90)
       </div>
 
     </main>
 
     <!-- Footer -->
-    <footer class="bg-[#0A0A0A] text-white pt-16 pb-8 px-6 md:px-12 mt-24">
-      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-neutral-850">
+    <footer class="bg-[#09090B] text-white pt-12 pb-8 px-6 md:px-12 mt-24">
+      <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-8 border-b border-[#27272A]">
         <div>
-          <a href="index.html" class="text-2xl font-extrabold tracking-tight hover:opacity-90 flex items-center gap-2 mb-4">
-            <span class="text-brand-cyan">⚡</span>Toolifya
+          <a href="index.html" class="text-base font-semibold tracking-tight hover:opacity-90">
+            Toolifya<span class="text-[#7C3AED]">.</span>
           </a>
-          <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
-            Free Online Image Tools — Fast, Simple, No Signup. High performance client processing for worldwide developers and content editors.
+          <p class="text-[#71717A] text-xs mt-1.5 font-sans">
+            Free image tools. No signup.
           </p>
-          <div class="mt-4 text-xs font-semibold text-brand-cyan uppercase tracking-wider">
-            Fast. Free. No Signup Required.
-          </div>
         </div>
-        
-        <div>
-          <h3 class="text-sm font-bold uppercase tracking-widest text-[#06B6D4] mb-4">Quick Links</h3>
-          <ul class="space-y-2.5 text-slate-400 text-sm">
-            <li><a href="index.html" class="hover:text-white transition-colors">Home Dashboard</a></li>
-            <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
-            <li><a href="image-compressor.html" class="hover:text-white transition-colors">Image Compressor</a></li>
-            <li><a href="image-resizer.html" class="hover:text-white transition-colors">Sizing Toolkit</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="text-sm font-bold uppercase tracking-widest text-[#06B6D4] mb-4">Legal Operations</h3>
-          <ul class="space-y-2.5 text-slate-400 text-sm">
-            <li><a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
-            <li><a href="about.html#contact" class="hover:text-white transition-colors">Developer Contact</a></li>
-          </ul>
+        <div class="flex flex-wrap gap-x-4 gap-y-2 text-xs text-[#71717A]">
+          <a href="index.html" class="hover:text-white transition-colors">Home</a>
+          <span class="text-[#27272A]">•</span>
+          <a href="index.html" class="hover:text-white transition-colors">Tools</a>
+          <span class="text-[#27272A]">•</span>
+          <a href="about.html" class="hover:text-white transition-colors">About</a>
+          <span class="text-[#27272A]">•</span>
+          <a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
         </div>
       </div>
-      
-      <div class="max-w-7xl mx-auto pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+      <div class="max-w-5xl mx-auto pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-[#52525B] gap-4">
         <div>
-          &copy; 2026 Toolifya. All rights reserved. Built with pure browser technology.
+          &copy; 2026 Toolifya.
         </div>
         <div>
-          Domain: <a href="https://toolifya.site" class="hover:text-white transition-all underline">https://toolifya.site</a>
+          Made with ♥ for the web
         </div>
       </div>
     </footer>
@@ -412,9 +337,9 @@
         },
         {
           "@type": "WebApplication",
-          "@id": "https://toolifya.site/image-crop.html#app",
+          "@id": "https://toolifya.site/image-crop#app",
           "name": "Image Crop Tool",
-          "url": "https://toolifya.site/image-crop.html",
+          "url": "https://toolifya.site/image-crop",
           "description": "Crop images online for free with precise control. Choose aspect ratios like 1:1, 16:9, 4:3 or crop freely.",
           "applicationCategory": "UtilitiesApplication",
           "operatingSystem": "Windows, macOS, Linux, Android, iOS, ChromeOS",
@@ -441,7 +366,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "Image Crop Tool",
-              "item": "https://toolifya.site/image-crop.html"
+              "item": "https://toolifya.site/image-crop"
             }
           ]
         }
@@ -449,7 +374,7 @@
     }
     </script>
 
-    <!-- Cropping Interactive JS Logic -->
+    <!-- Cropping Interactive JS Handle logic loop -->
     <script type="module" defer>
       import { initNavbar, downloadFile } from '/src/utils.js';
       initNavbar();
@@ -467,27 +392,24 @@
       const successPanel = document.getElementById('success-panel');
       const processAnotherBtn = document.getElementById('process-another-btn');
 
-      // Draggable Crop Parameters State
       let imageObj = null;
-      let ratioLock = 'free'; // 'free', '1:1', '16:9', etc.
-      let imgScale = 1; // scale of rendered canvas relative to natural dimensions
+      let ratioLock = 'free';
+      let imgScale = 1;
 
-      // Crop box coordinates (rendered pixel spaces)
       let cropBox = { x: 50, y: 50, w: 200, h: 150 };
       const handleSize = 10;
-      let activeHandle = null; // 'nw', 'n', 'ne', 'e', 'se', 's', 'sw', 'w', 'move'
+      let activeHandle = null;
       let isDragging = false;
       let startMouse = { x: 0, y: 0 };
       let startCropBox = {};
 
-      // Initialize ratios listeners
       document.querySelectorAll('.ratio-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-          document.querySelectorAll('.ratio-btn').forEach(b => b.classList.replace('bg-[#7C3AED]', 'bg-white'));
-          document.querySelectorAll('.ratio-btn').forEach(b => b.classList.replace('text-white', 'text-slate-705'));
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.ratio-btn').forEach(b => {
+            b.className = 'ratio-btn px-3 py-1.5 text-xs font-semibold rounded-md bg-[#F4F4F5] text-[#52525B] hover:text-[#09090B] border border-[#E4E4E7] duration-150 transition-all cursor-pointer';
+          });
           
-          btn.classList.replace('bg-white', 'bg-[#7C3AED]');
-          btn.classList.add('text-white');
+          btn.className = 'ratio-btn px-3 py-1.5 text-xs font-semibold rounded-md bg-[#09090B] text-white border border-[#09090B] hover:opacity-90 duration-150 transition-all cursor-pointer';
 
           ratioLock = btn.getAttribute('data-ratio');
           resetCropBoxDefault();
@@ -495,12 +417,11 @@
         });
       });
 
-      // Events for dragging the crop box
       ['dragenter', 'dragover'].forEach(name => {
-        uploadZone.addEventListener(name, (e) => { e.preventDefault(); uploadZone.classList.add('bg-violet-50', 'border-[#7C3AED]'); });
+        uploadZone.addEventListener(name, (e) => { e.preventDefault(); uploadZone.classList.add('bg-[#F5F3FF]', 'border-[#7C3AED]'); });
       });
       ['dragleave', 'drop'].forEach(name => {
-        uploadZone.addEventListener(name, (e) => { e.preventDefault(); uploadZone.classList.remove('bg-violet-50', 'border-[#7C3AED]'); });
+        uploadZone.addEventListener(name, (e) => { e.preventDefault(); uploadZone.classList.remove('bg-[#F5F3FF]', 'border-[#7C3AED]'); });
       });
 
       uploadZone.addEventListener('drop', (e) => {
@@ -588,48 +509,39 @@
         cropDimsBadge.textContent = realW + ' \u00D7 ' + realH + ' px';
       }
 
-      // Draw loop handling crop boxes
       function drawCanvas() {
         if (!imageObj) return;
 
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        
-        // Draw main image on stage
         ctx.drawImage(imageObj, 0, 0, canvas.width, canvas.height);
 
-        // Overlay darken
         ctx.fillStyle = 'rgba(0,0,0,0.55)';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-        // Draw selection viewport
         ctx.drawImage(imageObj, 
           cropBox.x * imgScale, cropBox.y * imgScale, cropBox.w * imgScale, cropBox.h * imgScale,
           cropBox.x, cropBox.y, cropBox.w, cropBox.h
         );
 
-        // Wireframe border
         ctx.strokeStyle = '#7C3AED';
         ctx.lineWidth = 2.5;
         ctx.strokeRect(cropBox.x, cropBox.y, cropBox.w, cropBox.h);
 
-        // Rule of thirds lines
         ctx.strokeStyle = 'rgba(255, 255, 255, 0.35)';
         ctx.lineWidth = 1;
 
-        // Verticals
         ctx.beginPath();
         ctx.moveTo(cropBox.x + cropBox.w / 3, cropBox.y);
         ctx.lineTo(cropBox.x + cropBox.w / 3, cropBox.y + cropBox.h);
         ctx.moveTo(cropBox.x + (cropBox.w * 2) / 3, cropBox.y);
         ctx.lineTo(cropBox.x + (cropBox.w * 2) / 3, cropBox.y + cropBox.h);
-        // Horizontals
+        
         ctx.moveTo(cropBox.x, cropBox.y + cropBox.h / 3);
         ctx.lineTo(cropBox.x + cropBox.w, cropBox.y + cropBox.h / 3);
         ctx.moveTo(cropBox.x, cropBox.y + (cropBox.h * 2) / 3);
         ctx.lineTo(cropBox.x + cropBox.w, cropBox.y + (cropBox.h * 2) / 3);
         ctx.stroke();
 
-        // Corner control tags
         drawHandles();
       }
 
@@ -666,7 +578,6 @@
         };
       }
 
-      // Interaction coordinates mapping
       function detectHit(mx, my) {
         const pts = getHandlePts();
         let hit = null;
@@ -681,7 +592,6 @@
 
         if (hit) return hit;
 
-        // Inside drag bounding box
         if (mx > cropBox.x && mx < cropBox.x + cropBox.w && my > cropBox.y && my < cropBox.y + cropBox.h) {
           return 'move';
         }
@@ -689,7 +599,6 @@
         return null;
       }
 
-      // Setup interaction event listeners
       function getMousePos(e) {
         const rect = canvas.getBoundingClientRect();
         const clientX = e.touches ? e.touches[0].clientX : e.clientX;
@@ -726,7 +635,6 @@
           nb.x = Math.max(0, Math.min(canvas.width - nb.w, nb.x + dx));
           nb.y = Math.max(0, Math.min(canvas.height - nb.h, nb.y + dy));
         } else {
-          // Resize handle modifiers
           if (ratioLock === 'free') {
             modifyBoxFree(nb, activeHandle, dx, dy);
           } else {
@@ -734,7 +642,6 @@
           }
         }
 
-        // Constraints check
         if (nb.w > 15 && nb.h > 15 && nb.x >= 0 && nb.y >= 0 && (nb.x + nb.w) <= canvas.width && (nb.y + nb.h) <= canvas.height) {
           cropBox = nb;
           updateDimsBadge();
@@ -798,7 +705,6 @@
       canvas.addEventListener('touchmove', onMove, { passive: false });
       window.addEventListener('touchend', onEnd);
 
-      // Perform slice & crop download
       cropTriggerBtn.addEventListener('click', () => {
         if (!imageObj) return;
 
@@ -812,7 +718,6 @@
         destCanvas.height = realH;
         const destCtx = destCanvas.getContext('2d');
 
-        // Draw selection segment onto physical output
         destCtx.drawImage(imageObj, 
           realX, realY, realW, realH,
           0, 0, realW, realH
@@ -839,7 +744,6 @@
         successPanel.classList.add('hidden');
         fileInput.value = '';
       });
-
     </script>
   </body>
 </html>

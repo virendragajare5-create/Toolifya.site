@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
-    <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
-    </noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -22,13 +18,13 @@
     <title>Image Resizer Online Free — Resize Images Instantly | Toolifya</title>
     <meta name="description" content="Resize images online for free. Change dimensions by pixels, percentage or social media presets. Supports JPG, PNG, WebP. No signup needed." />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <link rel="canonical" href="https://toolifya.site/image-resizer.html" />
+    <link rel="canonical" href="https://toolifya.site/image-resizer" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Image Resizer Online Free — Resize Images Instantly | Toolifya" />
     <meta property="og:description" content="Resize images online for free. Change dimensions by pixels, percentage or social media presets. Supports JPG, PNG, WebP. No signup needed." />
-    <meta property="og:url" content="https://toolifya.site/image-resizer.html" />
+    <meta property="og:url" content="https://toolifya.site/image-resizer" />
     <meta property="og:image" content="https://toolifya.site/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -42,9 +38,6 @@
     <meta name="twitter:image" content="https://toolifya.site/og-image.png" />
     <meta name="twitter:site" content="@toolifya" />
 
-    <!-- Performance hints -->
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-
     <!-- Styles -->
     <link rel="stylesheet" href="/src/index.css" />
 
@@ -52,234 +45,216 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7108819443201963"
          crossorigin="anonymous"></script>
   </head>
-  <body class="bg-white text-[#0F172A] min-h-screen flex flex-col font-sans">
+  <body class="bg-[#FAFAFA] text-[#09090B] min-h-screen flex flex-col font-sans">
     
     <!-- Navbar -->
-    <header class="sticky top-0 z-50 bg-[#0A0A0A] text-white py-4 px-6 md:px-12 flex justify-between items-center shadow-lg">
+    <header class="h-14 bg-[#09090B] border-b border-[#1C1C1E] text-white px-6 md:px-12 flex justify-between items-center sticky top-0 z-50">
       <div class="flex items-center gap-3">
-        <a href="index.html" class="text-xl md:text-2xl font-extrabold tracking-tight hover:opacity-90 flex items-center gap-2">
-          <span class="text-brand-cyan">⚡</span>Toolifya
+        <a href="index.html" class="text-base font-semibold tracking-tight hover:opacity-90 flex items-center">
+          Toolifya<span class="text-[#7C3AED] ml-0.5">.</span>
         </a>
       </div>
       
-      <!-- Mobile Toggle -->
-      <button id="nav-toggle" class="md:hidden text-white hover:text-brand-cyan focus:outline-none">
-        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-          <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
-        </svg>
-      </button>
-
-      <nav id="nav-menu" class="hidden md:flex flex-col md:flex-row absolute md:relative top-full left-0 w-full md:w-auto bg-[#0A0A0A] md:bg-transparent p-6 md:p-0 gap-6 items-start md:items-center border-t border-neutral-800 md:border-0">
-        <div class="relative group">
-          <button id="tools-dropdown-btn" class="flex items-center gap-1 font-medium text-brand-cyan hover:text-brand-cyan transition-colors">
-            All Tools
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-          </button>
-          
-          <ul id="tools-dropdown" class="hidden absolute left-0 mt-2 w-56 bg-white text-slate-800 rounded-xl shadow-xl border border-slate-100 overflow-hidden py-1 z-50">
-            <li><a href="image-compressor.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">⚡ Image Compressor</a></li>
-            <li><a href="image-resizer.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-bold transition-colors">↕️ Image Resizer</a></li>
-            <li><a href="image-crop.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">✂️ Image Crop Tool</a></li>
-            <li><a href="jpg-to-png.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">🖼️ JPG to PNG Converter</a></li>
-            <li><a href="png-to-jpg.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">🎨 PNG to JPG Converter</a></li>
-            <li><a href="webp-converter.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">🕸️ WebP Converter</a></li>
-            <li><a href="image-to-pdf.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">📄 Image to PDF</a></li>
-          </ul>
-        </div>
-        <a href="about.html" class="font-medium hover:text-brand-cyan transition-colors">About Us</a>
-        <a href="privacy-policy.html" class="font-medium hover:text-brand-cyan transition-colors">Privacy Policy</a>
+      <!-- Nav List -->
+      <nav id="nav-menu" class="hidden md:flex flex-col md:flex-row absolute md:relative top-full left-0 w-full md:w-auto bg-[#09090B] md:bg-transparent p-6 md:p-0 gap-4 md:gap-6 items-start md:items-center border-b border-[#1C1C1E] md:border-0 z-50">
+        <a href="index.html" class="text-sm font-medium text-[#A1A1AA] hover:text-white transition-colors w-full md:w-auto">All Tools</a>
+        <a href="about.html" class="text-sm font-medium text-[#A1A1AA] hover:text-white transition-colors w-full md:w-auto">About</a>
+        <a href="privacy-policy.html" class="text-sm font-medium text-[#A1A1AA] hover:text-white transition-colors w-full md:w-auto">Privacy Policy</a>
+        <a href="image-compressor.html" class="md:hidden text-[#7C3AED] font-semibold text-sm w-full pt-2 border-t border-[#1C1C1E]">Try Free →</a>
       </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="image-compressor.html" class="hidden md:inline-flex items-center text-sm text-white border border-[#3F3F46] rounded-md px-3.5 py-1.5 hover:bg-[#1C1C1E] transition-all font-medium">Try Free →</a>
+        <!-- Mobile Toggle -->
+        <button id="nav-toggle" class="md:hidden text-[#A1A1AA] hover:text-white focus:outline-none" aria-label="Toggle navigation">
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
     </header>
 
-    <!-- Breadcrumb -->
-    <div class="bg-slate-50 border-b border-slate-100 py-3 px-6 md:px-12 text-sm text-slate-500">
-      <div class="max-w-7xl mx-auto flex items-center gap-2">
-        <a href="index.html" class="hover:text-brand-primary transition-colors">Home</a>
-        <span>&rsaquo;</span>
-        <span class="text-slate-400">Image Tools</span>
-        <span>&rsaquo;</span>
-        <span class="text-slate-800 font-medium">Image Resizer</span>
-      </div>
-    </div>
-
-    <!-- Main Workspace -->
-    <main class="max-w-7xl mx-auto px-6 py-12 flex-grow w-full">
+    <!-- Main Container -->
+    <main class="max-w-2xl mx-auto px-6 py-12 flex-grow w-full">
       
-      <!-- AD Placement -->
-      <div class="w-full text-center bg-slate-50 border border-slate-100 rounded-2xl py-2 px-4 mb-10 text-xs text-slate-400 font-mono tracking-wider">
-        <span>ADVERTISEMENT SPACE</span>
-        <div class="w-full max-w-[728px] h-20 bg-slate-200/40 border border-dashed border-slate-200 rounded mx-auto flex items-center justify-center text-slate-400 mt-1">
-          AdSterra / AdSense Resizer Banner
-        </div>
-      </div>
+      <!-- Breadcrumb -->
+      <nav class="flex items-center gap-1 text-[13px] text-[#A1A1AA] mb-4 font-medium">
+        <a href="index.html" class="hover:text-[#09090B] transition-colors">Home</a>
+        <span>/</span>
+        <span class="text-[#09090B]">Image Resizer</span>
+      </nav>
 
       <!-- Title / Header -->
-      <div class="text-center max-w-3xl mx-auto mb-12">
-        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-4">
-          Image Resizer — Resize Images Online Free
+      <div class="mb-8">
+        <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight text-[#09090B]">
+          Image Resizer
         </h1>
-        <p class="text-slate-500 text-base md:text-lg">
-          Change graphic pixel ratios, scale dimensions by percentages, or auto-fit pre-compiled configurations matching high priority Instagram, Facebook, and YouTube sizes instantly.
+        <p class="text-[14px] text-[#52525B] mt-1.5 leading-relaxed font-sans">
+          Easily resize image dimensions by pixels, percentage scale, or lock coordinates to specific social presets.
         </p>
       </div>
 
-      <!-- Main Interaction Dashboard -->
-      <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-10 shadow-[0_12px_48px_rgba(0,0,0,0.03)] mb-16 max-w-4xl mx-auto">
+      <!-- Sponsored Ad -->
+      <div class="ad-slot my-6">
+        AdSterra / AdSense Placeholder (728x90)
+      </div>
+
+      <!-- Workspace Card -->
+      <div class="bg-white border border-[#E4E4E7] rounded-2xl p-6 md:p-8 shadow-sm">
         
-        <!-- Upload Box -->
-        <div id="upload-zone" class="border-2 border-dashed border-slate-300 hover:border-brand-primary hover:bg-slate-50/50 rounded-2xl p-8 md:p-12 text-center cursor-pointer transition-all duration-300 relative group">
-          <input type="file" id="file-input" accept="image/jpeg, image/png, image/webp" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
-          <div class="flex flex-col items-center gap-4">
-            <div class="w-16 h-16 bg-cyan-50 text-[#06B6D4] rounded-full flex items-center justify-center text-3xl transition-transform group-hover:scale-110">
-              ↕️
+        <!-- Upload Tray -->
+        <div id="upload-zone" class="border-[1.5px] border-dashed border-[#D4D4D8] rounded-xl bg-[#F4F4F5] p-10 text-center cursor-pointer transition-all duration-200 relative group">
+          <input type="file" id="file-input" accept="image/jpeg, image/png, image/webp" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" />
+          <div class="flex flex-col items-center gap-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center text-2xl transition-transform duration-200 group-hover:-translate-y-0.5">
+              <svg class="h-8 w-8 text-[#A1A1AA] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5h10.5" />
+              </svg>
             </div>
             <div>
-              <p class="text-lg font-bold text-slate-900 mb-1">Upload the image to resize</p>
-              <p class="text-slate-500 text-sm">Drag &amp; drop here or click to browse files</p>
+              <p class="text-[14px] font-medium text-[#09090B]">Upload the image to resize</p>
+              <p class="text-xs text-[#A1A1AA] mt-0.5">or click to browse</p>
             </div>
-            <div class="flex flex-wrap justify-center gap-2 mt-1">
-              <span class="bg-slate-100 text-slate-600 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">JPEG</span>
-              <span class="bg-slate-100 text-slate-600 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">PNG</span>
-              <span class="bg-slate-100 text-slate-600 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">WebP</span>
+            <div class="flex gap-1.5 mt-1">
+              <span class="bg-white border border-[#E4E4E7] text-[#A1A1AA] text-[10px] font-semibold px-2 py-0.5 rounded uppercase tracking-wider">JPG</span>
+              <span class="bg-white border border-[#E4E4E7] text-[#A1A1AA] text-[10px] font-semibold px-2 py-0.5 rounded uppercase tracking-wider">PNG</span>
+              <span class="bg-white border border-[#E4E4E7] text-[#A1A1AA] text-[10px] font-semibold px-2 py-0.5 rounded uppercase tracking-wider">WebP</span>
             </div>
           </div>
         </div>
 
-        <!-- Resize Settings Workspace (Hidden until uploaded) -->
-        <div id="settings-panel" class="hidden mt-8 pt-8 border-t border-slate-100 space-y-6">
-          <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center bg-slate-50 p-4 rounded-xl border border-slate-100 gap-2">
+        <!-- Settings Dashboard (Initially Hidden) -->
+        <div id="settings-panel" class="hidden mt-6 pt-6 border-t border-[#E4E4E7] space-y-5">
+          <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center bg-[#FAFAFA] p-3 border border-[#E4E4E7] rounded-lg gap-2">
             <div>
-              <p class="text-xs text-slate-400 font-bold uppercase tracking-wider">Detected Metadata</p>
-              <p id="loaded-filename" class="text-sm font-bold text-slate-800 break-all"></p>
+              <p class="text-[10px] text-[#A1A1AA] font-bold uppercase tracking-wider">File Name</p>
+              <p id="loaded-filename" class="text-xs font-semibold text-[#09090B] break-all"></p>
             </div>
-            <div class="bg-indigo-50 text-brand-primary text-xs font-bold px-3 py-1.5 rounded-lg">
+            <div class="bg-[#F5F3FF] text-[#7C3AED] text-[10px] font-bold px-2.5 py-1 rounded-md border border-[#EDE9FE] whitespace-nowrap">
               Original: <span id="original-dims" class="font-mono">0 &times; 0 px</span>
             </div>
           </div>
 
-          <!-- Modality Tabs -->
+          <!-- Modality tab -->
           <div>
-            <label class="text-xs text-slate-400 font-bold uppercase tracking-wider block mb-2">Adjust Dimensions By</label>
-            <div class="grid grid-cols-3 gap-2 bg-slate-100 p-1 rounded-xl">
-              <button id="tab-pixels" class="py-2.5 text-xs md:text-sm font-bold rounded-lg text-brand-primary bg-white shadow-sn focus:outline-none transition-all">
+            <label class="text-[11px] text-[#52525B] font-semibold uppercase tracking-wider block mb-2">Resize Mode</label>
+            <div class="grid grid-cols-3 gap-1 bg-[#F4F4F5] p-1 rounded-lg border border-[#E4E4E7]">
+              <button id="tab-pixels" class="py-1.5 text-xs font-semibold rounded-md text-[#7C3AED] bg-white shadow-xs focus:outline-none transition-all">
                 Pixels (px)
               </button>
-              <button id="tab-percent" class="py-2.5 text-xs md:text-sm font-semibold rounded-lg text-slate-600 hover:text-slate-800 focus:outline-none transition-all">
-                Percentage (%)
+              <button id="tab-percent" class="py-1.5 text-xs font-medium rounded-md text-[#52525B] hover:text-[#09090B] focus:outline-none transition-all">
+                Scale (%)
               </button>
-              <button id="tab-presets" class="py-2.5 text-xs md:text-sm font-semibold rounded-lg text-slate-600 hover:text-slate-800 focus:outline-none transition-all">
-                Social Presets
+              <button id="tab-presets" class="py-1.5 text-xs font-medium rounded-md text-[#52525B] hover:text-[#09090B] focus:outline-none transition-all">
+                Presets
               </button>
             </div>
           </div>
 
-          <!-- GROUP A: Pixels Mode -->
-          <div id="group-pixels" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div class="space-y-2">
-              <label class="text-xs font-bold text-slate-600 block">Height (pixels)</label>
-              <input type="number" id="input-height" class="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl font-mono text-sm focus:outline-none focus:ring-2 focus:ring-brand-primary text-slate-800" />
+          <!-- GROUP A: Pixels -->
+          <div id="group-pixels" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div class="space-y-1">
+              <label class="text-[11px] font-medium text-[#52525B] block">Width (px)</label>
+              <input type="number" id="input-width" class="w-full px-3 py-1.8 bg-white border border-[#E4E4E7] rounded-md font-mono text-xs focus:outline-none focus:border-[#7C3AED] focus:ring-2 focus:ring-[#7C3AED]/10 text-[#09090B]" />
             </div>
-            <div class="space-y-2">
-              <label class="text-xs font-bold text-slate-600 block">Width (pixels)</label>
-              <input type="number" id="input-width" class="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl font-mono text-sm focus:outline-none focus:ring-2 focus:ring-brand-primary text-slate-800" />
+            <div class="space-y-1">
+              <label class="text-[11px] font-medium text-[#52525B] block">Height (px)</label>
+              <input type="number" id="input-height" class="w-full px-3 py-1.8 bg-white border border-[#E4E4E7] rounded-md font-mono text-xs focus:outline-none focus:border-[#7C3AED] focus:ring-2 focus:ring-[#7C3AED]/10 text-[#09090B]" />
             </div>
-            <div class="sm:col-span-2 flex items-center justify-between py-2 border-b border-dashed border-slate-100">
-              <span class="text-xs font-semibold text-slate-500">Lock Aspect Ratio constraint</span>
+            <div class="sm:col-span-2 flex items-center justify-between py-2 border-b border-dashed border-[#E4E4E7]">
+              <span class="text-xs text-[#52525B] font-medium">Constrain proportions (AR)</span>
               <label class="relative inline-flex items-center cursor-pointer">
                 <input type="checkbox" id="lock-ar" class="sr-only peer" checked>
-                <div class="w-11 h-6 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-brand-primary"></div>
+                <div class="w-9 h-5 bg-[#E4E4E7] peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#7C3AED]"></div>
               </label>
             </div>
           </div>
 
-          <!-- GROUP B: Percentage Scale Slider -->
-          <div id="group-percent" class="hidden space-y-4">
-            <div class="flex justify-between items-center text-sm">
-              <span class="font-semibold text-slate-600">Scale factor</span>
-              <span id="scale-val" class="font-mono font-bold text-brand-primary bg-violet-50 px-2.5 py-1 rounded">100%</span>
+          <!-- GROUP B: Percentage -->
+          <div id="group-percent" class="hidden space-y-3">
+            <div class="flex justify-between items-center text-xs">
+              <span class="font-semibold text-[#52525B]">Scale Percentage</span>
+              <span id="scale-val" class="font-mono font-bold text-[#7C3AED] bg-[#F5F3FF] px-2.5 py-0.5 rounded border border-[#EDE9FE]">100%</span>
             </div>
-            <input type="range" id="percent-slider" min="10" max="200" value="100" />
-            <div class="flex justify-between text-[11px] text-slate-400">
-              <span>Resize Smaller (10%)</span>
-              <span>Actual Size (100%)</span>
-              <span>Enlarge Larger (200%)</span>
+            <div>
+              <input type="range" id="percent-slider" min="10" max="200" value="100" class="w-full" />
             </div>
           </div>
 
-          <!-- GROUP C: Presets Drawer -->
-          <div id="group-presets" class="hidden space-y-3">
-            <label class="text-xs font-bold text-slate-600 block">Target Social Platform Ratio</label>
-            <select id="preset-select" class="w-full p-3.5 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-primary text-slate-805 font-medium cursor-pointer">
-              <option value="custom" disabled selected>-- Choose Preset --</option>
-              <option value="instagram-post">Instagram Square Post (1080 × 1080 px)</option>
-              <option value="instagram-story">Instagram Portrait Story (1080 × 1920 px)</option>
-              <option value="facebook-cover">Facebook Banner Cover (851 × 315 px)</option>
-              <option value="twitter-header">Twitter / X Header Cover (1500 × 500 px)</option>
-              <option value="youtube-thumbnail">YouTube Presenter Thumbnail (1280 × 720 px)</option>
-              <option value="linkedin-cover">LinkedIn Professional Banner (1584 × 396 px)</option>
-              <option value="whatsapp-dp">WhatsApp Contact Avatar (500 × 500 px)</option>
+          <!-- GROUP C: Social Presets -->
+          <div id="group-presets" class="hidden space-y-1.5">
+            <label class="text-[11px] font-medium text-[#52525B] block">Select Dimension Preset</label>
+            <select id="preset-select" class="w-full px-3 py-2 bg-white border border-[#E4E4E7] rounded-lg text-xs font-medium focus:outline-none focus:border-[#7C3AED] text-[#09090B] cursor-pointer">
+              <option value="custom" disabled selected>-- Select Profile Preset --</option>
+              <option value="instagram-post">Instagram Square (1080 &times; 1080 px)</option>
+              <option value="instagram-story">Instagram Portrait Story (1080 &times; 1920 px)</option>
+              <option value="facebook-cover">Facebook Cover Banner (851 &times; 315 px)</option>
+              <option value="twitter-header">Twitter / X Header Cover (1500 &times; 500 px)</option>
+              <option value="youtube-thumbnail">YouTube Thumbnail (1280 &times; 720 px)</option>
+              <option value="linkedin-cover">LinkedIn Banner Header (1584 &times; 396 px)</option>
+              <option value="whatsapp-dp">WhatsApp Avatar (500 &times; 500 px)</option>
             </select>
           </div>
 
-          <!-- Output Settings -->
-          <div class="border-t border-slate-100 pt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div class="space-y-2">
-              <label class="text-xs font-bold text-slate-650 block">Target Output Format</label>
-              <select id="select-format" class="w-full p-3.5 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-1 focus:ring-brand-primary text-slate-800 font-semibold cursor-pointer">
+          <!-- Target specs conversion options -->
+          <div class="border-t border-[#E4E4E7] pt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div class="space-y-1">
+              <label class="text-[11px] font-semibold text-[#52525B] block">Format Output</label>
+              <select id="select-format" class="w-full px-3 py-1.8 bg-white border border-[#E4E4E7] rounded-md text-xs focus:outline-none focus:border-[#7C3AED] text-[#09090B] font-medium cursor-pointer">
                 <option value="image/jpeg">JPEG (.jpg)</option>
-                <option value="image/png">PNG (.png) - Supports transparency</option>
-                <option value="image/webp">WebP (.webp) - Optimized Web Format</option>
+                <option value="image/png">PNG (.png) - Transparency</option>
+                <option value="image/webp">WebP (.webp)</option>
               </select>
             </div>
-            <div class="space-y-2">
-              <label class="text-xs font-bold text-slate-650 block">Estimated Resulting Dimensions</label>
-              <div class="bg-slate-50 border border-slate-100 text-slate-800 font-mono font-bold rounded-xl p-3 text-center text-sm flex items-center justify-center min-h-[50px]">
-                <span id="live-est-dims" class="text-brand-primary">0 &times; 0 px</span>
+            <div class="space-y-1">
+              <label class="text-[11px] font-semibold text-[#52525B] block">Estimated Dimensions</label>
+              <div class="bg-[#FAFAFA] border border-[#E4E4E7] text-[#7C3AED] font-mono font-bold rounded-md py-1.8 text-center text-xs flex items-center justify-center min-h-[34px]">
+                <span id="live-est-dims">0 &times; 0 px</span>
               </div>
             </div>
           </div>
 
           <!-- Trigger -->
-          <button id="resizer-btn" class="w-full bg-[#7C3AED] hover:bg-brand-hover text-white py-4 px-6 rounded-2xl font-bold tracking-wide shadow-md transition-all active:scale-[0.98] cursor-pointer">
+          <button id="resizer-btn" class="w-full bg-[#09090B] text-white font-medium py-2.5 px-4 rounded-lg hover:bg-[#1C1C1E] transition-all text-xs tracking-wide cursor-pointer">
             Resize &amp; Compile Output
           </button>
         </div>
 
-        <!-- Processing State (Hidden) -->
-        <div id="processing-loader" class="hidden mt-8 py-10 flex flex-col items-center justify-center gap-3">
-          <div class="animate-spin rounded-full h-10 w-10 border-4 border-slate-200 border-t-brand-primary"></div>
-          <span class="text-sm font-bold text-slate-600">Re-sampling pixels dynamically...</span>
+        <!-- Processing Loader -->
+        <div id="processing-loader" class="hidden mt-6 py-6 flex flex-col items-center justify-center gap-2.5 border-t border-[#E4E4E7]">
+          <div class="animate-spin rounded-full h-6 w-6 border-2 border-[#E4E4E7] border-t-[#7C3AED]"></div>
+          <span class="text-xs font-medium text-[#52525B]">Re-sampling pixels dynamically...</span>
         </div>
 
-        <!-- Processed Success Box (Hidden until compilation complete) -->
-        <div id="success-card" class="hidden mt-8 pt-8 border-t border-slate-200">
-          <div class="bg-emerald-50 border border-emerald-100 rounded-2xl p-6 text-center space-y-4">
-            <div class="w-12 h-12 bg-emerald-500 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto shadow-md">
+        <!-- Success Result Container -->
+        <div id="success-card" class="hidden mt-6 pt-6 border-t border-[#E4E4E7]">
+          <div class="bg-[#F0FDF4] border border-[#BBF7D0] rounded-xl p-5 text-center space-y-4">
+            <div class="w-8 h-8 bg-[#16A34A] text-white rounded-full flex items-center justify-center text-sm font-semibold mx-auto">
               ✓
             </div>
             <div>
-              <h3 class="text-lg font-bold text-slate-900">Your image was successfully resized</h3>
-              <p class="text-xs text-slate-400 mt-0.5">Outputs rendered fully locally in standard 24bit buffers</p>
+              <h3 class="text-xs font-bold text-[#16A34A] uppercase tracking-wider">Resizing Completed</h3>
+              <p class="text-xs text-[#52525B] mt-0.5">Processed 24-bit canvas coordinates successfully.</p>
             </div>
             
-            <div class="flex justify-center items-center gap-6 py-4 border-y border-dashed border-emerald-200 font-mono text-xs text-slate-600">
+            <div class="flex justify-center items-center gap-6 py-3 border-y border-dashed border-[#BBF7D0] font-mono text-xs text-[#52525B]">
               <div>
-                <span class="block font-bold text-[#0F172A] text-sm" id="badge-old-dims">1200 x 800</span>
-                <span>Original Size</span>
+                <span class="block font-bold text-[#09090B] text-xs" id="badge-old-dims">1200 x 800</span>
+                <span class="text-[10px] text-[#A1A1AA]">Before</span>
               </div>
-              <div class="text-lg font-bold text-emerald-600">➔</div>
+              <div class="text-sm font-bold text-[#16A34A]">➔</div>
               <div>
-                <span class="block font-bold text-brand-primary text-sm" id="badge-new-dims">800 x 533</span>
-                <span>Optimized Size</span>
+                <span class="block font-bold text-[#7C3AED] text-xs" id="badge-new-dims">800 x 533</span>
+                <span class="text-[10px] text-[#A1A1AA]">After</span>
               </div>
             </div>
 
-            <div class="flex flex-col sm:flex-row gap-3 pt-2">
-              <button id="download-final-btn" class="flex-grow bg-[#7C3AED] hover:bg-brand-hover text-white font-bold py-3 px-6 rounded-xl transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer">
-                📊 Download Resized Image
+            <div class="flex flex-col sm:flex-row gap-2 pt-1.5">
+              <button id="download-final-btn" class="flex-grow bg-[#7C3AED] hover:bg-accent-hover text-white font-medium py-2 px-4 rounded-lg transition-all text-xs flex items-center justify-center gap-1.5 cursor-pointer">
+                Download Resized Image
               </button>
-              <button id="another-btn" class="sm:w-1/3 border-2 border-slate-250 hover:border-brand-primary text-slate-700 hover:text-brand-primary font-semibold py-3 px-6 rounded-xl transition-all cursor-pointer">
-                Resize Another
+              <button id="another-btn" class="sm:w-1/3 border border-[#E4E4E7] bg-white text-[#52525B] hover:bg-[#F4F4F5] font-medium py-2 px-4 rounded-lg transition-all text-xs cursor-pointer">
+                Clear
               </button>
             </div>
           </div>
@@ -287,188 +262,134 @@
 
       </div>
 
-      <!-- SEO SECTION A to D -->
-      <section class="max-w-4xl mx-auto space-y-16 mt-20">
-        
-        <!-- SECTION A: How to Resize -->
+      <!-- Steps connected by thin line -->
+      <section class="mt-16 space-y-8">
         <div>
-          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-6 col-span-full">How to Resize Images Online Free</h2>
-          <ol class="grid grid-cols-1 md:grid-cols-3 gap-6 list-none p-0">
-            <li class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-              <div class="text-[#06B6D4] font-black text-2xl mb-3">01</div>
-              <h3 class="font-bold text-base text-slate-900 mb-2">Load Image File</h3>
-              <p class="text-slate-500 text-sm leading-relaxed">Select or drag a PNG, JPEG or WebP file into the designated active sandbox container above to view original dimensions.</p>
-            </li>
-            <li class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-              <div class="text-[#06B6D4] font-black text-2xl mb-3">02</div>
-              <h3 class="font-bold text-base text-slate-900 mb-2">Input target specs</h3>
-              <p class="text-slate-500 text-sm leading-relaxed">Adjust sizing using three unique modes. Bind heights and widths, sliding scaling percentages, or preset parameters.</p>
-            </li>
-            <li class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-              <div class="text-[#06B6D4] font-black text-2xl mb-3">03</div>
-              <h3 class="font-bold text-base text-slate-900 mb-2">Instantly Download</h3>
-              <p class="text-slate-500 text-sm leading-relaxed">Canvas components immediately process the pixel grids. Download files in JPEG, PNG, or WebP format instantly with zero loss.</p>
-            </li>
-          </ol>
+          <h2 class="text-sm font-bold uppercase tracking-wider text-[#09090B]">How to Resize Images</h2>
+          <p class="text-xs text-[#A1A1AA] mt-1 relative z-10 font-sans">Three micro-directions to adjust pixel boxes easily.</p>
         </div>
 
-        <!-- SECTION B: Why use Toolifya's Sizing Toolkit -->
-        <div>
-          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-6 text-center">Why Use Toolifya's Image Resizer?</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="flex gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-100">
-              <div class="text-2xl">⚡</div>
-              <div>
-                <h4 class="font-bold text-slate-900 text-sm mb-1">Instant Ratio Locking</h4>
-                <p class="text-slate-500 text-xs leading-relaxed">Enable standard proportional constraints with a simple toggle switch to prevent squished layouts.</p>
-              </div>
-            </div>
-            <div class="flex gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-100">
-              <div class="text-2xl">📱</div>
-              <div>
-                <h4 class="font-bold text-slate-900 text-sm mb-1">Social Presets Configured</h4>
-                <p class="text-slate-500 text-xs leading-relaxed">Direct target outputs matching high priority dimensions for Instagram stories, YouTube covers, and LinkedIn posts.</p>
-              </div>
-            </div>
-            <div class="flex gap-2 p-5 bg-slate-50 rounded-2xl border border-slate-100">
-              <div class="text-2xl">🔒</div>
-              <div>
-                <h4 class="font-bold text-slate-900 text-sm mb-1">Guaranteed Data Confidentiality</h4>
-                <p class="text-slate-500 text-xs leading-relaxed">Your professional photography and credentials never travel to third-party databases, executing 100% locally.</p>
-              </div>
-            </div>
-            <div class="flex gap-2 p-5 bg-slate-50 rounded-2xl border border-slate-100">
-              <div class="text-2xl">🎨</div>
-              <div>
-                <h4 class="font-bold text-slate-900 text-sm mb-1">High-Fidelity Resampling</h4>
-                <p class="text-slate-500 text-xs leading-relaxed">Our scaling filters preserve crisp outlines, texture parameters, and color depths across all formats.</p>
-              </div>
-            </div>
+        <div class="relative pl-6 border-l border-[#E4E4E7] space-y-8 ml-3">
+          <!-- Step 1 -->
+          <div class="relative">
+            <span class="absolute -left-[35px] top-0.5 w-5 h-5 rounded-full bg-[#F5F3FF] border border-[#DDD6FE] text-[#7C3AED] text-[10px] font-bold flex items-center justify-center">1</span>
+            <h3 class="text-sm font-semibold text-[#09090B]">Upload Source Asset</h3>
+            <p class="text-xs text-[#52525B] mt-1 font-sans leading-relaxed">Drop your graphic locally into standard drag targets. Supports formats including PNG, JPG, and WebP.</p>
+          </div>
+          <!-- Step 2 -->
+          <div class="relative">
+            <span class="absolute -left-[35px] top-0.5 w-5 h-5 rounded-full bg-[#F5F3FF] border border-[#DDD6FE] text-[#7C3AED] text-[10px] font-bold flex items-center justify-center">2</span>
+            <h3 class="text-sm font-semibold text-[#09090B]">Configure Boundaries</h3>
+            <p class="text-xs text-[#52525B] mt-1 font-sans leading-relaxed">Adjust pixel coordinates manually, sliding standard scale percentages, or choosing preset slots.</p>
+          </div>
+          <!-- Step 3 -->
+          <div class="relative">
+            <span class="absolute -left-[35px] top-0.5 w-5 h-5 rounded-full bg-[#F5F3FF] border border-[#DDD6FE] text-[#7C3AED] text-[10px] font-bold flex items-center justify-center">3</span>
+            <h3 class="text-sm font-semibold text-[#09090B]">Surgically Export</h3>
+            <p class="text-xs text-[#52525B] mt-1 font-sans leading-relaxed">Execute local pixel resampling engines and instantly download your refined graphic package.</p>
           </div>
         </div>
-
-        <!-- SECTION C: Frequently Asked Questions -->
-        <div>
-          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-6 text-center">Frequently Asked Questions</h2>
-          <div class="space-y-4">
-            <details class="group bg-slate-50 border border-slate-100 rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
-              <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
-                <h3 class="font-bold text-slate-900 text-base">Will my image lose quality during resize processes?</h3>
-                <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-slate-900 shadow-sm transition group-open:rotate-180">
-                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-                </span>
-              </summary>
-              <p class="mt-4 text-slate-500 text-sm leading-relaxed">
-                When scaling images down, bicubic interpolation ensures pixels regroup cleanly with zero perceptible fidelity loss. When magnifying images significantly above 150%, mild blur can present as browser engines must interpret new pixels, which we mitigate using optimal anti-aliasing configurations.
-              </p>
-            </details>
-
-            <details class="group bg-slate-50 border border-slate-200 rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
-              <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
-                <h3 class="font-bold text-slate-900 text-base">Does your resizer support transparent backgrounds?</h3>
-                <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-slate-950 shadow-sm transition group-open:rotate-180">
-                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-                </span>
-              </summary>
-              <p class="mt-4 text-slate-500 text-sm leading-relaxed">
-                Yes! If you upload a transparent PNG and select standard PNG or WebP as your target output format, all alpha levels and translucent parameters will be preserved cleanly. However, if you choose JPEG as the final format, transparent elements are backfilled with neutral white solid block colors.
-              </p>
-            </details>
-
-            <details class="group bg-slate-50 border border-slate-200 rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
-              <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
-                <h3 class="font-bold text-slate-900 text-base">Can I enter any specific custom pixel size constraints?</h3>
-                <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-slate-950 shadow-sm transition group-open:rotate-180">
-                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-                </span>
-              </summary>
-              <p class="mt-4 text-slate-500 text-sm leading-relaxed">
-                Absolutely. Our Pixel option accommodates custom heights and widths. If the Aspect Ratio lock constraint is checked, entering value modifications inside one field dynamically coordinates the appropriate proportional counterpart, avoiding stretched results.
-              </p>
-            </details>
-          </div>
-        </div>
-
-        <!-- SECTION D: More Tools -->
-        <div class="border-t border-slate-100 pt-16">
-          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-8 text-center">More Free Image Tools</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div class="bg-slate-50 hover:bg-slate-100/50 rounded-2xl p-6 border border-slate-100 flex flex-col justify-between hover:shadow-md transition-all">
-              <div>
-                <h4 class="font-bold text-slate-950 mb-2">Image Compressor</h4>
-                <p class="text-slate-500 text-xs mb-4">Compress high quality photographs down to specific custom target KB sizes.</p>
-              </div>
-              <a href="image-compressor.html" class="text-xs font-semibold text-brand-primary hover:underline">Try Tool &rarr;</a>
-            </div>
-            <div class="bg-slate-50 hover:bg-slate-100/50 rounded-2xl p-6 border border-slate-100 flex flex-col justify-between hover:shadow-md transition-all">
-              <div>
-                <h4 class="font-bold text-slate-950 mb-2">Image Crop Tool</h4>
-                <p class="text-slate-500 text-xs mb-4">Crop images inside interactive mouse draggable focus containers.</p>
-              </div>
-              <a href="image-crop.html" class="text-xs font-semibold text-brand-primary hover:underline">Try Tool &rarr;</a>
-            </div>
-            <div class="bg-slate-50 hover:bg-slate-100/50 rounded-2xl p-6 border border-slate-100 flex flex-col justify-between hover:shadow-md transition-all">
-              <div>
-                <h4 class="font-bold text-slate-950 mb-2">WebP Converter</h4>
-                <p class="text-slate-500 text-xs mb-4">Reformat large standard pictures and graphics to WebP formats.</p>
-              </div>
-              <a href="webp-converter.html" class="text-xs font-semibold text-brand-primary hover:underline">Try Tool &rarr;</a>
-            </div>
-          </div>
-        </div>
-
       </section>
 
-      <!-- AD Space bottom -->
-      <div class="w-full text-center bg-slate-50 border border-slate-100 rounded-2xl py-2 px-4 mt-20 text-xs text-slate-400 font-mono tracking-wider">
-        <span>ADVERTISEMENT SPACE</span>
-        <div class="w-full max-w-[728px] h-20 bg-slate-200/40 border border-dashed border-slate-200 rounded mx-auto flex items-center justify-center text-slate-400 mt-1">
-          AdSterra / AdSense Resizer Banner Footer
+      <!-- Clean FAQ accordion -->
+      <section class="mt-16 border-t border-[#E4E4E7] pt-12">
+        <div class="mb-6">
+          <h2 class="text-sm font-bold uppercase tracking-wider text-[#09090B]">Frequently Asked Questions</h2>
+          <p class="text-xs text-[#A1A1AA] mt-1">Sizing toolkit answers.</p>
         </div>
+
+        <div class="space-y-1">
+          <details class="group bg-transparent">
+            <summary class="flex items-center justify-between cursor-pointer focus:outline-none py-3.5 border-b border-[#E4E4E7]">
+              <h3 class="font-medium text-xs md:text-sm text-[#09090B]">Will resizing blur my original image?</h3>
+              <span class="text-[#A1A1AA] group-open:rotate-180 transition-transform">
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </span>
+            </summary>
+            <div class="py-3.5 text-xs text-[#52525B] leading-relaxed">
+              Rescaling downward remains exceptionally sharp. Stretching graphics far past original width constraints will introduce native pixel interpolation artifacts.
+            </div>
+          </details>
+
+          <details class="group bg-transparent">
+            <summary class="flex items-center justify-between cursor-pointer focus:outline-none py-3.5 border-b border-[#E4E4E7]">
+              <h3 class="font-medium text-xs md:text-sm text-[#09090B]">Are transparency structures kept?</h3>
+              <span class="text-[#A1A1AA] group-open:rotate-180 transition-transform">
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </span>
+            </summary>
+            <div class="py-3.5 text-xs text-[#52525B] leading-relaxed">
+              Yes, choosing PNG or WebP targets preserves absolute transparency channels. Exporting under JPEG outputs solid white backups instead.
+            </div>
+          </details>
+
+          <details class="group bg-transparent">
+            <summary class="flex items-center justify-between cursor-pointer focus:outline-none py-3.5 border-b border-[#E4E4E7]">
+              <h3 class="font-medium text-xs md:text-sm text-[#09090B]">Can I specify customized dimension values?</h3>
+              <span class="text-[#A1A1AA] group-open:rotate-180 transition-transform">
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </span>
+            </summary>
+            <div class="py-3.5 text-xs text-[#52525B] leading-relaxed">
+              Yes. Enter any custom numbers into the pixel coordinate inputs and toggle Aspect Ratio rules off to resize entirely freely.
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- Linked More Tools -->
+      <section class="mt-16 border-t border-[#E4E4E7] pt-12">
+        <h2 class="text-xs font-bold text-[#09090B] uppercase tracking-wider mb-5">More Tools</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <a href="image-compressor.html" class="block bg-white border border-[#E4E4E7] p-4 rounded-xl hover:border-[#7C3AED] hover:shadow-[0_0_0_3px_rgba(124,58,237,0.08)] transition-all">
+            <h4 class="text-xs font-bold text-[#09090B]">Image Compressor</h4>
+            <p class="text-[11px] text-[#52525B] mt-1 leading-relaxed">Compress high quality photos down to targeted KB files securely.</p>
+          </a>
+          <a href="image-crop.html" class="block bg-white border border-[#E4E4E7] p-4 rounded-xl hover:border-[#7C3AED] hover:shadow-[0_0_0_3px_rgba(124,58,237,0.08)] transition-all">
+            <h4 class="text-xs font-bold text-[#09090B]">Image Crop</h4>
+            <p class="text-[11px] text-[#52525B] mt-1 leading-relaxed">Precision crop images inside draggable container frames.</p>
+          </a>
+          <a href="image-to-pdf.html" class="block bg-white border border-[#E4E4E7] p-4 rounded-xl hover:border-[#7C3AED] hover:shadow-[0_0_0_3px_rgba(124,58,237,0.08)] transition-all">
+            <h4 class="text-xs font-bold text-[#09090B]">Image to PDF</h4>
+            <p class="text-[11px] text-[#52525B] mt-1 leading-relaxed">Combine multiple graphics into clean consolidated PDF logs.</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- AD Space -->
+      <div class="ad-slot mt-16">
+        AdSterra / AdSense Placeholder (728x90)
       </div>
 
     </main>
 
     <!-- Footer -->
-    <footer class="bg-[#0A0A0A] text-white pt-16 pb-8 px-6 md:px-12 mt-24">
-      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-neutral-850">
+    <footer class="bg-[#09090B] text-white pt-12 pb-8 px-6 md:px-12 mt-24">
+      <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-8 border-b border-[#27272A]">
         <div>
-          <a href="index.html" class="text-2xl font-extrabold tracking-tight hover:opacity-90 flex items-center gap-2 mb-4">
-            <span class="text-brand-cyan">⚡</span>Toolifya
+          <a href="index.html" class="text-base font-semibold tracking-tight hover:opacity-90">
+            Toolifya<span class="text-[#7C3AED]">.</span>
           </a>
-          <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
-            Free Online Image Tools — Fast, Simple, No Signup. High performance client processing for worldwide developers and content editors.
+          <p class="text-[#71717A] text-xs mt-1.5 font-sans">
+            Free image tools. No signup.
           </p>
-          <div class="mt-4 text-xs font-semibold text-brand-cyan uppercase tracking-wider">
-            Fast. Free. No Signup Required.
-          </div>
         </div>
-        
-        <div>
-          <h3 class="text-sm font-bold uppercase tracking-widest text-[#06B6D4] mb-4">Quick Links</h3>
-          <ul class="space-y-2.5 text-slate-400 text-sm">
-            <li><a href="index.html" class="hover:text-white transition-colors">Home Dashboard</a></li>
-            <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
-            <li><a href="image-compressor.html" class="hover:text-white transition-colors">Image Compressor</a></li>
-            <li><a href="image-resizer.html" class="hover:text-white transition-colors">Sizing Toolkit</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="text-sm font-bold uppercase tracking-widest text-[#06B6D4] mb-4">Legal Operations</h3>
-          <ul class="space-y-2.5 text-slate-400 text-sm">
-            <li><a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
-            <li><a href="about.html#contact" class="hover:text-white transition-colors">Developer Contact</a></li>
-          </ul>
+        <div class="flex flex-wrap gap-x-4 gap-y-2 text-xs text-[#71717A]">
+          <a href="index.html" class="hover:text-white transition-colors">Home</a>
+          <span class="text-[#27272A]">•</span>
+          <a href="index.html" class="hover:text-white transition-colors">Tools</a>
+          <span class="text-[#27272A]">•</span>
+          <a href="about.html" class="hover:text-white transition-colors">About</a>
+          <span class="text-[#27272A]">•</span>
+          <a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
         </div>
       </div>
-      
-      <div class="max-w-7xl mx-auto pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+      <div class="max-w-5xl mx-auto pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-[#52525B] gap-4">
         <div>
-          &copy; 2026 Toolifya. All rights reserved. Built with pure browser technology.
+          &copy; 2026 Toolifya.
         </div>
         <div>
-          Domain: <a href="https://toolifya.site" class="hover:text-white transition-all underline">https://toolifya.site</a>
+          Made with ♥ for the web
         </div>
       </div>
     </footer>
@@ -487,9 +408,9 @@
         },
         {
           "@type": "WebApplication",
-          "@id": "https://toolifya.site/image-resizer.html#app",
+          "@id": "https://toolifya.site/image-resizer#app",
           "name": "Image Resizer",
-          "url": "https://toolifya.site/image-resizer.html",
+          "url": "https://toolifya.site/image-resizer",
           "description": "Resize images online for free. Change dimensions by pixels, percentage or social media presets.",
           "applicationCategory": "UtilitiesApplication",
           "operatingSystem": "Windows, macOS, Linux, Android, iOS, ChromeOS",
@@ -516,7 +437,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "Image Resizer",
-              "item": "https://toolifya.site/image-resizer.html"
+              "item": "https://toolifya.site/image-resizer"
             }
           ]
         }
@@ -524,7 +445,7 @@
     }
     </script>
 
-    <!-- Handler JS -->
+    <!-- Page Handler JS -->
     <script type="module" defer>
       import { initNavbar, downloadFile } from '/src/utils.js';
       initNavbar();
@@ -571,9 +492,9 @@
       // Tab switching listeners
       tabPixels.addEventListener('click', () => {
         activeTab = 'pixels';
-        tabPixels.className = 'py-2.5 text-xs md:text-sm font-bold rounded-lg text-brand-primary bg-white shadow-sn focus:outline-none transition-all';
-        tabPercent.className = 'py-2.5 text-xs md:text-sm font-semibold rounded-lg text-slate-600 hover:text-slate-800 focus:outline-none transition-all';
-        tabPresets.className = 'py-2.5 text-xs md:text-sm font-semibold rounded-lg text-slate-600 hover:text-slate-800 focus:outline-none transition-all';
+        tabPixels.className = 'py-1.5 text-xs font-semibold rounded-md text-[#7C3AED] bg-white shadow-xs focus:outline-none transition-all';
+        tabPercent.className = 'py-1.5 text-xs font-medium rounded-md text-[#52525B] hover:text-[#09090B] focus:outline-none transition-all';
+        tabPresets.className = 'py-1.5 text-xs font-medium rounded-md text-[#52525B] hover:text-[#09090B] focus:outline-none transition-all';
         groupPixels.classList.remove('hidden');
         groupPercent.classList.add('hidden');
         groupPresets.classList.add('hidden');
@@ -582,9 +503,9 @@
 
       tabPercent.addEventListener('click', () => {
         activeTab = 'percent';
-        tabPercent.className = 'py-2.5 text-xs md:text-sm font-bold rounded-lg text-brand-primary bg-white shadow-sn focus:outline-none transition-all';
-        tabPixels.className = 'py-2.5 text-xs md:text-sm font-semibold rounded-lg text-slate-600 hover:text-slate-800 focus:outline-none transition-all';
-        tabPresets.className = 'py-2.5 text-xs md:text-sm font-semibold rounded-lg text-slate-600 hover:text-slate-800 focus:outline-none transition-all';
+        tabPercent.className = 'py-1.5 text-xs font-semibold rounded-md text-[#7C3AED] bg-white shadow-xs focus:outline-none transition-all';
+        tabPixels.className = 'py-1.5 text-xs font-medium rounded-md text-[#52525B] hover:text-[#09090B] focus:outline-none transition-all';
+        tabPresets.className = 'py-1.5 text-xs font-medium rounded-md text-[#52525B] hover:text-[#09090B] focus:outline-none transition-all';
         groupPercent.classList.remove('hidden');
         groupPixels.classList.add('hidden');
         groupPresets.classList.add('hidden');
@@ -593,21 +514,21 @@
 
       tabPresets.addEventListener('click', () => {
         activeTab = 'presets';
-        tabPresets.className = 'py-2.5 text-xs md:text-sm font-bold rounded-lg text-brand-primary bg-white shadow-sn focus:outline-none transition-all';
-        tabPixels.className = 'py-2.5 text-xs md:text-sm font-semibold rounded-lg text-slate-600 hover:text-slate-800 focus:outline-none transition-all';
-        tabPercent.className = 'py-2.5 text-xs md:text-sm font-semibold rounded-lg text-slate-600 hover:text-slate-800 focus:outline-none transition-all';
+        tabPresets.className = 'py-1.5 text-xs font-semibold rounded-md text-[#7C3AED] bg-white shadow-xs focus:outline-none transition-all';
+        tabPixels.className = 'py-1.5 text-xs font-medium rounded-md text-[#52525B] hover:text-[#09090B] focus:outline-none transition-all';
+        tabPercent.className = 'py-1.5 text-xs font-medium rounded-md text-[#52525B] hover:text-[#09090B] focus:outline-none transition-all';
         groupPresets.classList.remove('hidden');
         groupPixels.classList.add('hidden');
         groupPercent.classList.add('hidden');
         recalcDims();
       });
 
-      // Drag over styles
+      // Drag override
       ['dragenter', 'dragover'].forEach(eventName => {
-        uploadZone.addEventListener(eventName, (e) => { e.preventDefault(); uploadZone.classList.add('bg-cyan-50', 'border-[#06B6D4]'); });
+        uploadZone.addEventListener(eventName, (e) => { e.preventDefault(); uploadZone.classList.add('bg-[#F5F3FF]', 'border-[#7C3AED]'); });
       });
       ['dragleave', 'drop'].forEach(eventName => {
-        uploadZone.addEventListener(eventName, (e) => { e.preventDefault(); uploadZone.classList.remove('bg-cyan-50', 'border-[#06B6D4]'); });
+        uploadZone.addEventListener(eventName, (e) => { e.preventDefault(); uploadZone.classList.remove('bg-[#F5F3FF]', 'border-[#7C3AED]'); });
       });
 
       uploadZone.addEventListener('drop', (e) => {
@@ -640,7 +561,7 @@
 
             originalDims.textContent = imgNaturalWidth + ' \u00D7 ' + imgNaturalHeight + ' px';
             
-            // Set initial pixel input values
+            // Set initial pixel inputs
             inputWidth.value = imgNaturalWidth;
             inputHeight.value = imgNaturalHeight;
 
@@ -652,7 +573,7 @@
         };
       }
 
-      // Live sizing calculator
+      // Live calc
       function recalcDims() {
         if (!currentRawImage) return;
 
@@ -690,7 +611,6 @@
         }
       }
 
-      // Bind locks to aspect ratios inside pixel inputs
       inputWidth.addEventListener('input', () => {
         if (lockAr.checked && activeTab === 'pixels') {
           const val = parseInt(inputWidth.value) || 0;
@@ -710,11 +630,10 @@
       percentSlider.addEventListener('input', recalcDims);
       presetSelect.addEventListener('change', recalcDims);
 
-      // Perform resample and draw
       resizerBtn.addEventListener('click', () => {
         if (!currentRawImage) return;
 
-        resizerBtn.classList.add('hidden');
+        settingsPanel.classList.add('hidden');
         processingLoader.classList.remove('hidden');
 
         setTimeout(() => {
@@ -739,14 +658,12 @@
           canvas.height = finalH;
           const ctx = canvas.getContext('2d');
 
-          // Neutral solid colors for transparency overrides inside JPEG conversions
           const format = selectFormat.value;
           if (format === 'image/jpeg') {
             ctx.fillStyle = '#FFFFFF';
             ctx.fillRect(0, 0, finalW, finalH);
           }
 
-          // Resample and render pixels
           ctx.drawImage(currentRawImage, 0, 0, finalW, finalH);
 
           finalResizedDataUrl = canvas.toDataURL(format, 0.95);

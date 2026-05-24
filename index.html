@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
-    <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
-    </noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -22,13 +18,13 @@
     <title>Free Online Image Tools — Compress, Resize, Convert | Toolifya</title>
     <meta name="description" content="Free online image tools with no signup. Compress, resize, crop, and convert images to JPG, PNG, WebP, and PDF instantly in your browser." />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <link rel="canonical" href="https://toolifya.site/index.html" />
+    <link rel="canonical" href="https://toolifya.site" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Free Online Image Tools — Compress, Resize, Convert | Toolifya" />
     <meta property="og:description" content="Free online image tools with no signup. Compress, resize, crop, and convert images to JPG, PNG, WebP, and PDF instantly in your browser." />
-    <meta property="og:url" content="https://toolifya.site/index.html" />
+    <meta property="og:url" content="https://toolifya.site" />
     <meta property="og:image" content="https://toolifya.site/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -42,9 +38,6 @@
     <meta name="twitter:image" content="https://toolifya.site/og-image.png" />
     <meta name="twitter:site" content="@toolifya" />
 
-    <!-- Performance hints -->
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-
     <!-- Styles -->
     <link rel="stylesheet" href="/src/index.css" />
 
@@ -52,343 +45,355 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7108819443201963"
          crossorigin="anonymous"></script>
   </head>
-  <body class="bg-white text-[#0F172A] min-h-screen flex flex-col font-sans">
+  <body class="bg-[#FAFAFA] text-[#09090B] min-h-screen flex flex-col font-sans">
     
     <!-- Navbar -->
-    <header class="sticky top-0 z-50 bg-[#0A0A0A] text-white py-4 px-6 md:px-12 flex justify-between items-center shadow-lg">
+    <header class="h-14 bg-[#09090B] border-b border-[#1C1C1E] text-white px-6 md:px-12 flex justify-between items-center sticky top-0 z-50">
       <div class="flex items-center gap-3">
-        <a href="index.html" class="text-xl md:text-2xl font-extrabold tracking-tight hover:opacity-90 flex items-center gap-2">
-          <span class="text-brand-cyan">⚡</span>Toolifya
+        <a href="index.html" class="text-base font-semibold tracking-tight hover:opacity-90 flex items-center">
+          Toolifya<span class="text-[#7C3AED] ml-0.5">.</span>
         </a>
       </div>
       
-      <!-- Mobile Toggle -->
-      <button id="nav-toggle" class="md:hidden text-white hover:text-brand-cyan focus:outline-none" aria-label="Toggle navigation">
-        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-          <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
-        </svg>
-      </button>
-
       <!-- Nav List -->
-      <nav id="nav-menu" class="hidden md:flex flex-col md:flex-row absolute md:relative top-full left-0 w-full md:w-auto bg-[#0A0A0A] md:bg-transparent p-6 md:p-0 gap-6 items-start md:items-center border-t border-neutral-800 md:border-0">
-        <div class="relative group">
-          <button id="tools-dropdown-btn" class="flex items-center gap-1 font-medium hover:text-brand-cyan transition-colors">
-            All Tools
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-          </button>
-          
-          <!-- Dropdown -->
-          <ul id="tools-dropdown" class="hidden absolute left-0 mt-2 w-56 bg-white text-slate-800 rounded-xl shadow-xl border border-slate-100 overflow-hidden py-1 z-50">
-            <li><a href="image-compressor.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">⚡ Image Compressor</a></li>
-            <li><a href="image-resizer.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">↕️ Image Resizer</a></li>
-            <li><a href="image-crop.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">✂️ Image Crop Tool</a></li>
-            <li><a href="jpg-to-png.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">🖼️ JPG to PNG Converter</a></li>
-            <li><a href="png-to-jpg.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">🎨 PNG to JPG Converter</a></li>
-            <li><a href="webp-converter.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">🕸️ WebP Converter</a></li>
-            <li><a href="image-to-pdf.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">📄 Image to PDF</a></li>
-          </ul>
-        </div>
-        <a href="about.html" class="font-medium hover:text-brand-cyan transition-colors">About Us</a>
-        <a href="privacy-policy.html" class="font-medium hover:text-brand-cyan transition-colors">Privacy Policy</a>
+      <nav id="nav-menu" class="hidden md:flex flex-col md:flex-row absolute md:relative top-full left-0 w-full md:w-auto bg-[#09090B] md:bg-transparent p-6 md:p-0 gap-4 md:gap-6 items-start md:items-center border-b border-[#1C1C1E] md:border-0 z-50">
+        <a href="index.html" class="text-sm font-medium text-[#A1A1AA] hover:text-white transition-colors w-full md:w-auto">All Tools</a>
+        <a href="about.html" class="text-sm font-medium text-[#A1A1AA] hover:text-white transition-colors w-full md:w-auto">About</a>
+        <a href="privacy-policy.html" class="text-sm font-medium text-[#A1A1AA] hover:text-white transition-colors w-full md:w-auto">Privacy Policy</a>
+        <a href="image-compressor.html" class="md:hidden text-[#7C3AED] font-semibold text-sm w-full pt-2 border-t border-[#1C1C1E]">Try Free →</a>
       </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="image-compressor.html" class="hidden md:inline-flex items-center text-sm text-white border border-[#3F3F46] rounded-md px-3.5 py-1.5 hover:bg-[#1C1C1E] transition-all font-medium">Try Free →</a>
+        <!-- Mobile Toggle -->
+        <button id="nav-toggle" class="md:hidden text-[#A1A1AA] hover:text-white focus:outline-none" aria-label="Toggle navigation">
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-[#0F172A] text-white py-24 px-6 md:px-12 text-center flex flex-col items-center relative overflow-hidden">
-      <!-- Subtle lighting background effect -->
-      <div class="absolute -top-40 -left-40 w-96 h-96 bg-brand-primary opacity-20 blur-3xl rounded-full"></div>
-      <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-brand-cyan opacity-20 blur-3xl rounded-full"></div>
-
-      <div class="max-w-4xl relative z-10">
-        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/60 border border-slate-700/50 text-brand-cyan text-xs font-semibold mb-6 uppercase tracking-wider">
-          🚀 100% Free &amp; Offline Browser Processing
+    <section class="bg-[#FAFAFA] text-[#09090B] pt-20 pb-16 px-6 md:px-12 text-center flex flex-col items-center relative overflow-hidden">
+      <div class="max-w-xl relative z-10">
+        <div class="mb-6">
+          <span class="hero-badge">
+            Free · No Signup · Browser-Based
+          </span>
         </div>
-        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
-          Free Online Image Tools<br/>
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-cyan">Fast, Simple, No Signup</span>
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 leading-[1.15] text-[#09090B]">
+          Image Tools That Just Work
         </h1>
-        <p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10">
-          Supercharge your workflow. Resize, compress, crop, and convert your images with military-grade privacy. Your files never touch our servers.
+        <p class="text-base text-[#52525B] max-w-lg mx-auto mb-8 leading-relaxed">
+          Compress, resize, crop and convert images — free, fast, and private. No account needed.
         </p>
 
-        <!-- Tool Filter Search Box -->
-        <div class="w-full max-w-lg mx-auto relative shadow-2xl rounded-full">
-          <input type="text" id="search-input" placeholder="Search for a tool (e.g., compress, pdf, png)..." 
-                 class="w-full pl-6 pr-12 py-4 bg-slate-800/80 hover:bg-slate-800/95 text-white border border-slate-700/60 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-primary text-base placeholder-slate-400 transition-all shadow-inner" />
-          <div class="absolute right-4 top-1/2 transform -translate-y-1/2 text-slate-400">
-            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-          </div>
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-2.5 mb-8">
+          <a href="#tools-section" class="w-full sm:w-auto bg-[#09090B] text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-[#1C1C1E] transition-all shadow-md hover:-translate-y-0.5">Explore Tools</a>
+          <a href="#why-choose-section" class="w-full sm:w-auto bg-transparent border border-[#E4E4E7] text-[#09090B] px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-[#F4F4F5] hover:border-[#D4D4D8] transition-all">How It Works</a>
+        </div>
+
+        <!-- Inline Stats Block -->
+        <div class="text-[13px] text-[#A1A1AA] font-medium font-sans">
+          7 Free Tools <span class="mx-1.5 text-[#E4E4E7]">•</span> Zero Upload <span class="mx-1.5 text-[#E4E4E7]">•</span> No Watermarks
         </div>
       </div>
     </section>
 
     <!-- Main Section (Ad & Tool Cards) -->
-    <main class="max-w-7xl mx-auto px-6 py-16 flex-grow w-full">
-      <!-- Standard Ad Banner Placement -->
-      <div class="w-full text-center bg-slate-50 border border-slate-100 rounded-2xl py-3 px-4 mb-12 text-xs text-slate-400 font-mono tracking-wider flex flex-col items-center justify-center gap-1">
-        <span>SPONSORED ADVERTISEMENT</span>
-        <div class="w-full max-w-[728px] h-24 bg-slate-200/50 border border-dashed border-slate-300 rounded flex items-center justify-center text-slate-400">
-          AdSterra / AdSense Placeholder (728x90)
+    <main class="max-w-5xl mx-auto px-6 pb-20 flex-grow w-full">
+      <!-- Search Panel Container -->
+      <div class="w-full max-w-md mx-auto mb-12">
+        <div class="relative">
+          <input type="text" id="search-input" placeholder="Search for a tool..." 
+                 class="w-full pl-10 pr-4 py-2.5 bg-white text-[#09090B] border border-[#E4E4E7] rounded-lg focus:outline-none focus:border-[#7C3AED] focus:ring-2 focus:ring-[#7C3AED]/10 text-sm placeholder-[#A1A1AA] transition-all shadow-xs" />
+          <div class="absolute left-3.5 top-1/2 transform -translate-y-1/2 text-[#A1A1AA]">
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+          </div>
         </div>
+      </div>
+
+      <!-- Sponsored Advertisement Slot -->
+      <div class="ad-slot">
+        AdSterra / AdSense Placeholder (728x90)
       </div>
 
       <!-- Grid Header -->
-      <div class="flex flex-col md:flex-row items-start md:items-end justify-between mb-10">
-        <div>
-          <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-slate-900 mb-2">Our Imaging Toolkit</h2>
-          <p class="text-slate-500 text-sm md:text-base">Browse through our lightning-fast image tools below.</p>
-        </div>
-        <div class="text-xs text-slate-400 font-medium bg-slate-100 rounded-lg px-3 py-1.5 mt-2 md:mt-0">
-          Showing 7 image tools
-        </div>
+      <div id="tools-section" class="mb-6 pt-6">
+        <h2 class="text-sm font-semibold uppercase tracking-wider text-[#09090B]">All Image Tools</h2>
+        <p class="text-xs text-[#A1A1AA] mt-1 font-sans">7 tools · All free · No signup</p>
       </div>
 
       <!-- Tools Grid -->
-      <div id="tools-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div id="tools-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
         
         <!-- Compressor Card -->
-        <div class="tool-card group bg-white border border-slate-200 rounded-2xl p-7 flex flex-col justify-between hover:translate-y-[-4px] hover:shadow-[0_12px_32px_rgba(124,58,237,0.12)] transition-all duration-300 hover-arrow" data-tags="compress shrink reduce quality size optimize">
+        <a href="image-compressor.html" class="tool-card group bg-white border border-[#E4E4E7] rounded-xl p-5 flex flex-col justify-between hover:border-[#7C3AED] hover:shadow-[0_0_0_3px_rgba(124,58,237,0.08)] hover:-translate-y-0.5 transition-all duration-250 cursor-pointer" data-tags="compress shrink reduce quality size optimize">
           <div>
-            <div class="w-12 h-12 rounded-xl bg-violet-50 text-brand-primary flex items-center justify-center text-2xl font-semibold mb-6">
-              ⚡
+            <div class="flex items-center justify-between">
+              <div class="w-9 h-9 rounded-lg bg-[#FFF7ED] text-[#EA580C] flex items-center justify-center text-lg">
+                ⚡
+              </div>
+              <span class="text-[#A1A1AA] group-hover:text-[#7C3AED] transition-colors text-base">→</span>
             </div>
-            <h3 class="text-lg md:text-xl font-bold text-slate-900 mb-3">Image Compressor</h3>
-            <p class="text-slate-500 text-sm leading-relaxed mb-6">
-              Reduce JPEGs, PNGs, and WebPs down to target sizes or specify desired quality. Compress multiple files in bulk.
+            <h3 class="text-[15px] font-bold text-[#09090B] mt-3.5">Image Compressor</h3>
+            <p class="text-xs text-[#52525B] mt-1 leading-relaxed">
+              Reduce image file size instantly. Compress JPG, PNG and WebP files without quality loss.
             </p>
           </div>
-          <a href="image-compressor.html" class="inline-flex items-center gap-2 text-brand-primary font-semibold text-sm hover:text-brand-hover tracking-wide mt-auto">
-            Compress Images <span class="arrow-icon transition-transform">→</span>
-          </a>
-        </div>
+          <div class="mt-3.5">
+            <span class="inline-block text-[11px] font-medium leading-none text-[#16A34A] bg-[#F0FDF4] px-2 py-1 rounded-full">Free</span>
+          </div>
+        </a>
 
         <!-- Resizer Card -->
-        <div class="tool-card group bg-white border border-slate-200 rounded-2xl p-7 flex flex-col justify-between hover:translate-y-[-4px] hover:shadow-[0_12px_32px_rgba(124,58,237,0.12)] transition-all duration-300 hover-arrow" data-tags="resize dimension width height social insta scale">
+        <a href="image-resizer.html" class="tool-card group bg-white border border-[#E4E4E7] rounded-xl p-5 flex flex-col justify-between hover:border-[#7C3AED] hover:shadow-[0_0_0_3px_rgba(124,58,237,0.08)] hover:-translate-y-0.5 transition-all duration-250 cursor-pointer" data-tags="resize dimension width height social insta scale">
           <div>
-            <div class="w-12 h-12 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-2xl font-semibold mb-6">
-              ↕️
+            <div class="flex items-center justify-between">
+              <div class="w-9 h-9 rounded-lg bg-[#EFF6FF] text-[#2563EB] flex items-center justify-center text-lg">
+                ↕️
+              </div>
+              <span class="text-[#A1A1AA] group-hover:text-[#7C3AED] transition-colors text-base">→</span>
             </div>
-            <h3 class="text-lg md:text-xl font-bold text-slate-900 mb-3">Image Resizer</h3>
-            <p class="text-slate-500 text-sm leading-relaxed mb-6">
-              Change aspect ratios or dimensions using social media preset specifications, pixels, or slider percentages.
+            <h3 class="text-[15px] font-bold text-[#09090B] mt-3.5">Image Resizer</h3>
+            <p class="text-xs text-[#52525B] mt-1 leading-relaxed">
+              Change image dimensions. Resize by pixels, percentage, or smart social presets.
             </p>
           </div>
-          <a href="image-resizer.html" class="inline-flex items-center gap-2 text-brand-primary font-semibold text-sm hover:text-brand-hover tracking-wide mt-auto">
-            Resize Images <span class="arrow-icon transition-transform">→</span>
-          </a>
-        </div>
+          <div class="mt-3.5">
+            <span class="inline-block text-[11px] font-medium leading-none text-[#16A34A] bg-[#F0FDF4] px-2 py-1 rounded-full">Free</span>
+          </div>
+        </a>
 
         <!-- Crop Card -->
-        <div class="tool-card group bg-white border border-slate-200 rounded-2xl p-7 flex flex-col justify-between hover:translate-y-[-4px] hover:shadow-[0_12px_32px_rgba(124,58,237,0.12)] transition-all duration-300 hover-arrow" data-tags="crop cut aspect ratio frame social trim">
+        <a href="image-crop.html" class="tool-card group bg-white border border-[#E4E4E7] rounded-xl p-5 flex flex-col justify-between hover:border-[#7C3AED] hover:shadow-[0_0_0_3px_rgba(124,58,237,0.08)] hover:-translate-y-0.5 transition-all duration-250 cursor-pointer" data-tags="crop cut aspect ratio frame social trim">
           <div>
-            <div class="w-12 h-12 rounded-xl bg-violet-50 text-brand-primary flex items-center justify-center text-2xl font-semibold mb-6">
-              ✂️
+            <div class="flex items-center justify-between">
+              <div class="w-9 h-9 rounded-lg bg-[#F0FDF4] text-[#16A34A] flex items-center justify-center text-lg">
+                ✂️
+              </div>
+              <span class="text-[#A1A1AA] group-hover:text-[#7C3AED] transition-colors text-base">→</span>
             </div>
-            <h3 class="text-lg md:text-xl font-bold text-slate-900 mb-3">Image Crop Tool</h3>
-            <p class="text-slate-500 text-sm leading-relaxed mb-6">
-              Crop images freely or lock onto 1:1, 16:9, and 4:3 ratios. Utilizes simple multi-handle offline dragging boxes.
+            <h3 class="text-[15px] font-bold text-[#09090B] mt-3.5">Image Crop Tool</h3>
+            <p class="text-xs text-[#52525B] mt-1 leading-relaxed">
+              Crop images with precision. Choose custom crops or lock aspect ratios like 1:1, 16:9, or 4:3.
             </p>
           </div>
-          <a href="image-crop.html" class="inline-flex items-center gap-2 text-brand-primary font-semibold text-sm hover:text-brand-hover tracking-wide mt-auto">
-            Crop Image <span class="arrow-icon transition-transform">→</span>
-          </a>
-        </div>
+          <div class="mt-3.5">
+            <span class="inline-block text-[11px] font-medium leading-none text-[#16A34A] bg-[#F0FDF4] px-2 py-1 rounded-full">Free</span>
+          </div>
+        </a>
 
         <!-- JPG to PNG Card -->
-        <div class="tool-card group bg-white border border-slate-200 rounded-2xl p-7 flex flex-col justify-between hover:translate-y-[-4px] hover:shadow-[0_12px_32px_rgba(124,58,237,0.12)] transition-all duration-300 hover-arrow" data-tags="jpg jpeg to png transparency convert format">
+        <a href="jpg-to-png.html" class="tool-card group bg-white border border-[#E4E4E7] rounded-xl p-5 flex flex-col justify-between hover:border-[#7C3AED] hover:shadow-[0_0_0_3px_rgba(124,58,237,0.08)] hover:-translate-y-0.5 transition-all duration-250 cursor-pointer" data-tags="jpg jpeg to png transparency convert format">
           <div>
-            <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl font-semibold mb-6">
-              🖼️
+            <div class="flex items-center justify-between">
+              <div class="w-9 h-9 rounded-lg bg-[#FDF4FF] text-[#C084FC] flex items-center justify-center text-lg">
+                🖼️
+              </div>
+              <span class="text-[#A1A1AA] group-hover:text-[#7C3AED] transition-colors text-base">→</span>
             </div>
-            <h3 class="text-lg md:text-xl font-bold text-slate-900 mb-3">JPG to PNG Converter</h3>
-            <p class="text-slate-500 text-sm leading-relaxed mb-6">
-              Turn your JPG or JPEG images into lossy or lossless transparent PNG format instantly inside your browser.
+            <h3 class="text-[15px] font-bold text-[#09090B] mt-3.5">JPG to PNG Converter</h3>
+            <p class="text-xs text-[#52525B] mt-1 leading-relaxed">
+              Convert JPG to PNG seamlessly. Supports batch uploads and preserves transparency configurations.
             </p>
           </div>
-          <a href="jpg-to-png.html" class="inline-flex items-center gap-2 text-brand-primary font-semibold text-sm hover:text-brand-hover tracking-wide mt-auto">
-            Convert to PNG <span class="arrow-icon transition-transform">→</span>
-          </a>
-        </div>
+          <div class="mt-3.5">
+            <span class="inline-block text-[11px] font-medium leading-none text-[#16A34A] bg-[#F0FDF4] px-2 py-1 rounded-full">Free</span>
+          </div>
+        </a>
 
         <!-- PNG to JPG Card -->
-        <div class="tool-card group bg-white border border-slate-200 rounded-2xl p-7 flex flex-col justify-between hover:translate-y-[-4px] hover:shadow-[0_12px_32px_rgba(124,58,237,0.12)] transition-all duration-300 hover-arrow" data-tags="png to jpg jpeg color background transparent fill">
+        <a href="png-to-jpg.html" class="tool-card group bg-white border border-[#E4E4E7] rounded-xl p-5 flex flex-col justify-between hover:border-[#7C3AED] hover:shadow-[0_0_0_3px_rgba(124,58,237,0.08)] hover:-translate-y-0.5 transition-all duration-250 cursor-pointer" data-tags="png to jpg jpeg color background transparent fill">
           <div>
-            <div class="w-12 h-12 rounded-xl bg-orange-50 text-orange-600 flex items-center justify-center text-2xl font-semibold mb-6">
-              🎨
+            <div class="flex items-center justify-between">
+              <div class="w-9 h-9 rounded-lg bg-[#FFFBEB] text-[#D97706] flex items-center justify-center text-lg">
+                🎨
+              </div>
+              <span class="text-[#A1A1AA] group-hover:text-[#7C3AED] transition-colors text-base">→</span>
             </div>
-            <h3 class="text-lg md:text-xl font-bold text-slate-900 mb-3">PNG to JPG Converter</h3>
-            <p class="text-slate-500 text-sm leading-relaxed mb-6">
-              Convert your transparent PNGs into standard JPEGs. Customize solid backdrop color fills for transparency.
+            <h3 class="text-[15px] font-bold text-[#09090B] mt-3.5">PNG to JPG Converter</h3>
+            <p class="text-xs text-[#52525B] mt-1 leading-relaxed">
+              Convert transparent PNG to JPG format. Choose compression rates and fallback colors.
             </p>
           </div>
-          <a href="png-to-jpg.html" class="inline-flex items-center gap-2 text-brand-primary font-semibold text-sm hover:text-brand-hover tracking-wide mt-auto">
-            Convert to JPG <span class="arrow-icon transition-transform">→</span>
-          </a>
-        </div>
+          <div class="mt-3.5">
+            <span class="inline-block text-[11px] font-medium leading-none text-[#16A34A] bg-[#F0FDF4] px-2 py-1 rounded-full">Free</span>
+          </div>
+        </a>
 
         <!-- WebP Converter Card -->
-        <div class="tool-card group bg-white border border-slate-200 rounded-2xl p-7 flex flex-col justify-between hover:translate-y-[-4px] hover:shadow-[0_12px_32px_rgba(124,58,237,0.12)] transition-all duration-300 hover-arrow" data-tags="webp to png to jpeg format converter size web speed">
+        <a href="webp-converter.html" class="tool-card group bg-white border border-[#E4E4E7] rounded-xl p-5 flex flex-col justify-between hover:border-[#7C3AED] hover:shadow-[0_0_0_3px_rgba(124,58,237,0.08)] hover:-translate-y-0.5 transition-all duration-250 cursor-pointer" data-tags="webp to png to jpeg format converter size web speed">
           <div>
-            <div class="w-12 h-12 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center text-2xl font-semibold mb-6">
-              🕸️
+            <div class="flex items-center justify-between">
+              <div class="w-9 h-9 rounded-lg bg-[#F0F9FF] text-[#0284C7] flex items-center justify-center text-lg">
+                🌐
+              </div>
+              <span class="text-[#A1A1AA] group-hover:text-[#7C3AED] transition-colors text-base">→</span>
             </div>
-            <h3 class="text-lg md:text-xl font-bold text-slate-900 mb-3">WebP Converter</h3>
-            <p class="text-slate-500 text-sm leading-relaxed mb-6">
-              A comprehensive utility tool to convert major standard image files to WebP, or revert WebPs back into JPGs/PNGs seamlessly.
+            <h3 class="text-[15px] font-bold text-[#09090B] mt-3.5">WebP Converter</h3>
+            <p class="text-xs text-[#52525B] mt-1 leading-relaxed">
+              Convert standard JPG/PNG into optimized WebP formats, or transfer WebP back to JPG/PNG.
             </p>
           </div>
-          <a href="webp-converter.html" class="inline-flex items-center gap-2 text-brand-primary font-semibold text-sm hover:text-brand-hover tracking-wide mt-auto">
-            Convert WebP <span class="arrow-icon transition-transform">→</span>
-          </a>
-        </div>
+          <div class="mt-3.5">
+            <span class="inline-block text-[11px] font-medium leading-none text-[#16A34A] bg-[#F0FDF4] px-2 py-1 rounded-full">Free</span>
+          </div>
+        </a>
 
         <!-- Image to PDF Card -->
-        <div class="tool-card group bg-white border border-slate-200 rounded-2xl p-7 flex flex-col justify-between hover:translate-y-[-4px] hover:shadow-[0_12px_32px_rgba(124,58,237,0.12)] transition-all duration-300 hover-arrow lg:col-span-1" data-tags="image to pdf compiler combine book document margins letter legal a4">
+        <a href="image-to-pdf.html" class="tool-card group bg-white border border-[#E4E4E7] rounded-xl p-5 flex flex-col justify-between hover:border-[#7C3AED] hover:shadow-[0_0_0_3px_rgba(124,58,237,0.08)] hover:-translate-y-0.5 transition-all duration-250 cursor-pointer" data-tags="image to pdf compiler combine book document margins letter legal a4">
           <div>
-            <div class="w-12 h-12 rounded-xl bg-red-50 text-red-600 flex items-center justify-center text-2xl font-semibold mb-6">
-              📄
+            <div class="flex items-center justify-between">
+              <div class="w-9 h-9 rounded-lg bg-[#FFF1F2] text-[#E11D48] flex items-center justify-center text-lg">
+                📄
+              </div>
+              <span class="text-[#A1A1AA] group-hover:text-[#7C3AED] transition-colors text-base">→</span>
             </div>
-            <h3 class="text-lg md:text-xl font-bold text-slate-900 mb-3">Image to PDF</h3>
-            <p class="text-slate-500 text-sm leading-relaxed mb-6">
-              Combine multiple images into an elegant PDF document. Organize sorting sequences, choose paper ratios, configure margins.
+            <h3 class="text-[15px] font-bold text-[#09090B] mt-3.5">Image to PDF</h3>
+            <p class="text-xs text-[#52525B] mt-1 leading-relaxed">
+              Combine multiple images together. Compile sorted PNG, JPG, or WebP inputs into a single PDF document.
             </p>
           </div>
-          <a href="image-to-pdf.html" class="inline-flex items-center gap-2 text-brand-primary font-semibold text-sm hover:text-brand-hover tracking-wide mt-auto">
-            Compile PDF <span class="arrow-icon transition-transform">→</span>
-          </a>
-        </div>
+          <div class="mt-3.5">
+            <span class="inline-block text-[11px] font-medium leading-none text-[#16A34A] bg-[#F0FDF4] px-2 py-1 rounded-full">Free</span>
+          </div>
+        </a>
 
       </div>
 
-      <!-- Feature Grid / Benefit list (Why Toolifya) -->
-      <section class="mt-24 border-t border-slate-100 pt-20">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl font-bold text-slate-900 mb-4">Why Global Creators Choose Toolifya</h2>
-          <p class="text-slate-500 max-w-xl mx-auto">Providing enterprise-grade offline processing capabilities without charging fees or requesting cookies.</p>
+      <!-- Why Choose Section -->
+      <section id="why-choose-section" class="mt-24 border-t border-[#E4E4E7] pt-20">
+        <div class="mb-10">
+          <h2 class="text-sm font-semibold uppercase tracking-wider text-[#09090B]">Why Toolifya?</h2>
+          <p class="text-xs text-[#A1A1AA] mt-1">Simple. fast. Secure offline conversions.</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100">
-            <div class="text-3xl mb-4">🔒</div>
-            <h3 class="font-bold text-slate-900 mb-2">100% Privacy Armed</h3>
-            <p class="text-slate-500 text-sm leading-relaxed">Your files never traverse networks or get stored on remote drives. Everything compiles completely on your local client CPU.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+          <!-- Feature 1 -->
+          <div class="border-l-3 border-[#7C3AED] pl-5 py-0.5">
+            <h3 class="text-[13px] font-semibold text-[#09090B] flex items-center gap-1.5">
+              <span>Private by Design</span>
+            </h3>
+            <p class="text-xs text-[#52525B] mt-1 font-sans leading-relaxed">
+              Images never leave your browser. Zero server uploads. Full security inside sandbox memory buffers.
+            </p>
           </div>
-          <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100">
-            <div class="text-3xl mb-4">⚡</div>
-            <h3 class="font-bold text-slate-900 mb-2">Supersonic Execution</h3>
-            <p class="text-slate-500 text-sm leading-relaxed">Runs in milliseconds utilizing high-performance canvas buffers inside modern sandboxed HTML5 modules.</p>
+          <!-- Feature 2 -->
+          <div class="border-l-3 border-[#7C3AED] pl-5 py-0.5">
+            <h3 class="text-[13px] font-semibold text-[#09090B] flex items-center gap-1.5">
+              <span>Instant Results</span>
+            </h3>
+            <p class="text-xs text-[#52525B] mt-1 font-sans leading-relaxed">
+              No waiting. Calculations complete in milliseconds directly using high-performance local canvas threads.
+            </p>
           </div>
-          <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100">
-            <div class="text-3xl mb-4">🚫</div>
-            <h3 class="font-bold text-slate-900 mb-2">No Signup Restrictions</h3>
-            <p class="text-slate-500 text-sm leading-relaxed">Skip the annoying logins, email confirmation boxes, or password verifications. Jump straight into processing your graphics.</p>
+          <!-- Feature 3 -->
+          <div class="border-l-3 border-[#7C3AED] pl-5 py-0.5">
+            <h3 class="text-[13px] font-semibold text-[#09090B] flex items-center gap-1.5">
+              <span>No Account Needed</span>
+            </h3>
+            <p class="text-xs text-[#52525B] mt-1 font-sans leading-relaxed">
+              Open any tool and start working immediately. Absolutely zero signups, email walls, or password mandates.
+            </p>
           </div>
-          <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100">
-            <div class="text-3xl mb-4">💻</div>
-            <h3 class="font-bold text-slate-900 mb-2">Cross-Platform Ready</h3>
-            <p class="text-slate-500 text-sm leading-relaxed">Engineered using fully responsive rendering targets that adjust to Android, iOS, Windows, and macOS devices instantly.</p>
+          <!-- Feature 4 -->
+          <div class="border-l-3 border-[#7C3AED] pl-5 py-0.5">
+            <h3 class="text-[13px] font-semibold text-[#09090B] flex items-center gap-1.5">
+              <span>Works Everywhere</span>
+            </h3>
+            <p class="text-xs text-[#52525B] mt-1 font-sans leading-relaxed">
+              Optimized seamlessly for mobile, iPad, laptop, and desktop viewports with a highly fluid design grid.
+            </p>
           </div>
         </div>
       </section>
 
-      <!-- Interactive FAQ Accordion -->
-      <section class="mt-24 border-t border-slate-100 pt-20">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl font-bold text-slate-900 mb-4">Frequently Asked Questions</h2>
-          <p class="text-slate-500 max-w-xl mx-auto">Got questions? Find direct, human responses below.</p>
+      <!-- FAQ Section -->
+      <section id="faq-section" class="mt-24 border-t border-[#E4E4E7] pt-20">
+        <div class="mb-10">
+          <h2 class="text-sm font-semibold uppercase tracking-wider text-[#09090B]">Frequently Asked Questions</h2>
+          <p class="text-xs text-[#A1A1AA] mt-1">Frequently asked questions about our application layers.</p>
         </div>
-        <div class="max-w-3xl mx-auto space-y-4">
-          <details class="group bg-slate-50 border border-slate-100 rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
-            <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
-              <h3 class="font-bold text-slate-900 text-base md:text-lg">Are my graphic files uploaded securely during compress/resize operations?</h3>
-              <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-slate-900 shadow-sm transition group-open:rotate-180">
-                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+        
+        <div class="max-w-2xl space-y-2">
+          <details class="group bg-transparent">
+            <summary class="flex items-center justify-between cursor-pointer focus:outline-none py-4 border-b border-[#E4E4E7]">
+              <h3 class="font-medium text-xs md:text-sm text-[#09090B]">Are my images uploaded to a server?</h3>
+              <span class="text-[#A1A1AA] group-open:rotate-180 transition-transform">
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
               </span>
             </summary>
-            <p class="mt-4 text-slate-500 text-sm md:text-base leading-relaxed">
-              No files are ever uploaded! Toolifya was constructed on standard progressive client technologies. When you select or drag files into upload containers, javascript components stream their raw binary chunks into localized FileReader scopes. Every sizing, cropping, or conversion is processed inside your local browser memory using Canvas buffers.
-            </p>
+            <div class="py-3 text-xs text-[#52525B] leading-relaxed">
+              Never. Everything happens inside your browser on your local device. Your images are processed entirely within sandbox memory and are never uploaded, storing supreme digital confidentiality.
+            </div>
           </details>
 
-          <details class="group bg-slate-50 border border-slate-100 rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
-            <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
-              <h3 class="font-bold text-slate-900 text-base md:text-lg">What makes Toolifya completely free to use without daily limits?</h3>
-              <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-slate-900 shadow-sm transition group-open:rotate-180">
-                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          <details class="group bg-transparent">
+            <summary class="flex items-center justify-between cursor-pointer focus:outline-none py-4 border-b border-[#E4E4E7]">
+              <h3 class="font-medium text-xs md:text-sm text-[#09090B]">Is Toolifya really free to use?</h3>
+              <span class="text-[#A1A1AA] group-open:rotate-180 transition-transform">
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
               </span>
             </summary>
-            <p class="mt-4 text-slate-500 text-sm md:text-base leading-relaxed">
-              We sustain this service without membership billing models by integration with premium programmatic visual banner advertisements (Google AdSense and Adsterra). This model protects your access from payment wall overlays or subscriptions while allowing us to continuously fund development and hosting services globally.
-            </p>
+            <div class="py-3 text-xs text-[#52525B] leading-relaxed">
+              Yes, 100% free with no caps. We display premium ads with zero overlay restrictions to offset infrastructure and domain expenses. No subscriptions, logins, or fees.
+            </div>
           </details>
 
-          <details class="group bg-slate-50 border border-slate-100 rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
-            <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
-              <h3 class="font-bold text-slate-900 text-base md:text-lg">Can I compress or resize large quantities of items in bulk?</h3>
-              <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-slate-900 shadow-sm transition group-open:rotate-180">
-                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          <details class="group bg-transparent">
+            <summary class="flex items-center justify-between cursor-pointer focus:outline-none py-4 border-b border-[#E4E4E7]">
+              <h3 class="font-medium text-xs md:text-sm text-[#09090B]">Can I process multiple images at once?</h3>
+              <span class="text-[#A1A1AA] group-open:rotate-180 transition-transform">
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
               </span>
             </summary>
-            <p class="mt-4 text-slate-500 text-sm md:text-base leading-relaxed">
-              Yes! High-volume operations are fully supported on Toolifya. The Compressor, format converters, and WebP modules compile multiple selected images asynchronously, generating customized tables of completed actions. You can download items individually or as consolidated compressed archives in single zip collections.
-            </p>
+            <div class="py-3 text-xs text-[#52525B] leading-relaxed">
+              Absolutely. Drag several JPG, PNG, or WebP credentials onto our drops. They'll convert and condense in bulk and pack neatly into a structured ZIP file.
+            </div>
           </details>
         </div>
       </section>
 
       <!-- Secondary Ad Banner Placement -->
-      <div class="w-full text-center bg-slate-50 border border-slate-100 rounded-2xl py-3 px-4 mt-20 text-xs text-slate-400 font-mono tracking-wider flex flex-col items-center justify-center gap-1">
-        <span>SPONSORED ADVERTISEMENT</span>
-        <div class="w-full max-w-[728px] h-24 bg-slate-200/50 border border-dashed border-slate-300 rounded flex items-center justify-center text-slate-400">
-          AdSterra / AdSense Placeholder (728x90)
-        </div>
+      <div class="ad-slot mt-20">
+        AdSterra / AdSense Placeholder (728x90)
       </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-[#0A0A0A] text-white pt-16 pb-8 px-6 md:px-12 mt-24">
-      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-neutral-850">
+    <footer class="bg-[#09090B] text-white pt-12 pb-8 px-6 md:px-12 mt-24">
+      <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-8 border-b border-[#27272A]">
         <div>
-          <a href="index.html" class="text-2xl font-extrabold tracking-tight hover:opacity-90 flex items-center gap-2 mb-4">
-            <span class="text-brand-cyan">⚡</span>Toolifya
+          <a href="index.html" class="text-base font-semibold tracking-tight hover:opacity-90">
+            Toolifya<span class="text-[#7C3AED]">.</span>
           </a>
-          <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
-            Free Online Image Tools — Fast, Simple, No Signup. High performance client processing for worldwide developers and content editors.
+          <p class="text-[#71717A] text-xs mt-1.5 font-sans">
+            Free image tools. No signup.
           </p>
-          <div class="mt-4 text-xs font-semibold text-brand-cyan uppercase tracking-wider">
-            Fast. Free. No Signup Required.
-          </div>
         </div>
-        
-        <div>
-          <h3 class="text-sm font-bold uppercase tracking-widest text-[#06B6D4] mb-4">Quick Links</h3>
-          <ul class="space-y-2.5 text-slate-400 text-sm">
-            <li><a href="index.html" class="hover:text-white transition-colors">Home Dashboard</a></li>
-            <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
-            <li><a href="image-compressor.html" class="hover:text-white transition-colors">Image Compressor</a></li>
-            <li><a href="image-resizer.html" class="hover:text-white transition-colors">Sizing Toolkit</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="text-sm font-bold uppercase tracking-widest text-[#06B6D4] mb-4">Legal Operations</h3>
-          <ul class="space-y-2.5 text-slate-400 text-sm">
-            <li><a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
-            <li><a href="about.html#contact" class="hover:text-white transition-colors">Developer Contact</a></li>
-          </ul>
+        <div class="flex flex-wrap gap-x-4 gap-y-2 text-xs text-[#71717A]">
+          <a href="index.html" class="hover:text-white transition-colors">Home</a>
+          <span class="text-[#27272A]">•</span>
+          <a href="index.html" class="hover:text-white transition-colors">Tools</a>
+          <span class="text-[#27272A]">•</span>
+          <a href="about.html" class="hover:text-white transition-colors">About</a>
+          <span class="text-[#27272A]">•</span>
+          <a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
         </div>
       </div>
-      
-      <div class="max-w-7xl mx-auto pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+      <div class="max-w-5xl mx-auto pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-[#52525B] gap-4">
         <div>
-          &copy; 2026 Toolifya. All rights reserved. Built with pure browser technology.
+          &copy; 2026 Toolifya.
         </div>
         <div>
-          Domain: <a href="https://toolifya.site" class="hover:text-white transition-all underline">https://toolifya.site</a>
+          Made with ♥ for the web
         </div>
       </div>
     </footer>
 
-    <!-- Shared/Page JS scripts -->
     <!-- Structured Data JSON-LD -->
     <script type="application/ld+json" defer>
     {

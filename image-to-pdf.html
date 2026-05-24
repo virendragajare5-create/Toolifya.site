@@ -4,11 +4,8 @@
     <meta charset="UTF-8" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
-    <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
-    </noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link class="canonical" href="https://toolifya.site/image-to-pdf" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -22,19 +19,15 @@
     <title>Image to PDF Converter Online Free | Toolifya</title>
     <meta name="description" content="Convert images to PDF online for free. Combine JPG, PNG, and WebP images into a single sorted, high quality PDF. Custom margins, page sizes, no signup." />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <link rel="canonical" href="https://toolifya.site/image-to-pdf.html" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Image to PDF Converter Online Free | Toolifya" />
     <meta property="og:description" content="Convert images to PDF online for free. Combine JPG, PNG, and WebP images into a single sorted, high quality PDF." />
-    <meta property="og:url" content="https://toolifya.site/image-to-pdf.html" />
+    <meta property="og:url" content="https://toolifya.site/image-to-pdf" />
     <meta property="og:image" content="https://toolifya.site/og-image.png" />
     <meta property="og:site_name" content="Toolifya" />
     <meta property="og:locale" content="en_US" />
-
-    <!-- Performance hints -->
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
 
     <!-- Styles -->
     <link rel="stylesheet" href="/src/index.css" />
@@ -46,138 +39,123 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7108819443201963"
          crossorigin="anonymous"></script>
   </head>
-  <body class="bg-white text-[#0F172A] min-h-screen flex flex-col font-sans">
+  <body class="bg-[#FAFAFA] text-[#09090B] min-h-screen flex flex-col font-sans">
     
     <!-- Navbar -->
-    <header class="sticky top-0 z-50 bg-[#0A0A0A] text-white py-4 px-6 md:px-12 flex justify-between items-center shadow-lg">
+    <header class="h-14 bg-[#09090B] border-b border-[#1C1C1E] text-white px-6 md:px-12 flex justify-between items-center sticky top-0 z-50">
       <div class="flex items-center gap-3">
-        <a href="index.html" class="text-xl md:text-2xl font-extrabold tracking-tight hover:opacity-90 flex items-center gap-2">
-          <span class="text-brand-cyan">⚡</span>Toolifya
+        <a href="index.html" class="text-base font-semibold tracking-tight hover:opacity-90 flex items-center">
+          Toolifya<span class="text-[#7C3AED] ml-0.5">.</span>
         </a>
       </div>
       
-      <!-- Mobile Toggle -->
-      <button id="nav-toggle" class="md:hidden text-white hover:text-brand-cyan focus:outline-none">
-        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-          <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
-        </svg>
-      </button>
-
-      <nav id="nav-menu" class="hidden md:flex flex-col md:flex-row absolute md:relative top-full left-0 w-full md:w-auto bg-[#0A0A0A] md:bg-transparent p-6 md:p-0 gap-6 items-start md:items-center border-t border-neutral-800 md:border-0">
-        <div class="relative group">
-          <button id="tools-dropdown-btn" class="flex items-center gap-1 font-medium text-brand-cyan hover:text-brand-cyan transition-colors">
-            All Tools
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-          </button>
-          
-          <ul id="tools-dropdown" class="hidden absolute left-0 mt-2 w-56 bg-white text-slate-800 rounded-xl shadow-xl border border-slate-100 overflow-hidden py-1 z-50">
-            <li><a href="image-compressor.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">⚡ Image Compressor</a></li>
-            <li><a href="image-resizer.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">↕️ Image Resizer</a></li>
-            <li><a href="image-crop.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">✂️ Image Crop Tool</a></li>
-            <li><a href="jpg-to-png.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">🖼️ JPG to PNG Converter</a></li>
-            <li><a href="png-to-jpg.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">🎨 PNG to JPG Converter</a></li>
-            <li><a href="webp-converter.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-medium transition-colors">🕸️ WebP Converter</a></li>
-            <li><a href="image-to-pdf.html" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-brand-primary font-bold transition-colors">📄 Image to PDF</a></li>
-          </ul>
-        </div>
-        <a href="about.html" class="font-medium hover:text-brand-cyan transition-colors">About Us</a>
-        <a href="privacy-policy.html" class="font-medium hover:text-brand-cyan transition-colors">Privacy Policy</a>
+      <!-- Nav List -->
+      <nav id="nav-menu" class="hidden md:flex flex-col md:flex-row absolute md:relative top-full left-0 w-full md:w-auto bg-[#09090B] md:bg-transparent p-6 md:p-0 gap-4 md:gap-6 items-start md:items-center border-b border-[#1C1C1E] md:border-0 z-50">
+        <a href="index.html" class="text-sm font-medium text-[#A1A1AA] hover:text-white transition-colors w-full md:w-auto">All Tools</a>
+        <a href="about.html" class="text-sm font-medium text-[#A1A1AA] hover:text-white transition-colors w-full md:w-auto">About</a>
+        <a href="privacy-policy.html" class="text-sm font-medium text-[#A1A1AA] hover:text-white transition-colors w-full md:w-auto">Privacy Policy</a>
+        <a href="image-compressor.html" class="md:hidden text-[#7C3AED] font-semibold text-sm w-full pt-2 border-t border-[#1C1C1E]">Try Free →</a>
       </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="image-compressor.html" class="hidden md:inline-flex items-center text-sm text-white border border-[#3F3F46] rounded-md px-3.5 py-1.5 hover:bg-[#1C1C1E] transition-all font-medium">Try Free →</a>
+        <!-- Mobile Toggle -->
+        <button id="nav-toggle" class="md:hidden text-[#A1A1AA] hover:text-white focus:outline-none" aria-label="Toggle navigation">
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
     </header>
 
-    <!-- Breadcrumb -->
-    <div class="bg-slate-50 border-b border-slate-100 py-3 px-6 md:px-12 text-sm text-slate-500">
-      <div class="max-w-7xl mx-auto flex items-center gap-2">
-        <a href="index.html" class="hover:text-brand-primary transition-colors">Home</a>
-        <span>&rsaquo;</span>
-        <span class="text-slate-400">Converters</span>
-        <span>&rsaquo;</span>
-        <span class="text-slate-800 font-medium font-bold">Image to PDF</span>
-      </div>
-    </div>
-
-    <!-- Main Workspace -->
-    <main class="max-w-7xl mx-auto px-6 py-12 flex-grow w-full">
+    <!-- Main Container -->
+    <main class="max-w-2xl mx-auto px-6 py-12 flex-grow w-full">
       
-      <!-- AD Placeholder -->
-      <div class="w-full text-center bg-slate-50 border border-slate-100 rounded-2xl py-2 px-4 mb-10 text-xs text-slate-400 font-mono tracking-wider">
-        <span>ADVERTISEMENT</span>
-        <div class="w-full max-w-[728px] h-20 bg-slate-200/40 border border-dashed border-slate-200 rounded mx-auto flex items-center justify-center text-slate-400 mt-1">
-          728x90 Billboard Layout
-        </div>
-      </div>
+      <!-- Breadcrumb -->
+      <nav class="flex items-center gap-1 text-[13px] text-[#A1A1AA] mb-4 font-medium">
+        <a href="index.html" class="hover:text-[#09090B] transition-colors">Home</a>
+        <span>/</span>
+        <span class="text-[#09090B]">Image to PDF</span>
+      </nav>
 
       <!-- Title / Header -->
-      <div class="text-center max-w-3xl mx-auto mb-12">
-        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-4">
-          Image to PDF Converter — JPG PNG to PDF Online Free
+      <div class="mb-8">
+        <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight text-[#09090B]">
+          Image to PDF
         </h1>
-        <p class="text-slate-500 text-base md:text-lg">
-          Combine and compile multiple JPG, WebP, or PNG images into a clean, print-ready PDF document. Reorder pages, select page margins, and define document dimensions.
+        <p class="text-[14px] text-[#52525B] mt-1.5 leading-relaxed font-sans">
+          Rearrange and pack multi-formatted JPG, PNG, or WebP layouts into one clean, highly aligned PDF publication securely in your browser.
         </p>
       </div>
 
-      <!-- Main Interaction Workspace Box -->
-      <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-10 shadow-[0_12px_48px_rgba(0,0,0,0.03)] mb-16 max-w-4xl mx-auto">
+      <!-- Advertisement Space -->
+      <div class="ad-slot my-6">
+        AdSterra / AdSense Placeholder (728x90)
+      </div>
+
+      <!-- Interactive Workspace Card -->
+      <div class="bg-white border border-[#E4E4E7] rounded-2xl p-6 md:p-8 shadow-sm">
         
-        <!-- Upload Box -->
-        <div id="upload-zone" class="border-2 border-dashed border-slate-200 hover:border-brand-primary hover:bg-slate-50/50 rounded-2xl p-8 md:p-12 text-center cursor-pointer transition-all duration-300 relative group">
-          <input type="file" id="file-input" multiple accept="image/jpeg, image/jpg, image/png, image/webp" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
-          <div class="flex flex-col items-center gap-4">
-            <div class="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center text-3xl transition-transform group-hover:scale-110">
-              📄
+        <!-- Upload Zone -->
+        <div id="upload-zone" class="border-[1.5px] border-dashed border-[#D4D4D8] rounded-xl bg-[#F4F4F5] p-12 text-center cursor-pointer transition-all duration-200 relative group">
+          <input type="file" id="file-input" multiple accept="image/jpeg, image/jpg, image/png, image/webp" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" />
+          <div class="flex flex-col items-center gap-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center text-2xl transition-transform duration-200 group-hover:-translate-y-0.5">
+              <svg class="h-8 w-8 text-[#A1A1AA] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5h10.5" />
+              </svg>
             </div>
             <div>
-              <p class="text-lg font-bold text-slate-905 mb-1">Upload multiple graphics to merge</p>
-              <p class="text-slate-505 text-sm">Drag and drop images here or select local files</p>
+              <p class="text-[14px] font-medium text-[#09090B]">Upload multiple graphics to merge</p>
+              <p class="text-xs text-[#A1A1AA] mt-0.5">Drag and drop images here or select local files</p>
             </div>
           </div>
         </div>
 
         <!-- Sorted Thumbnail Pipeline List (Hidden initially) -->
-        <div id="image-queue-section" class="hidden mt-8 space-y-4">
-          <div class="flex justify-between items-center">
-            <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wide">🔧 Image Ordering &amp; Pages</h3>
-            <button id="add-more-btn" class="bg-indigo-50 text-[#7C3AED] hover:bg-indigo-100/80 text-xs font-bold px-3.5 py-1.5 rounded-xl transition-all cursor-pointer">
+        <div id="image-queue-section" class="hidden mt-6 space-y-4">
+          <div class="flex justify-between items-center sm:gap-2">
+            <h3 class="text-xs font-bold text-[#A1A1AA] uppercase tracking-wider">Page Sequence</h3>
+            <button id="add-more-btn" class="bg-[#F4F4F5] hover:bg-[#E4E4E7] text-[#09090B] text-[11px] font-semibold px-3 py-1.5 rounded-md transition-all cursor-pointer">
               + Add More Files
             </button>
           </div>
           
           <!-- Virtual page order stack -->
-          <div id="queue-list" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div id="queue-list" class="grid grid-cols-1 gap-3">
             <!-- Rendered dynamically -->
           </div>
         </div>
 
-        <!-- Margins and Dimension Specifications (Hidden initially) -->
-        <div id="config-panel" class="hidden mt-8 pt-8 border-t border-slate-100 space-y-6">
-          <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">⚙️ Document Configurations</h3>
+        <!-- Document Configurations Panel -->
+        <div id="config-panel" class="hidden mt-6 pt-6 border-t border-[#E4E4E7] space-y-5">
+          <h3 class="text-xs font-bold text-[#A1A1AA] uppercase tracking-wider">Document Configurations</h3>
 
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             
             <!-- Page Size -->
-            <div class="space-y-2">
-              <label class="text-xs font-bold text-slate-705 block">Page Dimension Profile</label>
-              <select id="select-page-size" class="w-full p-2.5 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-1 focus:ring-brand-primary text-slate-800 font-semibold cursor-pointer">
+            <div class="space-y-1.5">
+              <label class="text-xs font-medium text-[#52525B] block">Page Dimension Profile</label>
+              <select id="select-page-size" class="w-full p-2 bg-white border border-[#E4E4E7] rounded-md text-xs focus:outline-none focus:border-[#7C3AED] text-[#09090B] font-medium cursor-pointer">
                 <option value="A4">A4 (210 &times; 297 mm)</option>
                 <option value="Letter">US Letter (8.5 &times; 11 in)</option>
-                <option value="Fit">Fit Image (Matches pixel limits)</option>
+                <option value="Fit">Fit Image Dimensions</option>
               </select>
             </div>
 
             <!-- Orientation -->
-            <div id="orientation-container" class="space-y-2">
-              <label class="text-xs font-bold text-slate-705 block">Page Orientation</label>
-              <select id="select-orientation" class="w-full p-2.5 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-1 focus:ring-brand-primary text-slate-800 font-semibold cursor-pointer">
+            <div id="orientation-container" class="space-y-1.5">
+              <label class="text-xs font-medium text-[#52525B] block">Page Orientation</label>
+              <select id="select-orientation" class="w-full p-2 bg-white border border-[#E4E4E7] rounded-md text-xs focus:outline-none focus:border-[#7C3AED] text-[#09090B] font-medium cursor-pointer">
                 <option value="Portrait">Portrait (Vertical)</option>
                 <option value="Landscape">Landscape (Horizontal)</option>
               </select>
             </div>
 
             <!-- Page Margins -->
-            <div id="margins-container" class="space-y-2">
-              <label class="text-xs font-bold text-slate-705 block">Print Margins</label>
-              <select id="select-margins" class="w-full p-2.5 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-1 focus:ring-brand-primary text-slate-800 font-semibold cursor-pointer">
+            <div id="margins-container" class="space-y-1.5">
+              <label class="text-xs font-medium text-[#52525B] block">Print Margins</label>
+              <select id="select-margins" class="w-full p-2 bg-white border border-[#E4E4E7] rounded-md text-xs focus:outline-none focus:border-[#7C3AED] text-[#09090B] font-medium cursor-pointer">
                 <option value="none">No Margin (Full bleed)</option>
                 <option value="narrow">Narrow (10 mm)</option>
                 <option value="wide">Wide (20 mm)</option>
@@ -187,34 +165,34 @@
           </div>
 
           <!-- Quality Compression Slider (For JPEG embedding optimization) -->
-          <div class="space-y-3 bg-slate-50 p-4 rounded-xl border border-slate-100">
+          <div class="space-y-2.5 bg-[#F4F4F5] p-4 rounded-xl border border-[#E4E4E7]">
             <div class="flex justify-between items-center text-xs">
-              <label class="font-bold text-slate-600">Image Compression Quality (PDF Optimization)</label>
-              <span id="quality-val" class="font-mono font-bold text-brand-primary bg-violet-50 px-2 rounded">85%</span>
+              <label class="font-semibold text-[#52525B]">Image Compression Quality</label>
+              <span id="quality-val" class="font-mono font-bold text-[#7C3AED] bg-white border border-[#DDD6FE] px-1.5 py-0.5 rounded">85%</span>
             </div>
-            <input type="range" id="quality-slider" min="50" max="100" value="85" />
-            <span class="text-[10px] text-slate-400 block font-medium">Slightly compressing high-resolution JPG files prevents resulting PDF books from swelling to immense sizes.</span>
+            <input type="range" id="quality-slider" min="50" max="100" value="85" class="w-full accent-[#7C3AED]" />
+            <span class="text-[10px] text-[#A1A1AA] block leading-relaxed font-sans">Compressing high-resolution graphics keeps output boundaries aligned while avoiding huge PDF files.</span>
           </div>
 
           <!-- Compile actions -->
-          <button id="compile-pdf-btn" class="w-full bg-[#7C3AED] hover:bg-brand-hover text-white py-4 px-6 rounded-2xl font-bold tracking-wide shadow-md transition-all active:scale-[0.98] cursor-pointer">
-            ✨ Compile &amp; Download PDF Document
+          <button id="compile-pdf-btn" class="w-full bg-[#09090B] text-white font-medium py-3 px-4 rounded-lg hover:bg-[#1C1C1E] transition-all text-xs tracking-wide cursor-pointer text-center">
+            Compile &amp; Download PDF Document
           </button>
         </div>
 
         <!-- Processing Loader State (Hidden) -->
-        <div id="processing-loader" class="hidden mt-8 py-10 flex flex-col items-center justify-center gap-3">
-          <div class="animate-spin rounded-full h-10 w-10 border-4 border-slate-200 border-t-brand-primary"></div>
-          <p class="text-sm font-bold text-slate-600">Packaging pages and pixel streams...</p>
+        <div id="processing-loader" class="hidden mt-6 py-6 flex flex-col items-center justify-center gap-2.5 border-t border-[#E4E4E7]">
+          <div class="animate-spin rounded-full h-6 w-6 border-2 border-[#E4E4E7] border-t-[#7C3AED]"></div>
+          <p class="text-xs font-medium text-[#52525B]">Packaging pages and pixel streams...</p>
         </div>
 
         <!-- Success prompt (Hidden) -->
-        <div id="success-panel" class="hidden mt-8 text-center space-y-4 bg-emerald-50 border border-emerald-100 p-6 rounded-2xl animate-fade-in">
-          <div class="w-12 h-12 bg-emerald-510 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto shadow-md">✓</div>
-          <h3 class="text-lg font-bold text-slate-905">Your PDF document was assembled successfully</h3>
-          <p class="text-xs text-slate-500">The compiler constructed and triggered download for your PDF booklet locally.</p>
+        <div id="success-panel" class="hidden mt-6 text-center space-y-3 bg-[#F0FDF4] border border-[#BBF7D0] p-6 rounded-xl">
+          <div class="w-8 h-8 bg-[#16A34A] text-white rounded-full flex items-center justify-center text-sm font-bold mx-auto">✓</div>
+          <h3 class="text-sm font-semibold text-[#09090B]">PDF Assembled Successfully</h3>
+          <p class="text-xs text-[#52525B]">Your clean consolidated PDF document has been constructed locally and saved.</p>
           <div class="flex justify-center gap-2 pt-2">
-            <button id="process-another-btn" class="bg-brand-primary text-white font-bold py-2.5 px-6 rounded-xl hover:bg-brand-hover transition-all cursor-pointer">
+            <button id="process-another-btn" class="bg-[#09090B] text-white font-medium py-1.8 px-3.5 rounded-md hover:bg-[#1C1C1E] transition-all text-[11px] cursor-pointer">
               Compile Another PDF
             </button>
           </div>
@@ -222,176 +200,122 @@
 
       </div>
 
-      <!-- SEO CONTENT SECTION SECTION A to D -->
-      <section class="max-w-4xl mx-auto space-y-16 mt-20">
-        
-        <!-- SECTION A: How to Convert -->
+      <!-- connected visual stepper guides -->
+      <section class="mt-16 space-y-8">
         <div>
-          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-6">How to Convert Images to PDF Online Free</h2>
-          <ol class="grid grid-cols-1 md:grid-cols-3 gap-6 list-none p-0">
-            <li class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-              <div class="text-[#7C3AED] font-black text-2xl mb-3">01</div>
-              <h3 class="font-bold text-base text-slate-905 mb-2">Import multiple images</h3>
-              <p class="text-slate-550 text-xs leading-relaxed">Drag and drop lists of JPG, WEBP, or PNG files into the platform. Previews are constructed instantly.</p>
-            </li>
-            <li class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-              <div class="text-[#7C3AED] font-black text-2xl mb-3">02</div>
-              <h3 class="font-bold text-base text-slate-905 mb-2">Rearrange &amp; Page Setup</h3>
-              <p class="text-slate-550 text-xs leading-relaxed">Reorder positions using intuitive layout arrows. Choose page sizes like A4 or Letter, orientation layouts, or margins borders.</p>
-            </li>
-            <li class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-              <div class="text-[#7C3AED] font-black text-2xl mb-3">03</div>
-              <h3 class="font-bold text-base text-slate-905 mb-2">Generate Assembly</h3>
-              <p class="text-slate-550 text-xs leading-relaxed">Click 'Compile' to join files together inside offline PDF frameworks. Instant secure transfers directly from memory.</p>
-            </li>
-          </ol>
+          <h2 class="text-sm font-bold uppercase tracking-wider text-[#09090B]">How to Convert Images to PDF</h2>
+          <p class="text-xs text-[#A1A1AA] mt-1">Generate a high-resolution, multipage Document in three steps.</p>
         </div>
 
-        <!-- SECTION B: Why use Toolifya's PDF compiler -->
-        <div>
-          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-6 text-center">Why Use Toolifya's Image to PDF Converter?</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="flex gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-100">
-              <div class="text-2xl">⚡</div>
-              <div>
-                <h4 class="font-bold text-slate-905 text-sm mb-1">Pragmatic Reordering controls</h4>
-                <p class="text-slate-500 text-xs leading-relaxed">Sort each page position easily to assemble scan documents cleanly before packaging.</p>
-              </div>
-            </div>
-            <div class="flex gap-4 p-5 bg-slate-50 rounded-2xl border border-slate-100">
-              <div class="text-2xl">🔒</div>
-              <div>
-                <h4 class="font-bold text-slate-905 text-sm mb-1">Strict Personal Privacy</h4>
-                <p class="text-slate-500 text-xs leading-relaxed">No remote server transmissions occur. Highly sensitive digital documents are managed securely within your local hardware sandbox.</p>
-              </div>
-            </div>
-            <div class="flex gap-2 p-5 bg-slate-50 rounded-2xl border border-slate-100">
-              <div class="text-2xl">📃</div>
-              <div>
-                <h4 class="font-bold text-[#0F172A] text-sm mb-1">Print Ready Layout formats</h4>
-                <p class="text-slate-500 text-xs leading-relaxed">Configure standard A4 or US letter dimension sizes with custom margins boundaries for neat physical handouts.</p>
-              </div>
-            </div>
-            <div class="flex gap-2 p-5 bg-slate-50 rounded-2xl border border-slate-100">
-              <div class="text-2xl">♾️</div>
-              <div>
-                <h4 class="font-bold text-[#0F172A] text-sm mb-1">No Watermarks Applied</h4>
-                <p class="text-slate-500 text-xs leading-relaxed">Export pristine digital documentation bundles without unwanted logos or page limits.</p>
-              </div>
-            </div>
+        <div class="relative pl-6 border-l border-[#E4E4E7] space-y-8 ml-3">
+          <!-- Step 1 -->
+          <div class="relative">
+            <span class="absolute -left-[35px] top-0.5 w-5 h-5 rounded-full bg-[#F5F3FF] border border-[#DDD6FE] text-[#7C3AED] text-[10px] font-bold flex items-center justify-center">1</span>
+            <h3 class="text-sm font-semibold text-[#09090B]">Load Graphical Sheets</h3>
+            <p class="text-xs text-[#52525B] mt-1 font-sans leading-relaxed">Select as many JPEG, PNG, or WebP files as required. Previews load safely and instantly into local container spaces.</p>
+          </div>
+          <!-- Step 2 -->
+          <div class="relative">
+            <span class="absolute -left-[35px] top-0.5 w-5 h-5 rounded-full bg-[#F5F3FF] border border-[#DDD6FE] text-[#7C3AED] text-[10px] font-bold flex items-center justify-center">2</span>
+            <h3 class="text-sm font-semibold text-[#09090B]">Rank Page Sequences</h3>
+            <p class="text-xs text-[#52525B] mt-1 font-sans leading-relaxed">Move elements or trim duplicates. Refine document parameters like page sizes (A4, Letters), orientation layers, and spacing margins.</p>
+          </div>
+          <!-- Step 3 -->
+          <div class="relative">
+            <span class="absolute -left-[35px] top-0.5 w-5 h-5 rounded-full bg-[#F5F3FF] border border-[#DDD6FE] text-[#7C3AED] text-[10px] font-bold flex items-center justify-center">3</span>
+            <h3 class="text-sm font-semibold text-[#09090B]">Compile Safely</h3>
+            <p class="text-xs text-[#52525B] mt-1 font-sans leading-relaxed">Apply compilation factors directly. Your browser organizes dimensions, integrates compressions, and exports PDF structures directly with no servers.</p>
           </div>
         </div>
-
-        <!-- SECTION C: FAQ -->
-        <div>
-          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-6 text-center">Frequently Asked Questions</h2>
-          <div class="space-y-4">
-            <details class="group bg-slate-50 border border-slate-205 rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
-              <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
-                <h3 class="font-bold text-slate-900 text-base">How do I change the layout order of PDF pages?</h3>
-                <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-slate-950 shadow-sm transition group-open:rotate-180">
-                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-                </span>
-              </summary>
-              <p class="mt-4 text-slate-500 text-sm leading-relaxed">
-                As soon as you upload multiple graphics, a sorted timeline window is created. You can use the '▲ Move Left' / '▼ Move Right' positional controls on each card to sort, reposition, or delete individual elements directly in the line stack.
-              </p>
-            </details>
-
-            <details class="group bg-slate-50 border border-slate-205 rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
-              <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
-                <h3 class="font-bold text-slate-900 text-base">What are Portrait and Landscape orientations used for?</h3>
-                <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-slate-950 shadow-sm transition group-open:rotate-180">
-                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-                </span>
-              </summary>
-              <p class="mt-4 text-slate-500 text-sm leading-relaxed">
-                Portrait formats orient the A4 or US Letter sheets as vertical documents—best for text document reports. Landscape designs shift sheets sideways (horizontal panels), which is ideal for photographic collections, slides, or high-definition portfolios.
-              </p>
-            </details>
-          </div>
-        </div>
-
-        <!-- SECTION D: Internal links -->
-        <div class="border-t border-slate-100 pt-16">
-          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-8 text-center">More Free Image Tools</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div class="bg-slate-50 hover:bg-slate-100/50 rounded-2xl p-6 border border-slate-100 flex flex-col justify-between hover:shadow-md transition-all">
-              <div>
-                <h4 class="font-bold text-slate-200 mb-2">Image Compressor</h4>
-                <p class="text-slate-500 text-xs mb-4">Compress files down to specific size targets in KB.</p>
-              </div>
-              <a href="image-compressor.html" class="text-xs font-semibold text-brand-primary hover:underline">Try Tool &rarr;</a>
-            </div>
-            <div class="bg-slate-50 hover:bg-slate-100/50 rounded-2xl p-6 border border-slate-100 flex flex-col justify-between hover:shadow-md transition-all">
-              <div>
-                <h4 class="font-bold text-slate-200 mb-2">Image Resizer</h4>
-                <p class="text-slate-505 text-xs mb-4">Scale graphic dimensions with precise pixel ratios.</p>
-              </div>
-              <a href="image-resizer.html" class="text-xs font-semibold text-brand-primary hover:underline">Try Tool &rarr;</a>
-            </div>
-            <div class="bg-slate-50 hover:bg-slate-100/50 rounded-2xl p-6 border border-slate-100 flex flex-col justify-between hover:shadow-md transition-all">
-              <div>
-                <h4 class="font-bold text-slate-200 mb-2">WebP Converter</h4>
-                <p class="text-slate-505 text-xs mb-4">Convert images into modern, web-optimized WebP assets.</p>
-              </div>
-              <a href="webp-converter.html" class="text-xs font-semibold text-brand-primary hover:underline">Try Tool &rarr;</a>
-            </div>
-          </div>
-        </div>
-
       </section>
 
-      <!-- AD Space bottom -->
-      <div class="w-full text-center bg-slate-50 border border-slate-100 rounded-2xl py-2 px-4 mt-20 text-xs text-slate-400 font-mono tracking-wider">
-        <span>ADVERTISEMENT</span>
-        <div class="w-full max-w-[728px] h-20 bg-slate-200/40 border border-dashed border-slate-200 rounded mx-auto flex items-center justify-center text-slate-400 mt-1">
-          728x90 Billboard Layout
+      <!-- Clean FAQs list accordions -->
+      <section class="mt-16 border-t border-[#E4E4E7] pt-12">
+        <div class="mb-6">
+          <h2 class="text-sm font-bold uppercase tracking-wider text-[#09090B]">Frequently Asked Questions</h2>
+          <p class="text-xs text-[#A1A1AA] mt-1">Resolving document generation questions.</p>
         </div>
+
+        <div class="space-y-1">
+          <details class="group bg-transparent">
+            <summary class="flex items-center justify-between cursor-pointer focus:outline-none py-3.5 border-b border-[#E4E4E7]">
+              <h3 class="font-medium text-xs md:text-sm text-[#09090B]">How do I shift the order of pages inside my document?</h3>
+              <span class="text-[#A1A1AA] group-open:rotate-180 transition-transform">
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </span>
+            </summary>
+            <div class="py-3.5 text-xs text-[#52525B] leading-relaxed">
+              Once files compile into the timeline queue, use the position buttons on the right margin of each row to move images up or down in sequence.
+            </div>
+          </details>
+
+          <details class="group bg-transparent">
+            <summary class="flex items-center justify-between cursor-pointer focus:outline-none py-3.5 border-b border-[#E4E4E7]">
+              <h3 class="font-medium text-xs md:text-sm text-[#09090B]">Are transparent borders preserved when creating PDFs?</h3>
+              <span class="text-[#A1A1AA] group-open:rotate-180 transition-transform">
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </span>
+            </summary>
+            <div class="py-3.5 text-xs text-[#52525B] leading-relaxed">
+              Transparent elements default to standard opaque white backdrops inside PDF pages to guarantee clean resolution layouts in any printed output.
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- clean tools grid -->
+      <section class="mt-16 border-t border-[#E4E4E7] pt-12">
+        <h2 class="text-xs font-bold text-[#09090B] uppercase tracking-wider mb-5">More Tools</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <a href="image-compressor.html" class="block bg-white border border-[#E4E4E7] p-4 rounded-xl hover:border-[#7C3AED] hover:shadow-[0_0_0_3px_rgba(124,58,237,0.08)] transition-all">
+            <h4 class="text-xs font-bold text-[#09090B]">Image Compressor</h4>
+            <p class="text-[11px] text-[#52525B] mt-1 leading-relaxed">Reduce footprint allocations directly on disk structures effortlessly.</p>
+          </a>
+          <a href="image-resizer.html" class="block bg-white border border-[#E4E4E7] p-4 rounded-xl hover:border-[#7C3AED] hover:shadow-[0_0_0_3px_rgba(124,58,237,0.08)] transition-all">
+            <h4 class="text-xs font-bold text-[#09090B]">Image Resizer</h4>
+            <p class="text-[11px] text-[#52525B] mt-1 leading-relaxed">Apply precise scale percentages or preset frames easily.</p>
+          </a>
+          <a href="webp-converter.html" class="block bg-white border border-[#E4E4E7] p-4 rounded-xl hover:border-[#7C3AED] hover:shadow-[0_0_0_3px_rgba(124,58,237,0.08)] transition-all">
+            <h4 class="text-xs font-bold text-[#09090B]">WebP Converter</h4>
+            <p class="text-[11px] text-[#52525B] mt-1 leading-relaxed">Convert images to WebP format online free in your browser.</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- AD Placeholder Footer Space -->
+      <div class="ad-slot mt-16">
+        AdSterra / AdSense Placeholder (728x90)
       </div>
 
     </main>
 
     <!-- Footer -->
-    <footer class="bg-[#0A0A0A] text-white pt-16 pb-8 px-6 md:px-12 mt-24">
-      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-neutral-850">
+    <footer class="bg-[#09090B] text-white pt-12 pb-8 px-6 md:px-12 mt-24">
+      <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-8 border-b border-[#27272A]">
         <div>
-          <a href="index.html" class="text-2xl font-extrabold tracking-tight hover:opacity-90 flex items-center gap-2 mb-4">
-            <span class="text-brand-cyan">⚡</span>Toolifya
+          <a href="index.html" class="text-base font-semibold tracking-tight hover:opacity-90">
+            Toolifya<span class="text-[#7C3AED]">.</span>
           </a>
-          <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
-            Free Online Image Tools — Fast, Simple, No Signup. High performance client processing for worldwide developers and content editors.
+          <p class="text-[#71717A] text-xs mt-1.5 font-sans">
+            Free image tools. No signup.
           </p>
-          <div class="mt-4 text-xs font-semibold text-brand-cyan uppercase tracking-wider">
-            Fast. Free. No Signup Required.
-          </div>
         </div>
-        
-        <div>
-          <h3 class="text-sm font-bold uppercase tracking-widest text-[#06B6D4] mb-4">Quick Links</h3>
-          <ul class="space-y-2.5 text-slate-400 text-sm">
-            <li><a href="index.html" class="hover:text-white transition-colors">Home Dashboard</a></li>
-            <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
-            <li><a href="image-compressor.html" class="hover:text-white transition-colors">Image Compressor</a></li>
-            <li><a href="image-resizer.html" class="hover:text-white transition-colors">Sizing Toolkit</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="text-sm font-bold uppercase tracking-widest text-[#06B6D4] mb-4">Legal Operations</h3>
-          <ul class="space-y-2.5 text-slate-400 text-sm">
-            <li><a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
-            <li><a href="about.html#contact" class="hover:text-white transition-colors">Developer Contact</a></li>
-          </ul>
+        <div class="flex flex-wrap gap-x-4 gap-y-2 text-xs text-[#71717A]">
+          <a href="index.html" class="hover:text-white transition-colors">Home</a>
+          <span class="text-[#27272A]">•</span>
+          <a href="index.html" class="hover:text-white transition-colors">Tools</a>
+          <span class="text-[#27272A]">•</span>
+          <a href="about.html" class="hover:text-white transition-colors">About</a>
+          <span class="text-[#27272A]">•</span>
+          <a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
         </div>
       </div>
-      
-      <div class="max-w-7xl mx-auto pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+      <div class="max-w-5xl mx-auto pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-[#52525B] gap-4">
         <div>
-          &copy; 2026 Toolifya. All rights reserved. Built with pure browser technology.
+          &copy; 2026 Toolifya.
         </div>
         <div>
-          Domain: <a href="https://toolifya.site" class="hover:text-white transition-all underline">https://toolifya.site</a>
+          Made with ♥ for the web
         </div>
       </div>
     </footer>
@@ -410,9 +334,9 @@
         },
         {
           "@type": "WebApplication",
-          "@id": "https://toolifya.site/image-to-pdf.html#app",
+          "@id": "https://toolifya.site/image-to-pdf#app",
           "name": "Image to PDF Converter",
-          "url": "https://toolifya.site/image-to-pdf.html",
+          "url": "https://toolifya.site/image-to-pdf",
           "description": "Convert images to PDF online for free. Combine JPG, PNG, and WebP images into a single sorted, high quality PDF.",
           "applicationCategory": "UtilitiesApplication",
           "operatingSystem": "Windows, macOS, Linux, Android, iOS, ChromeOS",
@@ -439,7 +363,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "Image to PDF Converter",
-              "item": "https://toolifya.site/image-to-pdf.html"
+              "item": "https://toolifya.site/image-to-pdf"
             }
           ]
         }
@@ -447,7 +371,7 @@
     }
     </script>
 
-    <!-- Handler logic -->
+    <!-- Page Specific Handlers -->
     <script type="module" defer>
       import { initNavbar, downloadFile, formatBytes } from '/src/utils.js';
       initNavbar();
@@ -472,10 +396,9 @@
       const successPanel = document.getElementById('success-panel');
       const processAnotherBtn = document.getElementById('process-another-btn');
 
-      let originalFileList = []; // { id: number, file: File, previewUrl: string, width: number, height: number }
+      let originalFileList = [];
       let nextId = 0;
 
-      // Disable/enable profile controllers based on Page Size Fit selector
       selectPageSize.addEventListener('change', () => {
         if (selectPageSize.value === 'Fit') {
           orientationContainer.classList.add('opacity-40', 'pointer-events-none');
@@ -490,12 +413,11 @@
         qualityVal.textContent = qualitySlider.value + '%';
       });
 
-      // Drag handles
       ['dragenter', 'dragover'].forEach(name => {
-        uploadZone.addEventListener(name, (e) => { e.preventDefault(); uploadZone.classList.add('bg-indigo-50/50', 'border-indigo-500'); });
+        uploadZone.addEventListener(name, (e) => { e.preventDefault(); uploadZone.classList.add('bg-[#F5F3FF]', 'border-[#7C3AED]'); });
       });
       ['dragleave', 'drop'].forEach(name => {
-        uploadZone.addEventListener(name, (e) => { e.preventDefault(); uploadZone.classList.remove('bg-indigo-50/50', 'border-indigo-500'); });
+        uploadZone.addEventListener(name, (e) => { e.preventDefault(); uploadZone.classList.remove('bg-[#F5F3FF]', 'border-[#7C3AED]'); });
       });
 
       uploadZone.addEventListener('drop', (e) => {
@@ -564,30 +486,27 @@
         });
       }
 
-      // Dynamic timeline stack sorting renderer
       function renderQueue() {
         queueList.innerHTML = '';
         originalFileList.forEach((item, index) => {
           const card = document.createElement('div');
-          card.className = 'flex items-center gap-4 bg-slate-50 border border-slate-200 p-3.5 rounded-2xl relative shadow-sm animation-fade-in group hover:bg-white transition-all';
+          card.className = 'flex items-center gap-4 bg-[#F4F4F5] border border-[#E4E4E7] p-3 rounded-xl relative shadow-sm group hover:bg-white transition-all';
           card.innerHTML = `
-            <div class="w-16 h-16 bg-slate-200 rounded-lg overflow-hidden flex-shrink-0 border border-slate-100 shadow-inner">
+            <div class="w-12 h-12 bg-white rounded-lg overflow-hidden flex-shrink-0 border border-[#E4E4E7]">
               <img src="${item.previewUrl}" class="w-full h-full object-cover" />
             </div>
-            <div class="flex-grow min-w-0 pr-10">
-              <p class="font-bold text-slate-800 text-sm truncate" title="${item.file.name}">${item.file.name}</p>
-              <p class="text-[11px] text-slate-400 font-medium">${item.width} &times; ${item.height} px &middot; ${formatBytes(item.file.size)} &middot; Page ${index + 1}</p>
+            <div class="flex-grow min-w-0 pr-16">
+              <p class="font-semibold text-[#09090B] text-xs truncate" title="${item.file.name}">${item.file.name}</p>
+              <p class="text-[10px] text-[#A1A1AA] mt-0.5 font-medium">${item.width} &times; ${item.height} px &middot; ${formatBytes(item.file.size)} &middot; Page ${index + 1}</p>
             </div>
             
-            <!-- Positional move controls -->
-            <div class="absolute right-3.5 top-1/2 -translate-y-1/2 flex flex-col gap-1.5 opacity-80 group-hover:opacity-100 transition-opacity">
-              <button data-id="${item.id}" class="move-up-btn p-1 bg-white hover:bg-[#7C3AED] hover:text-white rounded shadow-sm text-slate-500 hover:shadow transition-all text-xs cursor-pointer" title="Move Up">▲</button>
-              <button data-id="${item.id}" class="move-down-btn p-1 bg-white hover:bg-[#7C3AED] hover:text-white rounded shadow-sm text-slate-500 hover:shadow transition-all text-xs cursor-pointer" title="Move Down">▼</button>
+            <div class="absolute right-3.5 top-1/2 -translate-y-1/2 flex items-center gap-1 opacity-80 group-hover:opacity-100 transition-opacity">
+              <button data-id="${item.id}" class="move-up-btn p-1 bg-white hover:bg-[#7C3AED] hover:text-white rounded border border-[#E4E4E7] text-[#09090B] transition-all text-[9px] font-bold cursor-pointer" title="Move Up">▲</button>
+              <button data-id="${item.id}" class="move-down-btn p-1 bg-white hover:bg-[#7C3AED] hover:text-white rounded border border-[#E4E4E7] text-[#09090B] transition-all text-[9px] font-bold cursor-pointer" title="Move Down">▼</button>
             </div>
 
-            <!-- Absolute Delete Control -->
-            <button data-id="${item.id}" class="delete-btn absolute left-2.5 top-2.5 bg-rose-50 text-rose-600 rounded-full h-6 w-6 text-xs flex items-center justify-center font-bold hover:bg-rose-500 hover:text-white border border-rose-100 shadow-sm opacity-0 group-hover:opacity-100 transition-all cursor-pointer" title="Delete Page">
-              &times;
+            <button data-id="${item.id}" class="delete-btn absolute left-1 w-4 h-4 rounded-full bg-red-100 text-red-650 hover:bg-red-500 hover:text-white text-[9px] flex items-center justify-center font-bold opacity-0 group-hover:opacity-100 transition-all cursor-pointer -top-1 shadow" title="Delete Page">
+              ✕
             </button>
           `;
           queueList.appendChild(card);
@@ -638,7 +557,6 @@
         });
       }
 
-      // Compile and render PDF locally using pdf-lib
       compilePdfBtn.addEventListener('click', async () => {
         if (originalFileList.length === 0) return;
 
@@ -647,33 +565,29 @@
         processingLoader.classList.remove('hidden');
 
         try {
-          // Initialize PDF Document
           const { PDFDocument } = PDFLib;
           const pdfDoc = await PDFDocument.create();
 
-          const pageSizeOption = selectPageSize.value; // 'A4', 'Letter', 'Fit'
-          const orientation = selectOrientation.value; // 'Portrait', 'Landscape'
-          const marginsOption = selectMargins.value; // 'none', 'narrow' (10mm), 'wide' (20mm)
+          const pageSizeOption = selectPageSize.value;
+          const orientation = selectOrientation.value;
+          const marginsOption = selectMargins.value;
           const quality = parseInt(qualitySlider.value) / 100;
 
-          // Standard conversions factors
           const mmToPts = 2.83465;
-          const A4_W = 210 * mmToPts; // 595.27
-          const A4_H = 297 * mmToPts; // 841.89
-          const Letter_W = 8.5 * 72; // 612
-          const Letter_H = 11 * 72; // 792
+          const A4_W = 210 * mmToPts;
+          const A4_H = 297 * mmToPts;
+          const Letter_W = 8.5 * 72;
+          const Letter_H = 11 * 72;
 
           let marginPts = 0;
           if (pageSizeOption !== 'Fit') {
-            if (marginsOption === 'narrow') marginPts = 10 * mmToPts; // ~28.3 pts
-            if (marginsOption === 'wide') marginPts = 20 * mmToPts; // ~56.7 pts
+            if (marginsOption === 'narrow') marginPts = 10 * mmToPts;
+            if (marginsOption === 'wide') marginPts = 20 * mmToPts;
           }
 
-          // Assembly pipeline
           for (let i = 0; i < originalFileList.length; i++) {
             const queueItem = originalFileList[i];
             
-            // Draw image on canvas to optimize compression as clean JPEGs
             const optimizedBytes = await rebuildLocalJpegBytes(queueItem, quality);
             const embeddedImg = await pdfDoc.embedJpg(optimizedBytes);
 
@@ -687,7 +601,6 @@
               pageW = naturalW;
               pageH = naturalH;
             } else {
-              // Custom A4 or US Letter sizes
               let standardW = pageSizeOption === 'A4' ? A4_W : Letter_W;
               let standardH = pageSizeOption === 'A4' ? A4_H : Letter_H;
 
@@ -701,19 +614,15 @@
               pageH = standardH;
             }
 
-            // Create page instance
             const page = pdfDoc.addPage([pageW, pageH]);
 
-            // Calculate active design printable sizes
             const printableW = pageW - marginPts * 2;
             const printableH = pageH - marginPts * 2;
 
-            // Maintain photo aspect ratios during page adjustments
             const scale = Math.min(printableW / naturalW, printableH / naturalH);
             const finalW = naturalW * scale;
             const finalH = naturalH * scale;
 
-            // Calculate coordinates to center inside print margins
             const posX = marginPts + (printableW - finalW) / 2;
             const posY = marginPts + (printableH - finalH) / 2;
 
@@ -725,7 +634,6 @@
             });
           }
 
-          // Expose and download assembled PDF book
           const finalPdfBytes = await pdfDoc.save();
           const pdfBlob = new Blob([finalPdfBytes], { type: 'application/pdf' });
           const objectUrl = URL.createObjectURL(pdfBlob);
@@ -744,7 +652,6 @@
         }
       });
 
-      // Canvas compressor utility generating safe physical JPEG arrays
       function rebuildLocalJpegBytes(item, quality) {
         return new Promise((resolve, reject) => {
           const img = new Image();
@@ -755,12 +662,10 @@
             canvas.height = img.naturalHeight;
             const ctx = canvas.getContext('2d');
 
-            // White backing for transparent png bounds inside new JPEG
             ctx.fillStyle = '#FFFFFF';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             ctx.drawImage(img, 0, 0);
 
-            // Rebuild as highly robust JPEG array bytes (pdf-lib parses clean array buffers)
             canvas.toBlob((blob) => {
               const reader = new FileReader();
               reader.onloadend = () => {
